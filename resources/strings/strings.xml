@@ -1,0 +1,13 @@
+<strings>
+    <string id="AppName">PowerRunningZone</string>
+    <string id="zone1_low_p_title">Zone 1 Low</string>
+    <string id="zone2_low_p_title">Zone 2 Low</string>
+    <string id="zone3_low_p_title">Zone 3 Low</string>
+    <string id="zone4_low_p_title">Zone 4 Low</string>
+    <string id="zone5_low_p_title">Zone 5 Low</string>
+    <string id="zone6_low_p_title">Zone 6 Low</string>
+    <string id="zone7_low_p_title">Zone 7 Low</string>
+    <string id="alert_zone_change_title">Alert on Zone Change</string>
+    <string id="vibrate_zone_change_title">Vibrate on Zone Change</string>
+    <string id="alert_lap_title">Alert on Lap Average</string>
+</strings>
