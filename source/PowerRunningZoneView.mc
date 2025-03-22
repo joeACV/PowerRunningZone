@@ -5,6 +5,21 @@ using Toybox.System as Sys;
 using Toybox.Attention as Attention;
 using Toybox.Application as App;
 
+class DrawAttributes {
+    var label = "";
+    var value = 0.0;
+    var dimensions = [0, 0];
+    var valueDimensions = [0, 0];
+    var labelDimensions = [0, 0];
+    var valueFont = Gfx.FONT_MEDIUM;
+    var labelFont = Gfx.FONT_SMALL;
+    var textAlign = Gfx.TEXT_JUSTIFY_CENTER;
+    var obscurity = Ui.DataField.OBSCURE_BOTTOM;
+    var bkColor = Gfx.COLOR_TRANSPARENT;
+    var baseLocation = [0, 0];
+    var location = [0, 0];
+    var labelLocation = [0, 0];
+}
 
 class PowerRunningZoneView extends Ui.DataField {
 	const OBSCURE_ALL_SIDES = (OBSCURE_TOP | OBSCURE_BOTTOM | OBSCURE_RIGHT | OBSCURE_LEFT);
@@ -43,6 +58,7 @@ class PowerRunningZoneView extends Ui.DataField {
 	var alertZoneChange = false;
 	var vibrateZoneChange = false;
 	var lapAlertZone = false;
+	var obscurity;
 	hidden var prevZone = 0.0;
 	hidden var currentPowerZone = 0.0;
 	hidden var powerZone = 0.0;
@@ -60,6 +76,7 @@ class PowerRunningZoneView extends Ui.DataField {
     // Set the label of the data field here.
     function initialize() {
         DataField.initialize();
+		obscurity = getObscurityFlags();
     }
     
     // The given info object contains all the current workout
@@ -71,7 +88,6 @@ class PowerRunningZoneView extends Ui.DataField {
     	var labelDisplay = label;
     	var valueString;
     	var effString = "0";
-	   	var obscurity = getObscurityFlags();
     	var app = App.getApp();
     	alertZoneChange = app.getProperty("alert_zone_change_p");
     	vibrateZoneChange = app.getProperty("vibrate_zone_change_p");
@@ -113,6 +129,8 @@ class PowerRunningZoneView extends Ui.DataField {
     	var dataColor = Gfx.COLOR_BLACK;
     	var effWidth = 0;
     	var effHeight = 0;
+		var width = 0;
+		var height = 0;
     	var powerDimensions = [0,0];
     	var lapString = "0";
    		var obscurity = getObscurityFlags();
@@ -154,8 +172,9 @@ class PowerRunningZoneView extends Ui.DataField {
         			Gfx.FONT_NUMBER_MEDIUM , 
         			valueString, 
         			Gfx.TEXT_JUSTIFY_CENTER);
-
-        if (dc.getWidth()>70 | dc.getHeight() < 50){
+		width = dc.getWidth();
+		height = dc.getHeight();
+        if (width>70 | height < 50){
         	drawValue(dc, "Eff",effString,TopRight,Gfx.COLOR_TRANSPARENT, location[1]*0.95, obscurity); //Draw Efficiency top right
 			drawValue(dc, "Lap",lapString ,TopLeft,setZoneColor(lapPowerZone), location[1]*0.95, obscurity);
 			drawValue(dc, "GAP", pe.getGap().format("%.0f") , BottomLeft, Gfx.COLOR_TRANSPARENT, location[1]*0.99, obscurity);
@@ -168,82 +187,108 @@ class PowerRunningZoneView extends Ui.DataField {
 //      	dc.drawText((dc.getWidth() + dc.getTextWidthInPixels(eff.format("%.1f") + " gap", Gfx.FONT_SMALL)) / 2,dc.getFontHeight(Gfx.FONT_SMALL) , Gfx.FONT_SMALL, eff.format("%.1f") + " gap", (Gfx.TEXT_JUSTIFY_LEFT | Gfx.TEXT_JUSTIFY_CENTER));
     }
    
-    function drawValue(dc, label, value, position,bkColor, height, obscurity){
-    	//Draw based on position
-    	var dimensions = [0,0];
-    	var baseLocation = [0,0];
-    	var location = [0,0];
-    	var labelLocation = [0,0];
-    	var fontSize = Gfx.FONT_NUMBER_MEDIUM;
-	   	var valueString = "0.0";
-    	var valueFont = Gfx.FONT_NUMBER_MEDIUM;
-    	var drawLabel = 1;
-    	var labelDimensions = [0,0];
-    	var labelFont = Gfx.FONT_TINY;
-    	var valueDimensions = [0,0];
-    	var textAlign = Gfx.TEXT_JUSTIFY_CENTER;
-    	
-    	valueDimensions = dc.getTextDimensions(value, valueFont);
-    	dimensions = [dc.getWidth()/2, height];
-    	labelDimensions = dc.getTextDimensions(label, labelFont);
-       	dc.setColor(Gfx.COLOR_BLACK, Gfx.COLOR_TRANSPARENT);
-       	if (valueDimensions[1] + labelDimensions[1] > dimensions[1]){
-       		valueFont = Gfx.FONT_SMALL;
-	    	valueDimensions = dc.getTextDimensions(value, valueFont);
-	    }
-       	switch (position) {
-       		case TopLeft: {
-       			baseLocation = [0,0];
-       			}
-				break;
-       			
-       		case TopRight:{
-       			baseLocation = [dc.getWidth()/2,0];}
-       			break;
-       			
-       		case BottomLeft:{
-       			baseLocation = [0,dc.getHeight()-height];}
-       			break;
-       			
-       		case BottomRight:{
-       			baseLocation = [dc.getWidth()/2, dc.getHeight()-height];}
-       			break;
-       			
-       		default:
-       			break;
-       			
-       	}
-       	if (obscurity & OBSCURE_LEFT and position == TopLeft){     		
-	       	location = [baseLocation[0] + dimensions[0] *0.5,  //Position of value
-	       				baseLocation[1] + dimensions[1] - valueDimensions[1]*1.1];
-	    }
-	    else if (obscurity & OBSCURE_RIGHT and position == TopRight){     		
-	       	location = [baseLocation[0] + dimensions[0] - valueDimensions[0],  //Position of value
-	       				baseLocation[1] + dimensions[1] - valueDimensions[1]*1.1];
-    	}else if (obscurity & OBSCURE_LEFT and position == BottomLeft){     		
-	       	location = [baseLocation[0] + dimensions[0] - valueDimensions[0],  //Position of value
-	       				baseLocation[1] + labelDimensions[1]*1.1];
-    	}
-    	labelLocation = [location[0],
-    					location[1] - labelDimensions[1]*1.01];
-   		dc.setColor(bkColor, Gfx.COLOR_BLUE);
-         dc.fillRectangle(baseLocation[0], baseLocation[1], 
-         					dimensions[0], dimensions[1]);
-         dc.setColor(Gfx.COLOR_BLACK, Gfx.COLOR_BLACK);
-         dc.drawRectangle(baseLocation[0], baseLocation[1], 
-         					dimensions[0], dimensions[1]);
-         dc.setColor(Gfx.COLOR_BLACK, Gfx.COLOR_TRANSPARENT);
-		 dc.drawText(location[0], 			
-					location[1],  
-					valueFont, 
-					value , 
-					textAlign);
-		 dc.drawText(labelLocation[0], //Draw Label
-	    			labelLocation[1],
-	    			labelFont,
-	    			label,
-	    			textAlign);
+function drawTopLeft(dc, drawAttributes as DrawAttributes) {
+	drawAttributes.baseLocation = [0, 0];
+	drawAttributes.location = [0, 0];
+	drawAttributes.labelLocation = [0, 0];
+
+	if (drawAttributes.obscurity & OBSCURE_LEFT) {         
+		drawAttributes.location = [drawAttributes.baseLocation[0] + drawAttributes.dimensions[0] * 0.5, drawAttributes.baseLocation[1] + drawAttributes.dimensions[1] - drawAttributes.valueDimensions[1] * 1.1];
+	} else {
+		drawAttributes.location = [drawAttributes.baseLocation[0] + drawAttributes.dimensions[0] / 2 - drawAttributes.valueDimensions[0] / 2, drawAttributes.baseLocation[1] + drawAttributes.dimensions[1] - drawAttributes.valueDimensions[1] * 1.1];
+	}
+	drawAttributes.labelLocation = [drawAttributes.location[0], drawAttributes.location[1] - drawAttributes.labelDimensions[1] * 1.01];
+
+	drawRectangleAndText(dc, drawAttributes);
 }
+
+function drawTopRight(dc, drawAttributes as DrawAttributes) {
+    drawAttributes.baseLocation = [dc.getWidth() / 2, 0];
+    drawAttributes.location = [0, 0];
+    drawAttributes.labelLocation = [0, 0];
+
+    if (drawAttributes.obscurity & OBSCURE_RIGHT) {         
+        drawAttributes.location = [drawAttributes.baseLocation[0] + drawAttributes.dimensions[0] - drawAttributes.valueDimensions[0], drawAttributes.baseLocation[1] + drawAttributes.dimensions[1] - drawAttributes.valueDimensions[1] * 1.1];
+    } else {
+        drawAttributes.location = [drawAttributes.baseLocation[0] + drawAttributes.dimensions[0] / 2 - drawAttributes.valueDimensions[0] / 2, drawAttributes.baseLocation[1] + drawAttributes.dimensions[1] - drawAttributes.valueDimensions[1] * 1.1];
+    }
+    drawAttributes.labelLocation = [drawAttributes.location[0], drawAttributes.location[1] - drawAttributes.labelDimensions[1] * 1.01];
+
+    drawRectangleAndText(dc, drawAttributes);
+}
+
+function drawBottomLeft(dc, drawAttributes as DrawAttributes) {
+    drawAttributes.baseLocation = [0, dc.getHeight() - drawAttributes.dimensions[1]];
+    drawAttributes.location = [0, 0];
+    drawAttributes.labelLocation = [0, 0];
+
+    if (drawAttributes.obscurity & OBSCURE_LEFT) {         
+        drawAttributes.location = [drawAttributes.baseLocation[0] + drawAttributes.dimensions[0] - drawAttributes.valueDimensions[0], drawAttributes.baseLocation[1] + drawAttributes.labelDimensions[1] * 1.1];
+    } else {
+        drawAttributes.location = [drawAttributes.baseLocation[0] + drawAttributes.dimensions[0] / 2 - drawAttributes.valueDimensions[0] / 2, drawAttributes.baseLocation[1] + drawAttributes.labelDimensions[1] * 1.1];
+    }
+    drawAttributes.labelLocation = [drawAttributes.location[0], drawAttributes.location[1] - drawAttributes.labelDimensions[1] * 1.01];
+
+    drawRectangleAndText(dc, drawAttributes);
+}
+
+function drawBottomRight(dc, drawAttributes as DrawAttributes) {
+    drawAttributes.baseLocation = [dc.getWidth() / 2, dc.getHeight() - drawAttributes.dimensions[1]];
+    drawAttributes.location = [0, 0];
+    drawAttributes.labelLocation = [0, 0];
+
+    drawAttributes.location = [drawAttributes.baseLocation[0] + drawAttributes.dimensions[0] - drawAttributes.valueDimensions[0], drawAttributes.baseLocation[1] + drawAttributes.labelDimensions[1] * 1.1];
+    drawAttributes.labelLocation = [drawAttributes.location[0], drawAttributes.location[1] - drawAttributes.labelDimensions[1] * 1.01];
+
+    drawRectangleAndText(dc, drawAttributes);
+}
+
+function drawRectangleAndText(dc, drawAttributes as DrawAttributes) {
+    dc.setColor(drawAttributes.bkColor, Gfx.COLOR_BLUE);
+    dc.fillRectangle(drawAttributes.baseLocation[0], drawAttributes.baseLocation[1], drawAttributes.dimensions[0], drawAttributes.dimensions[1]);
+    dc.setColor(Gfx.COLOR_BLACK, Gfx.COLOR_BLACK);
+    dc.drawRectangle(drawAttributes.baseLocation[0], drawAttributes.baseLocation[1], drawAttributes.dimensions[0], drawAttributes.dimensions[1]);
+    dc.setColor(Gfx.COLOR_BLACK, Gfx.COLOR_TRANSPARENT);
+    dc.drawText(drawAttributes.location[0], drawAttributes.location[1], drawAttributes.valueFont, drawAttributes.value, drawAttributes.textAlign);
+    dc.drawText(drawAttributes.labelLocation[0], drawAttributes.labelLocation[1], drawAttributes.labelFont, drawAttributes.label, drawAttributes.textAlign);
+}
+
+function drawValue(dc, label, value, position, bkColor, height, obscurity) {
+	var drawAttributes = new DrawAttributes();
+	drawAttributes.label = label;
+	drawAttributes.value = value;
+	drawAttributes.dimensions = [dc.getWidth() / 2, height];
+	drawAttributes.valueFont = Gfx.FONT_NUMBER_MEDIUM;
+	drawAttributes.labelFont = Gfx.FONT_TINY;
+	drawAttributes.textAlign = Gfx.TEXT_JUSTIFY_CENTER;
+	drawAttributes.obscurity = obscurity;
+	drawAttributes.bkColor = bkColor;  
+    drawAttributes.valueDimensions = dc.getTextDimensions(drawAttributes.value, drawAttributes.valueFont);
+    drawAttributes.labelDimensions = dc.getTextDimensions(drawAttributes.label, drawAttributes.labelFont);
+
+    if (drawAttributes.valueDimensions[1] + drawAttributes.labelDimensions[1] > drawAttributes.dimensions[1]) {
+        drawAttributes.valueFont = Gfx.FONT_SMALL;
+        drawAttributes.valueDimensions = dc.getTextDimensions(drawAttributes.value, drawAttributes.valueFont);
+    }
+
+    switch (position) {
+        case TopLeft:
+            drawTopLeft(dc, drawAttributes);
+            break;
+        case TopRight:
+            drawTopRight(dc, drawAttributes);
+            break;
+        case BottomLeft:
+            drawBottomLeft(dc, drawAttributes);
+            break;
+        case BottomRight:
+            drawBottomRight(dc, drawAttributes);
+            break;
+        default:
+            break;
+    }
+}
+
      
     
     function compute(info) {
@@ -424,9 +469,10 @@ class PowerRunningZoneView extends Ui.DataField {
 	function onTimerLap(){
 		lapComplete();
 	}
-	function onWorkoutStepComplete(){
+	function onWorkoutStepComplete(){	
 		lapComplete();
 	}
+	
 	function lapComplete(){
 		//Set last lap power
 		//Reset lap time and lappower

@@ -1,0 +1,26 @@
+import Toybox.Lang;
+using Toybox.WatchUi;
+using Toybox.WatchUi as Ui;
+using Toybox.Graphics;
+using Toybox.Graphics as Gfx;
+
+module Rez {
+    module Drawables {
+        (:initialized) var PowerIcon as ResourceId;
+        (:initialized) var LauncherIcon as ResourceId;
+    } // Drawables
+
+    module Strings {
+        (:initialized) var zone6_low_p_title as ResourceId;
+        (:initialized) var zone7_low_p_title as ResourceId;
+        (:initialized) var alert_zone_change_title as ResourceId;
+        (:initialized) var zone4_low_p_title as ResourceId;
+        (:initialized) var zone3_low_p_title as ResourceId;
+        (:initialized) var vibrate_zone_change_title as ResourceId;
+        (:initialized) var zone1_low_p_title as ResourceId;
+        (:initialized) var zone5_low_p_title as ResourceId;
+        (:initialized) var zone2_low_p_title as ResourceId;
+        (:initialized) var AppName as ResourceId;
+        (:initialized) var alert_lap_title as ResourceId;
+    } // Strings
+} // Rez

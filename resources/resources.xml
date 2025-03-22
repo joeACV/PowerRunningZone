@@ -1,0 +1,9 @@
+<resources>
+     <drawables>
+         <bitmap id="LauncherIcon" filename="drawables/Symbol.png" />
+         <bitmap id="PowerIcon" filename="drawables/dumbell_small.png" />
+         <bitmap id="PowerIconWhite" filename="drawables/dumbell_small_white.png" />
+         <bitmap id="Heart" filename="drawables/heart.png" />
+         <bitmap id="HeartWhite" filename="drawables/heart_white.png" />
+     </drawables>
+</resources>
