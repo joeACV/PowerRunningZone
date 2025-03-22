@@ -16,7 +16,8 @@ class PowerRunningZoneApp extends App.AppBase {
 
     // Return the initial view of your application here
     function getInitialView() {
-        return [ new PowerRunningZoneView() ];
+        return [ new CircularZoneView() ];
+        // return [ new PowerRunningZoneView() ];
     }
 
 }

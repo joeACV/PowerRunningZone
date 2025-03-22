@@ -1,0 +1,42 @@
+[ @file = "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\PowerRunningZoneApp.mc"; @line = 1; ]
+using Toybox.Application as :App;
+[ @file = "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\PowerRunningZoneApp.mc"; @line = 3; ]
+class PowerRunningZoneApp extends App.AppBase{
+    [ @file = "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\PowerRunningZoneApp.mc"; @line = 3; ]
+    <init> {
+    }
+    [ @file = "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\PowerRunningZoneApp.mc"; @line = 3; ]
+    static
+    <init> {
+    }
+    [ @file = "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\PowerRunningZoneApp.mc"; @line = 5; ]
+    function initialize() as Void {
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_PowerRunningZoneApp_mc_5_26_7_4_start:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\PowerRunningZoneApp.mc" 6 8 ]
+        %tmp.2 = getv ? :AppBase;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_PowerRunningZoneApp_mc_5_26_7_4_stop:
+    }
+    [ @file = "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\PowerRunningZoneApp.mc"; @line = 10; ]
+    function onStart(state) {
+    }
+    [ @file = "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\PowerRunningZoneApp.mc"; @line = 14; ]
+    function onStop(state) {
+    }
+    [ @file = "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\PowerRunningZoneApp.mc"; @line = 18; ]
+    function getInitialView() {
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_PowerRunningZoneApp_mc_18_30_21_4_start:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\PowerRunningZoneApp.mc" 19 8 ]
+        %tmp.1 = newa 1;
+        %tmp.5 = getv ? :CircularZoneView;
+        %tmp.2 = newc %tmp.5 ();
+        %tmp.6 = dup %tmp.1;
+        %tmp.7 = aputv %tmp.6 0 %tmp.2;
+        ret %tmp.7;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_PowerRunningZoneApp_mc_18_30_21_4_stop:
+    }
+}
+[ @file = "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\PowerRunningZoneApp.mc"; @line = 1; ]
+<init> {
+}
