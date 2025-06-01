@@ -38,7 +38,7 @@ class ZoneManagment{
         %tmp.20 = 150;
         %tmp.21 = dup %tmp.19;
         %tmp.22 = aputv %tmp.21 4 %tmp.20;
-        %tmp.23 = 350;
+        %tmp.23 = 0;
         %tmp.24 = dup %tmp.22;
         %tmp.25 = aputv %tmp.24 5 %tmp.23;
         putv self :zoneLow %tmp.25;
@@ -181,14 +181,14 @@ class ZoneManagment{
     var vibrateZoneProfile;
     [ @file = "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc"; @line = 47; ]
     function Update(info) {
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_47_25_66_4_start:
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_47_25_68_4_start:
 [ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 49 8 ]
-        [ "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_47_25_66_4_start" "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_47_25_66_4_stop" ]
+        [ "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_47_25_68_4_start" "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_47_25_68_4_stop" ]
         %lapPowerZone.1 = local;
         %tmp.1 = 0.0;
         lputv %lapPowerZone.1 %tmp.1;
 [ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 50 8 ]
-        [ "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_47_25_66_4_start" "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_47_25_66_4_stop" ]
+        [ "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_47_25_68_4_start" "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_47_25_68_4_stop" ]
         %prevLapZone.2 = local;
         %tmp.2 = 0.0;
         lputv %prevLapZone.2 %tmp.2;
@@ -215,264 +215,255 @@ E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc
 E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_52_26_54_8_stop:
         goto @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_52_8_54_8_if_end;
 E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_52_8_54_8_if_end:
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 55 8 ]
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_55_8_57_8_if_stmt:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 56 8 ]
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_56_8_60_8_if_stmt:
         %tmp.17 = lgetv %info;
-        %tmp.18 = getv %tmp.17 :elapsedTime;
+        %tmp.18 = getv %tmp.17 :timerTime;
         %tmp.19 = null;
         %tmp.20 = ne %tmp.18 %tmp.19;
-        bf %tmp.20 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_55_8_57_8_if_end;
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_55_8_57_8_if_true:
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_55_37_57_8_start:
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 56 12 ]
+        bf %tmp.20 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_56_8_60_8_if_false;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_56_8_60_8_if_true:
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_56_35_58_8_start:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 57 12 ]
         %tmp.21 = lgetv %info;
-        %tmp.22 = getv %tmp.21 :elapsedTime;
+        %tmp.22 = getv %tmp.21 :timerTime;
         %tmp.24 = getv ? :lapStartTime;
         %tmp.25 = sub %tmp.22 %tmp.24;
         putv self :lapTime %tmp.25;
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_55_37_57_8_stop:
-        goto @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_55_8_57_8_if_end;
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_55_8_57_8_if_end:
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 58 8 ]
-        %tmp.26 = lgetv %info;
-        %tmp.27 = getv %tmp.26 :elapsedTime;
-        %tmp.29 = getv ? :lapStartTime;
-        %tmp.30 = sub %tmp.27 %tmp.29;
-        putv self :lapTime %tmp.30;
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 59 8 ]
-        %tmp.32 = getv ? :lapPower;
-        putv self :prevLapPower %tmp.32;
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 60 8 ]
-        %tmp.33 = lgetv %info;
-        %tmp.34 = getv %tmp.33 :currentPower;
-        putv self :currentPower %tmp.34;
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 61 5 ]
-        %tmp.35 = self;
-        %tmp.36 = getv function %tmp.35 :getZone;
-        %tmp.38 = getv ? :prevLapPower;
-        %tmp.39 = invoke %tmp.35 %tmp.36(%tmp.38);
-        lputv %prevLapZone.2 %tmp.39;
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 62 5 ]
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_62_5_64_5_if_stmt:
-        %tmp.41 = getv ? :lapTime;
-        %tmp.43 = getv ? :prevLapPowerTime;
-        %tmp.44 = gt %tmp.41 %tmp.43;
-        bf %tmp.44 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_62_5_64_5_if_end;
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_62_5_64_5_if_true:
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_62_36_64_5_start:
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 63 9 ]
-        %tmp.45 = self;
-        %tmp.46 = getv function %tmp.45 :calculateAvgPower;
-        %tmp.48 = getv ? :lapTime;
-        %tmp.50 = getv ? :prevLapPowerTime;
-        %tmp.52 = getv ? :lapPower;
-        %tmp.53 = lgetv %info;
-        %tmp.54 = getv %tmp.53 :currentPower;
-        %tmp.55 = invoke %tmp.45 %tmp.46(%tmp.48, %tmp.50, %tmp.52, %tmp.54);
-        putv self :lapPower %tmp.55;
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_62_36_64_5_stop:
-        goto @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_62_5_64_5_if_end;
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_62_5_64_5_if_end:
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 65 8 ]
-        %tmp.57 = getv ? :lapTime;
-        putv self :prevLapPowerTime %tmp.57;
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_47_25_66_4_stop:
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_56_35_58_8_stop:
+        goto @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_56_8_60_8_if_end;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_56_8_60_8_if_false:
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_58_13_60_8_start:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 59 12 ]
+        %tmp.26 = 0;
+        putv self :lapTime %tmp.26;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_58_13_60_8_stop:
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_56_8_60_8_if_end:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 61 8 ]
+        %tmp.28 = getv ? :lapPower;
+        putv self :prevLapPower %tmp.28;
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 62 8 ]
+        %tmp.29 = lgetv %info;
+        %tmp.30 = getv %tmp.29 :currentPower;
+        putv self :currentPower %tmp.30;
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 63 5 ]
+        %tmp.31 = self;
+        %tmp.32 = getv function %tmp.31 :getZone;
+        %tmp.34 = getv ? :prevLapPower;
+        %tmp.35 = invoke %tmp.31 %tmp.32(%tmp.34);
+        lputv %prevLapZone.2 %tmp.35;
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 64 5 ]
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_64_5_66_5_if_stmt:
+        %tmp.37 = getv ? :lapTime;
+        %tmp.39 = getv ? :prevLapPowerTime;
+        %tmp.40 = gt %tmp.37 %tmp.39;
+        bf %tmp.40 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_64_5_66_5_if_end;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_64_5_66_5_if_true:
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_64_36_66_5_start:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 65 9 ]
+        %tmp.41 = self;
+        %tmp.42 = getv function %tmp.41 :calculateAvgPower;
+        %tmp.44 = getv ? :lapTime;
+        %tmp.46 = getv ? :prevLapPowerTime;
+        %tmp.48 = getv ? :lapPower;
+        %tmp.49 = lgetv %info;
+        %tmp.50 = getv %tmp.49 :currentPower;
+        %tmp.51 = invoke %tmp.41 %tmp.42(%tmp.44, %tmp.46, %tmp.48, %tmp.50);
+        putv self :lapPower %tmp.51;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_64_36_66_5_stop:
+        goto @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_64_5_66_5_if_end;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_64_5_66_5_if_end:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 67 8 ]
+        %tmp.53 = getv ? :lapTime;
+        putv self :prevLapPowerTime %tmp.53;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_47_25_68_4_stop:
     }
-    [ @file = "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc"; @line = 67; ]
+    [ @file = "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc"; @line = 69; ]
     function GetPower() {
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_67_23_72_4_start:
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 68 8 ]
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_68_8_70_8_if_stmt:
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_69_23_74_4_start:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 70 8 ]
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_70_8_72_8_if_stmt:
         %tmp.2 = getv ? :currentPower;
         %tmp.3 = null;
         %tmp.4 = eq %tmp.2 %tmp.3;
-        bf %tmp.4 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_68_8_70_8_if_end;
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_68_8_70_8_if_true:
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_68_33_70_8_start:
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 69 12 ]
+        bf %tmp.4 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_70_8_72_8_if_end;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_70_8_72_8_if_true:
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_70_33_72_8_start:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 71 12 ]
         %tmp.5 = 0.0;
         putv self :currentPower %tmp.5;
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_68_33_70_8_stop:
-        goto @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_68_8_70_8_if_end;
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_68_8_70_8_if_end:
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 71 8 ]
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_70_33_72_8_stop:
+        goto @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_70_8_72_8_if_end;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_70_8_72_8_if_end:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 73 8 ]
         %tmp.7 = getv ? :currentPower;
         ret %tmp.7;
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_67_23_72_4_stop:
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_69_23_74_4_stop:
     }
-    [ @file = "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc"; @line = 73; ]
+    [ @file = "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc"; @line = 75; ]
     function calculateAvgPower(time, prevTime, avg, power) {
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_73_58_96_1_start:
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 78 2 ]
-        [ "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_73_58_96_1_start" "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_73_58_96_1_stop" ]
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_75_58_94_0_start:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 80 8 ]
+        [ "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_75_58_94_0_start" "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_75_58_94_0_stop" ]
         %newAvg.1 = local;
         %tmp.1 = 0.0;
         lputv %newAvg.1 %tmp.1;
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 79 2 ]
-        [ "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_73_58_96_1_start" "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_73_58_96_1_stop" ]
-        %timeF.2 = local;
-        %tmp.2 = 0.0;
-        lputv %timeF.2 %tmp.2;
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 80 2 ]
-        [ "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_73_58_96_1_start" "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_73_58_96_1_stop" ]
-        %math.3 = local;
-        %tmp.3 = "";
-        lputv %math.3 %tmp.3;
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 81 2 ]
-        [ "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_73_58_96_1_start" "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_73_58_96_1_stop" ]
-        %timeDiff.4 = local;
-        %tmp.4 = 0.0;
-        lputv %timeDiff.4 %tmp.4;
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 82 2 ]
-        %tmp.5 = lgetv %time;
-        %tmp.6 = getv function %tmp.5 :toFloat;
-        %tmp.7 = invoke %tmp.5 %tmp.6();
-        %tmp.8 = 1000.0;
-        %tmp.9 = div %tmp.7 %tmp.8;
-        lputv %timeF.2 %tmp.9;
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 83 2 ]
-        %tmp.10 = lgetv %time;
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 81 8 ]
+        [ "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_75_58_94_0_start" "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_75_58_94_0_stop" ]
+        %totalTimeInSeconds.2 = local;
+        %tmp.2 = lgetv %time;
+        %tmp.3 = getv function %tmp.2 :toFloat;
+        %tmp.4 = invoke %tmp.2 %tmp.3();
+        %tmp.5 = 1000.0;
+        %tmp.6 = div %tmp.4 %tmp.5;
+        lputv %totalTimeInSeconds.2 %tmp.6;
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 82 8 ]
+        [ "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_75_58_94_0_start" "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_75_58_94_0_stop" ]
+        %timeDiffInSeconds.3 = local;
+        %tmp.7 = lgetv %time;
+        %tmp.8 = getv function %tmp.7 :toFloat;
+        %tmp.9 = invoke %tmp.7 %tmp.8();
+        %tmp.10 = lgetv %prevTime;
         %tmp.11 = getv function %tmp.10 :toFloat;
         %tmp.12 = invoke %tmp.10 %tmp.11();
-        %tmp.13 = lgetv %prevTime;
-        %tmp.14 = getv function %tmp.13 :toFloat;
-        %tmp.15 = invoke %tmp.13 %tmp.14();
-        %tmp.16 = sub %tmp.12 %tmp.15;
-        %tmp.17 = 1000.0;
-        %tmp.18 = div %tmp.16 %tmp.17;
-        lputv %timeDiff.4 %tmp.18;
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 86 2 ]
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_86_2_94_2_if_stmt:
-        %tmp.20 = lgetv %timeF.2;
-        %tmp.21 = 0;
-        %tmp.22 = gt %tmp.20 %tmp.21;
-        bf %tmp.22 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_86_2_94_2_if_false;
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_86_2_94_2_if_true:
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_86_14_92_2_start:
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 87 3 ]
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_87_3_91_3_if_stmt:
-        %tmp.24 = lgetv %power;
-        %tmp.25 = null;
-        %tmp.26 = ne %tmp.24 %tmp.25;
-        bf %tmp.26 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_87_3_91_3_if_false;
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_87_3_91_3_if_true:
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_87_19_89_3_start:
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 88 4 ]
-        %tmp.28 = lgetv %avg;
-        %tmp.29 = lgetv %prevTime;
-        %tmp.30 = getv function %tmp.29 :toFloat;
-        %tmp.31 = invoke %tmp.29 %tmp.30();
-        %tmp.32 = 1000.0;
-        %tmp.33 = div %tmp.31 %tmp.32;
-        %tmp.34 = mul %tmp.28 %tmp.33;
-        %tmp.36 = lgetv %power;
-        %tmp.37 = as %tmp.36 { (!Null) };
-        %tmp.39 = lgetv %timeDiff.4;
-        %tmp.40 = mul %tmp.37 %tmp.39;
-        %tmp.41 = add %tmp.34 %tmp.40;
-        %tmp.43 = lgetv %timeF.2;
-        %tmp.44 = div %tmp.41 %tmp.43;
-        lputv %newAvg.1 %tmp.44;
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_87_19_89_3_stop:
-        goto @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_87_3_91_3_if_end;
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_87_3_91_3_if_false:
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_89_8_91_3_start:
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 90 4 ]
-        %tmp.46 = lgetv %avg;
-        %tmp.47 = lgetv %prevTime;
-        %tmp.48 = getv function %tmp.47 :toFloat;
-        %tmp.49 = invoke %tmp.47 %tmp.48();
-        %tmp.50 = 1000.0;
-        %tmp.51 = div %tmp.49 %tmp.50;
-        %tmp.52 = mul %tmp.46 %tmp.51;
-        %tmp.53 = 0;
-        %tmp.54 = add %tmp.52 %tmp.53;
-        %tmp.56 = lgetv %timeF.2;
-        %tmp.57 = div %tmp.54 %tmp.56;
-        lputv %newAvg.1 %tmp.57;
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_89_8_91_3_stop:
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_87_3_91_3_if_end:
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_86_14_92_2_stop:
-        goto @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_86_2_94_2_if_end;
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_86_2_94_2_if_false:
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_92_9_94_2_start:
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 93 3 ]
-        %tmp.58 = 0.0;
+        %tmp.13 = sub %tmp.9 %tmp.12;
+        %tmp.14 = 1000.0;
+        %tmp.15 = div %tmp.13 %tmp.14;
+        lputv %timeDiffInSeconds.3 %tmp.15;
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 84 8 ]
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_84_8_92_8_if_stmt:
+        %tmp.17 = lgetv %totalTimeInSeconds.2;
+        %tmp.18 = 0;
+        %tmp.19 = gt %tmp.17 %tmp.18;
+        bf %tmp.19 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_84_8_92_8_if_false;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_84_8_92_8_if_true:
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_84_35_90_8_start:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 85 12 ]
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_85_12_89_12_if_stmt:
+        %tmp.21 = lgetv %power;
+        %tmp.22 = null;
+        %tmp.23 = ne %tmp.21 %tmp.22;
+        bf %tmp.23 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_85_12_89_12_if_false;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_85_12_89_12_if_true:
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_85_30_87_12_start:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 86 16 ]
+        %tmp.25 = lgetv %avg;
+        %tmp.26 = lgetv %prevTime;
+        %tmp.27 = getv function %tmp.26 :toFloat;
+        %tmp.28 = invoke %tmp.26 %tmp.27();
+        %tmp.29 = 1000.0;
+        %tmp.30 = div %tmp.28 %tmp.29;
+        %tmp.31 = mul %tmp.25 %tmp.30;
+        %tmp.33 = lgetv %power;
+        %tmp.34 = as %tmp.33 { (!Null) };
+        %tmp.36 = lgetv %timeDiffInSeconds.3;
+        %tmp.37 = mul %tmp.34 %tmp.36;
+        %tmp.38 = add %tmp.31 %tmp.37;
+        %tmp.40 = lgetv %totalTimeInSeconds.2;
+        %tmp.41 = div %tmp.38 %tmp.40;
+        lputv %newAvg.1 %tmp.41;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_85_30_87_12_stop:
+        goto @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_85_12_89_12_if_end;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_85_12_89_12_if_false:
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_87_19_89_12_start:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 88 16 ]
+        %tmp.43 = lgetv %avg;
+        %tmp.44 = lgetv %prevTime;
+        %tmp.45 = getv function %tmp.44 :toFloat;
+        %tmp.46 = invoke %tmp.44 %tmp.45();
+        %tmp.47 = 1000.0;
+        %tmp.48 = div %tmp.46 %tmp.47;
+        %tmp.49 = mul %tmp.43 %tmp.48;
+        %tmp.51 = lgetv %avg;
+        %tmp.53 = lgetv %timeDiffInSeconds.3;
+        %tmp.54 = mul %tmp.51 %tmp.53;
+        %tmp.55 = add %tmp.49 %tmp.54;
+        %tmp.57 = lgetv %totalTimeInSeconds.2;
+        %tmp.58 = div %tmp.55 %tmp.57;
         lputv %newAvg.1 %tmp.58;
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_92_9_94_2_stop:
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_86_2_94_2_if_end:
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 95 2 ]
-        %tmp.60 = lgetv %newAvg.1;
-        ret %tmp.60;
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_73_58_96_1_stop:
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_87_19_89_12_stop:
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_85_12_89_12_if_end:
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_84_35_90_8_stop:
+        goto @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_84_8_92_8_if_end;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_84_8_92_8_if_false:
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_90_15_92_8_start:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 91 12 ]
+        %tmp.60 = lgetv %power;
+        lputv %newAvg.1 %tmp.60;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_90_15_92_8_stop:
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_84_8_92_8_if_end:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 93 8 ]
+        %tmp.62 = lgetv %newAvg.1;
+        ret %tmp.62;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_75_58_94_0_stop:
     }
-    [ @file = "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc"; @line = 97; ]
+    [ @file = "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc"; @line = 95; ]
     function GetWorkoutZone() {
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_97_29_116_4_start:
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 99 8 ]
-        [ "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_97_29_116_4_start" "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_97_29_116_4_stop" ]
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_95_29_114_4_start:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 97 8 ]
+        [ "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_95_29_114_4_start" "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_95_29_114_4_stop" ]
         %step.1 = local;
         %tmp.1 = getm $.Toybox.Activity;
         %tmp.2 = getv function %tmp.1 :getCurrentWorkoutStep;
         %tmp.3 = invoke %tmp.1 %tmp.2();
         lputv %step.1 %tmp.3;
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 100 8 ]
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_100_8_102_8_if_stmt:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 98 8 ]
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_98_8_100_8_if_stmt:
         %tmp.5 = lgetv %step.1;
         %tmp.6 = null;
         %tmp.7 = eq %tmp.5 %tmp.6;
-        bf %tmp.7 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_100_8_102_8_if_end;
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_100_8_102_8_if_true:
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_100_26_102_8_start:
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 101 12 ]
+        bf %tmp.7 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_98_8_100_8_if_end;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_98_8_100_8_if_true:
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_98_26_100_8_start:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 99 12 ]
         %tmp.8 = null;
         ret %tmp.8;
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_100_26_102_8_stop:
-        goto @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_100_8_102_8_if_end;
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_100_8_102_8_if_end:
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 103 8 ]
-        [ "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_97_29_116_4_start" "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_97_29_116_4_stop" ]
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_98_26_100_8_stop:
+        goto @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_98_8_100_8_if_end;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_98_8_100_8_if_end:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 101 8 ]
+        [ "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_95_29_114_4_start" "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_95_29_114_4_stop" ]
         %notes.2 = local;
         %tmp.9 = lgetv %step.1;
         %tmp.10 = getv %tmp.9 :notes;
         lputv %notes.2 %tmp.10;
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 104 8 ]
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_104_8_106_8_if_stmt:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 102 8 ]
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_102_8_104_8_if_stmt:
         %tmp.12 = lgetv %notes.2;
         %tmp.13 = null;
         %tmp.14 = eq %tmp.12 %tmp.13;
-        bf %tmp.14 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_104_8_106_8_if_end;
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_104_8_106_8_if_true:
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_104_27_106_8_start:
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 105 12 ]
+        bf %tmp.14 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_102_8_104_8_if_end;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_102_8_104_8_if_true:
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_102_27_104_8_start:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 103 12 ]
         %tmp.15 = null;
         ret %tmp.15;
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_104_27_106_8_stop:
-        goto @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_104_8_106_8_if_end;
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_104_8_106_8_if_end:
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 107 8 ]
-        [ "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_97_29_116_4_start" "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_97_29_116_4_stop" ]
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_102_27_104_8_stop:
+        goto @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_102_8_104_8_if_end;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_102_8_104_8_if_end:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 105 8 ]
+        [ "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_95_29_114_4_start" "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_95_29_114_4_stop" ]
         %powerZone.3 = local;
         %tmp.16 = 0.0;
         lputv %powerZone.3 %tmp.16;
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 108 8 ]
-        [ "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_97_29_116_4_start" "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_97_29_116_4_stop" ]
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 106 8 ]
+        [ "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_95_29_114_4_start" "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_95_29_114_4_stop" ]
         %powerZoneIndex.4 = local;
         %tmp.17 = lgetv %notes.2;
         %tmp.18 = getv function %tmp.17 :find;
         %tmp.19 = "powerzone=";
         %tmp.20 = invoke %tmp.17 %tmp.18(%tmp.19);
         lputv %powerZoneIndex.4 %tmp.20;
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 109 8 ]
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_109_8_114_8_if_stmt:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 107 8 ]
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_107_8_112_8_if_stmt:
         %tmp.22 = lgetv %powerZoneIndex.4;
         %tmp.23 = null;
         %tmp.24 = ne %tmp.22 %tmp.23;
-        bf %tmp.24 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_109_8_114_8_if_end;
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_109_8_114_8_if_true:
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_109_36_114_8_start:
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 110 12 ]
-        [ "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_109_36_114_8_start" "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_109_36_114_8_stop" ]
+        bf %tmp.24 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_107_8_112_8_if_end;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_107_8_112_8_if_true:
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_107_36_112_8_start:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 108 12 ]
+        [ "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_107_36_112_8_start" "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_107_36_112_8_stop" ]
         %powerZoneString.5 = local;
         %tmp.25 = lgetv %notes.2;
         %tmp.26 = getv function %tmp.25 :substring;
@@ -485,49 +476,49 @@ E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc
         %tmp.34 = invoke %tmp.32 %tmp.33();
         %tmp.35 = invoke %tmp.25 %tmp.26(%tmp.31, %tmp.34);
         lputv %powerZoneString.5 %tmp.35;
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 112 12 ]
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 110 12 ]
         %tmp.36 = lgetv %powerZoneString.5;
         %tmp.37 = getv function %tmp.36 :toFloat;
         %tmp.38 = invoke %tmp.36 %tmp.37();
         lputv %powerZone.3 %tmp.38;
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_109_36_114_8_stop:
-        goto @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_109_8_114_8_if_end;
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_109_8_114_8_if_end:
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 115 8 ]
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_107_36_112_8_stop:
+        goto @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_107_8_112_8_if_end;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_107_8_112_8_if_end:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 113 8 ]
         %tmp.40 = lgetv %powerZone.3;
         ret %tmp.40;
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_97_29_116_4_stop:
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_95_29_114_4_stop:
     }
-    [ @file = "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc"; @line = 117; ]
+    [ @file = "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc"; @line = 115; ]
     function GetTimeLeft() {
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_117_26_135_4_start:
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 118 8 ]
-        [ "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_117_26_135_4_start" "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_117_26_135_4_stop" ]
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_115_26_133_4_start:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 116 8 ]
+        [ "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_115_26_133_4_start" "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_115_26_133_4_stop" ]
         %sysInfo.1 = local;
         %tmp.1 = getm $.Toybox.System;
         %tmp.2 = getv function %tmp.1 :getDeviceSettings;
         %tmp.3 = invoke %tmp.1 %tmp.2();
         lputv %sysInfo.1 %tmp.3;
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 119 8 ]
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_119_8_121_8_if_stmt:
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_119_12_119_106_begin:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 117 8 ]
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_117_8_119_8_if_stmt:
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_117_12_117_106_begin:
         %tmp.4 = lgetv %sysInfo.1;
         %tmp.5 = getv %tmp.4 :monkeyVersion;
         %tmp.6 = 0;
         %tmp.7 = agetv %tmp.5 %tmp.6;
         %tmp.8 = 3;
         %tmp.9 = lt %tmp.7 %tmp.8;
-        bt %tmp.9 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_119_8_121_8_if_true;
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_119_44_119_106_false:
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_119_45_119_105_begin:
+        bt %tmp.9 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_117_8_119_8_if_true;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_117_44_117_106_false:
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_117_45_117_105_begin:
         %tmp.10 = lgetv %sysInfo.1;
         %tmp.11 = getv %tmp.10 :monkeyVersion;
         %tmp.12 = 0;
         %tmp.13 = agetv %tmp.11 %tmp.12;
         %tmp.14 = 3;
         %tmp.15 = eq %tmp.13 %tmp.14;
-        bf %tmp.15 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_119_8_121_8_if_end;
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_119_78_119_105_true:
+        bf %tmp.15 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_117_8_119_8_if_end;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_117_78_117_105_true:
         %tmp.16 = lgetv %sysInfo.1;
         %tmp.17 = getv %tmp.16 :monkeyVersion;
         %tmp.18 = 1;
@@ -535,87 +526,87 @@ E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc
         %tmp.20 = 2;
         %tmp.21 = lt %tmp.19 %tmp.20;
         push %tmp.21;
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_119_78_119_105_end:
-        %tmp.22 = phi [%tmp.15 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_119_45_119_105_begin] [%tmp.21 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_119_78_119_105_true] [%tmp.22 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_119_78_119_105_end];
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_117_78_117_105_end:
+        %tmp.22 = phi [%tmp.15 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_117_45_117_105_begin] [%tmp.21 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_117_78_117_105_true] [%tmp.22 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_117_78_117_105_end];
         push %tmp.22;
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_119_44_119_106_end:
-        %tmp.23 = phi [%tmp.9 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_119_12_119_106_begin] [%tmp.22 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_119_44_119_106_false] [%tmp.23 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_119_44_119_106_end];
-        bf %tmp.23 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_119_8_121_8_if_end;
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_119_8_121_8_if_true:
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_119_110_121_8_start:
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 120 12 ]
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_117_44_117_106_end:
+        %tmp.23 = phi [%tmp.9 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_117_12_117_106_begin] [%tmp.22 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_117_44_117_106_false] [%tmp.23 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_117_44_117_106_end];
+        bf %tmp.23 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_117_8_119_8_if_end;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_117_8_119_8_if_true:
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_117_110_119_8_start:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 118 12 ]
         %tmp.25 = getv ? :lapTime;
         %tmp.26 = 1000;
         %tmp.27 = div %tmp.25 %tmp.26;
         ret %tmp.27;
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_119_110_121_8_stop:
-        goto @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_119_8_121_8_if_end;
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_119_8_121_8_if_end:
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 122 8 ]
-        [ "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_117_26_135_4_start" "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_117_26_135_4_stop" ]
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_117_110_119_8_stop:
+        goto @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_117_8_119_8_if_end;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_117_8_119_8_if_end:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 120 8 ]
+        [ "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_115_26_133_4_start" "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_115_26_133_4_stop" ]
         %workoutStepInfo.2 = local;
         %tmp.28 = getm $.Toybox.Activity;
         %tmp.29 = getv function %tmp.28 :getCurrentWorkoutStep;
         %tmp.30 = invoke %tmp.28 %tmp.29();
         lputv %workoutStepInfo.2 %tmp.30;
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 123 8 ]
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_123_8_125_8_if_stmt:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 121 8 ]
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_121_8_123_8_if_stmt:
         %tmp.32 = lgetv %workoutStepInfo.2;
         %tmp.33 = null;
         %tmp.34 = eq %tmp.32 %tmp.33;
-        bf %tmp.34 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_123_8_125_8_if_end;
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_123_8_125_8_if_true:
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_123_37_125_8_start:
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 124 12 ]
+        bf %tmp.34 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_121_8_123_8_if_end;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_121_8_123_8_if_true:
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_121_37_123_8_start:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 122 12 ]
         %tmp.36 = getv ? :lapTime;
         %tmp.37 = 1000;
         %tmp.38 = div %tmp.36 %tmp.37;
         ret %tmp.38;
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_123_37_125_8_stop:
-        goto @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_123_8_125_8_if_end;
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_123_8_125_8_if_end:
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 126 8 ]
-        [ "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_117_26_135_4_start" "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_117_26_135_4_stop" ]
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_121_37_123_8_stop:
+        goto @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_121_8_123_8_if_end;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_121_8_123_8_if_end:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 124 8 ]
+        [ "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_115_26_133_4_start" "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_115_26_133_4_stop" ]
         %step.3 = local;
         %tmp.39 = lgetv %workoutStepInfo.2;
         %tmp.40 = getv %tmp.39 :step;
         lputv %step.3 %tmp.40;
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 127 8 ]
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_127_8_129_8_if_stmt:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 125 8 ]
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_125_8_127_8_if_stmt:
         %tmp.42 = lgetv %step.3;
         %tmp.43 = null;
         %tmp.44 = eq %tmp.42 %tmp.43;
-        bf %tmp.44 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_127_8_129_8_if_end;
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_127_8_129_8_if_true:
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_127_26_129_8_start:
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 128 12 ]
+        bf %tmp.44 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_125_8_127_8_if_end;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_125_8_127_8_if_true:
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_125_26_127_8_start:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 126 12 ]
         %tmp.46 = getv ? :lapTime;
         %tmp.47 = 1000;
         %tmp.48 = div %tmp.46 %tmp.47;
         ret %tmp.48;
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_127_26_129_8_stop:
-        goto @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_127_8_129_8_if_end;
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_127_8_129_8_if_end:
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 130 8 ]
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_130_8_132_8_if_stmt:
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_125_26_127_8_stop:
+        goto @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_125_8_127_8_if_end;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_125_8_127_8_if_end:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 128 8 ]
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_128_8_130_8_if_stmt:
         %tmp.49 = lgetv %step.3;
         %tmp.50 = getv %tmp.49 :durationType;
         %tmp.51 = getm $.Toybox.Activity;
         %tmp.52 = getv %tmp.51 :WORKOUT_STEP_DURATION_TIME;
         %tmp.53 = ne %tmp.50 %tmp.52;
-        bf %tmp.53 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_130_8_132_8_if_end;
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_130_8_132_8_if_true:
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_130_65_132_8_start:
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 131 12 ]
+        bf %tmp.53 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_128_8_130_8_if_end;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_128_8_130_8_if_true:
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_128_65_130_8_start:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 129 12 ]
         %tmp.55 = getv ? :lapTime;
         %tmp.56 = 1000;
         %tmp.57 = div %tmp.55 %tmp.56;
         ret %tmp.57;
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_130_65_132_8_stop:
-        goto @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_130_8_132_8_if_end;
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_130_8_132_8_if_end:
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 133 8 ]
-        [ "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_117_26_135_4_start" "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_117_26_135_4_stop" ]
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_128_65_130_8_stop:
+        goto @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_128_8_130_8_if_end;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_128_8_130_8_if_end:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 131 8 ]
+        [ "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_115_26_133_4_start" "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_115_26_133_4_stop" ]
         %timeLeft.4 = local;
         %tmp.58 = lgetv %step.3;
         %tmp.59 = getv %tmp.58 :durationValue;
@@ -624,59 +615,185 @@ E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc
         %tmp.63 = div %tmp.61 %tmp.62;
         %tmp.64 = sub %tmp.59 %tmp.63;
         lputv %timeLeft.4 %tmp.64;
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 134 8 ]
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 132 8 ]
         %tmp.65 = lgetv %timeLeft.4;
         %tmp.66 = getv function %tmp.65 :toLong;
         %tmp.67 = invoke %tmp.65 %tmp.66();
         ret %tmp.67;
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_117_26_135_4_stop:
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_115_26_133_4_stop:
     }
-    [ @file = "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc"; @line = 137; ]
+    [ @file = "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc"; @line = 134; ]
+    function GetWorkoutStepIntensity() {
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_134_38_140_4_start:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 135 8 ]
+        [ "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_134_38_140_4_start" "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_134_38_140_4_stop" ]
+        %step.1 = local;
+        %tmp.1 = getm $.Toybox.Activity;
+        %tmp.2 = getv function %tmp.1 :getCurrentWorkoutStep;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %step.1 %tmp.3;
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 136 8 ]
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_136_8_138_8_if_stmt:
+        %tmp.5 = lgetv %step.1;
+        %tmp.6 = null;
+        %tmp.7 = eq %tmp.5 %tmp.6;
+        bf %tmp.7 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_136_8_138_8_if_end;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_136_8_138_8_if_true:
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_136_26_138_8_start:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 137 12 ]
+        %tmp.8 = null;
+        ret %tmp.8;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_136_26_138_8_stop:
+        goto @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_136_8_138_8_if_end;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_136_8_138_8_if_end:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 139 8 ]
+        %tmp.9 = lgetv %step.1;
+        %tmp.10 = getv %tmp.9 :intensity;
+        ret %tmp.10;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_134_38_140_4_stop:
+    }
+    [ @file = "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc"; @line = 141; ]
+    function GetWorkoutRepeatCount() {
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_141_36_158_4_start:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 142 8 ]
+        [ "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_141_36_158_4_start" "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_141_36_158_4_stop" ]
+        %step.1 = local;
+        %tmp.1 = getm $.Toybox.Activity;
+        %tmp.2 = getv function %tmp.1 :getCurrentWorkoutStep;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %step.1 %tmp.3;
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 143 9 ]
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_143_9_145_8_if_stmt:
+        %tmp.5 = lgetv %step.1;
+        %tmp.6 = null;
+        %tmp.7 = eq %tmp.5 %tmp.6;
+        bf %tmp.7 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_143_9_145_8_if_end;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_143_9_145_8_if_true:
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_143_27_145_8_start:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 144 12 ]
+        %tmp.8 = "";
+        ret %tmp.8;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_143_27_145_8_stop:
+        goto @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_143_9_145_8_if_end;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_143_9_145_8_if_end:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 146 8 ]
+        [ "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_141_36_158_4_start" "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_141_36_158_4_stop" ]
+        %intervalStep.2 = local;
+        %tmp.9 = lgetv %step.1;
+        %tmp.10 = getv %tmp.9 :step;
+        lputv %intervalStep.2 %tmp.10;
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 147 8 ]
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_147_8_149_8_if_stmt:
+        %tmp.12 = lgetv %intervalStep.2;
+        %tmp.13 = null;
+        %tmp.14 = eq %tmp.12 %tmp.13;
+        bf %tmp.14 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_147_8_149_8_if_end;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_147_8_149_8_if_true:
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_147_34_149_8_start:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 148 12 ]
+        %tmp.15 = "";
+        ret %tmp.15;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_147_34_149_8_stop:
+        goto @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_147_8_149_8_if_end;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_147_8_149_8_if_end:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 150 8 ]
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_150_8_152_8_if_stmt:
+        %tmp.17 = lgetv %intervalStep.2;
+        %tmp.19 = const :repetitionNumber;
+        %tmp.20 = canhazplz %tmp.17 %tmp.19;
+        %tmp.21 = not %tmp.20;
+        bf %tmp.21 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_150_8_152_8_if_end;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_150_8_152_8_if_true:
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_150_50_152_8_start:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 151 12 ]
+        %tmp.22 = "";
+        ret %tmp.22;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_150_50_152_8_stop:
+        goto @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_150_8_152_8_if_end;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_150_8_152_8_if_end:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 153 8 ]
+        [ "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_141_36_158_4_start" "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_141_36_158_4_stop" ]
+        %totalReps.3 = local;
+        %tmp.23 = lgetv %intervalStep.2;
+        %tmp.24 = getv %tmp.23 :repetitionNumber;
+        lputv %totalReps.3 %tmp.24;
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 154 8 ]
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_154_8_156_8_if_stmt:
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_154_12_154_46_begin:
+        %tmp.26 = lgetv %totalReps.3;
+        %tmp.27 = null;
+        %tmp.28 = eq %tmp.26 %tmp.27;
+        bt %tmp.28 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_154_8_156_8_if_true;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_154_33_154_46_false:
+        %tmp.30 = lgetv %totalReps.3;
+        %tmp.31 = as %tmp.30 { (!Null) };
+        %tmp.32 = 0;
+        %tmp.33 = lte %tmp.31 %tmp.32;
+        push %tmp.33;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_154_33_154_46_end:
+        %tmp.34 = phi [%tmp.28 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_154_12_154_46_begin] [%tmp.33 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_154_33_154_46_false] [%tmp.34 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_154_33_154_46_end];
+        bf %tmp.34 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_154_8_156_8_if_end;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_154_8_156_8_if_true:
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_154_49_156_8_start:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 155 12 ]
+        %tmp.35 = "";
+        ret %tmp.35;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_154_49_156_8_stop:
+        goto @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_154_8_156_8_if_end;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_154_8_156_8_if_end:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 157 8 ]
+        %tmp.36 = lgetv %totalReps.3;
+        %tmp.37 = getv function %tmp.36 :toString;
+        %tmp.38 = invoke %tmp.36 %tmp.37();
+        ret %tmp.38;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_141_36_158_4_stop:
+    }
+    [ @file = "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc"; @line = 159; ]
     function getZone(power) {
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_137_28_145_4_start:
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 138 8 ]
-        [ "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_137_28_145_4_start" "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_137_28_145_4_stop" ]
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_159_28_170_4_start:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 160 8 ]
+        [ "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_159_28_170_4_start" "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_159_28_170_4_stop" ]
         %zone.1 = local;
         %tmp.1 = 0.0;
         lputv %zone.1 %tmp.1;
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 139 8 ]
-        for @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_139_8_143_8_for_test @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_139_8_143_8_for_incr @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_139_8_143_8_for_end;
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_139_8_143_8_for_init:
-        [ "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_139_8_143_8_for_begin" "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_139_8_143_8_for_end" ]
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 161 8 ]
+        for @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_161_8_165_8_for_test @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_161_8_165_8_for_incr @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_161_8_165_8_for_end;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_161_8_165_8_for_init:
+        [ "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_161_8_165_8_for_begin" "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_161_8_165_8_for_end" ]
         %i.2 = local;
         %tmp.2 = 1;
         lputv %i.2 %tmp.2;
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_139_8_143_8_for_test:
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_161_8_165_8_for_test:
         %tmp.4 = lgetv %i.2;
         %tmp.6 = getv ? :zoneLow;
         %tmp.7 = getv function %tmp.6 :size;
         %tmp.8 = invoke %tmp.6 %tmp.7();
         %tmp.9 = lt %tmp.4 %tmp.8;
-        bf %tmp.9 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_139_8_143_8_for_end;
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_139_8_143_8_for_begin:
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_139_49_143_8_start:
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 140 12 ]
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_140_12_142_12_if_stmt:
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_140_16_140_57_begin:
+        bf %tmp.9 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_161_8_165_8_for_end;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_161_8_165_8_for_begin:
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_161_49_165_8_start:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 162 12 ]
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_162_12_164_12_if_stmt:
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_162_16_162_57_begin:
         %tmp.11 = lgetv %power;
         %tmp.13 = getv ? :zoneLow;
         %tmp.15 = lgetv %i.2;
         %tmp.16 = agetv %tmp.13 %tmp.15;
         %tmp.17 = gte %tmp.11 %tmp.16;
-        bf %tmp.17 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_140_12_142_12_if_end;
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_140_39_140_57_true:
+        bf %tmp.17 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_162_12_164_12_if_end;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_162_39_162_57_true:
         %tmp.19 = lgetv %power;
         %tmp.21 = getv ? :zoneHigh;
         %tmp.23 = lgetv %i.2;
         %tmp.24 = agetv %tmp.21 %tmp.23;
         %tmp.25 = lt %tmp.19 %tmp.24;
         push %tmp.25;
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_140_39_140_57_end:
-        %tmp.26 = phi [%tmp.17 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_140_16_140_57_begin] [%tmp.25 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_140_39_140_57_true] [%tmp.26 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_140_39_140_57_end];
-        bf %tmp.26 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_140_12_142_12_if_end;
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_140_12_142_12_if_true:
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_140_60_142_12_start:
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 141 16 ]
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_162_39_162_57_end:
+        %tmp.26 = phi [%tmp.17 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_162_16_162_57_begin] [%tmp.25 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_162_39_162_57_true] [%tmp.26 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_162_39_162_57_end];
+        bf %tmp.26 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_162_12_164_12_if_end;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_162_12_164_12_if_true:
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_162_60_164_12_start:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 163 16 ]
         %tmp.28 = lgetv %i.2;
         %tmp.30 = lgetv %power;
         %tmp.32 = getv ? :zoneLow;
@@ -699,117 +816,143 @@ E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc
         %tmp.54 = div %tmp.38 %tmp.53;
         %tmp.55 = add %tmp.28 %tmp.54;
         lputv %zone.1 %tmp.55;
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_140_60_142_12_stop:
-        goto @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_140_12_142_12_if_end;
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_140_12_142_12_if_end:
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_139_49_143_8_stop:
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_139_8_143_8_for_incr:
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 139 ]
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_162_60_164_12_stop:
+        goto @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_162_12_164_12_if_end;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_162_12_164_12_if_end:
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_161_49_165_8_stop:
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_161_8_165_8_for_incr:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 161 ]
         %tmp.58 = lgetv %i.2;
         %tmp.59 = add %tmp.58 1;
         lputv %i.2 %tmp.59;
-        goto @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_139_8_143_8_for_test;
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_139_8_143_8_for_end:
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 144 8 ]
-        %tmp.61 = lgetv %zone.1;
-        ret %tmp.61;
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_137_28_145_4_stop:
+        goto @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_161_8_165_8_for_test;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_161_8_165_8_for_end:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 166 8 ]
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_166_8_168_8_if_stmt:
+        %tmp.61 = lgetv %power;
+        %tmp.63 = getv ? :zoneHigh;
+        %tmp.65 = getv ? :zoneLow;
+        %tmp.66 = getv function %tmp.65 :size;
+        %tmp.67 = invoke %tmp.65 %tmp.66();
+        %tmp.68 = 1;
+        %tmp.69 = sub %tmp.67 %tmp.68;
+        %tmp.70 = agetv %tmp.63 %tmp.69;
+        %tmp.71 = gte %tmp.61 %tmp.70;
+        bf %tmp.71 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_166_8_168_8_if_end;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_166_8_168_8_if_true:
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_166_51_168_8_start:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 167 12 ]
+        %tmp.73 = getv ? :zoneLow;
+        %tmp.74 = getv function %tmp.73 :size;
+        %tmp.75 = invoke %tmp.73 %tmp.74();
+        %tmp.76 = 1;
+        %tmp.77 = sub %tmp.75 %tmp.76;
+        %tmp.78 = 0.999999;
+        %tmp.79 = add %tmp.77 %tmp.78;
+        lputv %zone.1 %tmp.79;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_166_51_168_8_stop:
+        goto @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_166_8_168_8_if_end;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_166_8_168_8_if_end:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 169 8 ]
+        %tmp.81 = lgetv %zone.1;
+        ret %tmp.81;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_159_28_170_4_stop:
     }
-    [ @file = "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc"; @line = 147; ]
+    [ @file = "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc"; @line = 172; ]
     function GetZone() {
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_147_22_155_4_start:
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 148 8 ]
-        [ "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_147_22_155_4_start" "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_147_22_155_4_stop" ]
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_172_22_180_4_start:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 173 8 ]
+        [ "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_172_22_180_4_start" "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_172_22_180_4_stop" ]
         %power.1 = local;
         %tmp.1 = 0.0;
         lputv %power.1 %tmp.1;
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 149 8 ]
-        [ "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_147_22_155_4_start" "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_147_22_155_4_stop" ]
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 174 8 ]
+        [ "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_172_22_180_4_start" "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_172_22_180_4_stop" ]
         %zone.2 = local;
         %tmp.2 = 0.0;
         lputv %zone.2 %tmp.2;
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 150 8 ]
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_150_8_153_8_if_stmt:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 175 8 ]
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_175_8_178_8_if_stmt:
         %tmp.3 = self;
         %tmp.4 = getv function %tmp.3 :GetPower;
         %tmp.5 = invoke %tmp.3 %tmp.4();
         %tmp.6 = null;
         %tmp.7 = ne %tmp.5 %tmp.6;
-        bf %tmp.7 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_150_8_153_8_if_end;
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_150_8_153_8_if_true:
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_150_32_153_8_start:
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 151 12 ]
+        bf %tmp.7 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_175_8_178_8_if_end;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_175_8_178_8_if_true:
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_175_32_178_8_start:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 176 12 ]
         %tmp.8 = self;
         %tmp.9 = getv function %tmp.8 :GetPower;
         %tmp.10 = invoke %tmp.8 %tmp.9();
         lputv %power.1 %tmp.10;
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 152 12 ]
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 177 12 ]
         %tmp.11 = self;
         %tmp.12 = getv function %tmp.11 :getZone;
         %tmp.14 = lgetv %power.1;
         %tmp.15 = invoke %tmp.11 %tmp.12(%tmp.14);
         lputv %zone.2 %tmp.15;
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_150_32_153_8_stop:
-        goto @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_150_8_153_8_if_end;
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_150_8_153_8_if_end:
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 154 8 ]
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_175_32_178_8_stop:
+        goto @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_175_8_178_8_if_end;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_175_8_178_8_if_end:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 179 8 ]
         %tmp.17 = lgetv %zone.2;
         ret %tmp.17;
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_147_22_155_4_stop:
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_172_22_180_4_stop:
     }
-    [ @file = "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc"; @line = 156; ]
+    [ @file = "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc"; @line = 181; ]
     function GetLapZone() {
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_156_25_162_4_start:
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 157 8 ]
-        [ "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_156_25_162_4_start" "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_156_25_162_4_stop" ]
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_181_25_187_4_start:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 182 8 ]
+        [ "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_181_25_187_4_start" "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_181_25_187_4_stop" ]
         %zone.1 = local;
         %tmp.1 = 0.0;
         lputv %zone.1 %tmp.1;
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 158 8 ]
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_158_8_160_8_if_stmt:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 183 8 ]
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_183_8_185_8_if_stmt:
         %tmp.3 = getv ? :lapPower;
         %tmp.4 = null;
         %tmp.5 = ne %tmp.3 %tmp.4;
-        bf %tmp.5 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_158_8_160_8_if_end;
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_158_8_160_8_if_true:
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_158_29_160_8_start:
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 159 12 ]
+        bf %tmp.5 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_183_8_185_8_if_end;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_183_8_185_8_if_true:
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_183_29_185_8_start:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 184 12 ]
         %tmp.6 = self;
         %tmp.7 = getv function %tmp.6 :getZone;
         %tmp.9 = getv ? :lapPower;
         %tmp.10 = as %tmp.9 { (!Null) };
         %tmp.11 = invoke %tmp.6 %tmp.7(%tmp.10);
         lputv %zone.1 %tmp.11;
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_158_29_160_8_stop:
-        goto @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_158_8_160_8_if_end;
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_158_8_160_8_if_end:
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 161 8 ]
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_183_29_185_8_stop:
+        goto @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_183_8_185_8_if_end;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_183_8_185_8_if_end:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 186 8 ]
         %tmp.13 = lgetv %zone.1;
         ret %tmp.13;
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_156_25_162_4_stop:
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_181_25_187_4_stop:
     }
-    [ @file = "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc"; @line = 163; ]
+    [ @file = "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc"; @line = 188; ]
     function setZones() {
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_163_23_182_4_start:
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 165 8 ]
-        [ "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_163_23_182_4_start" "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_163_23_182_4_stop" ]
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_188_23_207_4_start:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 190 8 ]
+        [ "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_188_23_207_4_start" "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_188_23_207_4_stop" ]
         %properties.1 = local;
         %tmp.1 = getm $.Toybox.Application;
         %tmp.2 = getv %tmp.1 :Properties;
         lputv %properties.1 %tmp.2;
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 166 5 ]
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 191 5 ]
         %tmp.3 = lgetv %properties.1;
         %tmp.4 = getv function %tmp.3 :getValue;
         %tmp.5 = "alert_zone_change_p";
         %tmp.6 = invoke %tmp.3 %tmp.4(%tmp.5);
         putv self :alertZoneChange %tmp.6;
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 167 5 ]
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 192 5 ]
         %tmp.7 = lgetv %properties.1;
         %tmp.8 = getv function %tmp.7 :getValue;
         %tmp.9 = "vibrate_zone_change_p";
         %tmp.10 = invoke %tmp.7 %tmp.8(%tmp.9);
         putv self :vibrateZoneChange %tmp.10;
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 168 7 ]
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 193 7 ]
         %tmp.11 = getv self :zoneLow;
         %tmp.12 = lgetv %properties.1;
         %tmp.13 = getv function %tmp.12 :getValue;
@@ -817,25 +960,25 @@ E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc
         %tmp.15 = invoke %tmp.12 %tmp.13(%tmp.14);
         %tmp.16 = 1;
         aputv %tmp.11 %tmp.16 %tmp.15;
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 169 7 ]
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_169_7_171_7_if_stmt:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 194 7 ]
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_194_7_196_7_if_stmt:
         %tmp.18 = getv ? :zoneLow;
         %tmp.19 = 1;
         %tmp.20 = agetv %tmp.18 %tmp.19;
         %tmp.21 = 0.0;
         %tmp.22 = eq %tmp.20 %tmp.21;
-        bf %tmp.22 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_169_7_171_7_if_end;
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_169_7_171_7_if_true:
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_169_29_171_7_start:
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 170 8 ]
+        bf %tmp.22 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_194_7_196_7_if_end;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_194_7_196_7_if_true:
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_194_29_196_7_start:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 195 8 ]
         %tmp.23 = getv self :zoneLow;
         %tmp.24 = 1.0;
         %tmp.25 = 1;
         aputv %tmp.23 %tmp.25 %tmp.24;
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_169_29_171_7_stop:
-        goto @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_169_7_171_7_if_end;
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_169_7_171_7_if_end:
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 172 7 ]
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_194_29_196_7_stop:
+        goto @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_194_7_196_7_if_end;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_194_7_196_7_if_end:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 197 7 ]
         %tmp.26 = getv self :zoneLow;
         %tmp.27 = lgetv %properties.1;
         %tmp.28 = getv function %tmp.27 :getValue;
@@ -843,7 +986,7 @@ E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc
         %tmp.30 = invoke %tmp.27 %tmp.28(%tmp.29);
         %tmp.31 = 2;
         aputv %tmp.26 %tmp.31 %tmp.30;
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 173 7 ]
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 198 7 ]
         %tmp.32 = getv self :zoneLow;
         %tmp.33 = lgetv %properties.1;
         %tmp.34 = getv function %tmp.33 :getValue;
@@ -851,7 +994,7 @@ E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc
         %tmp.36 = invoke %tmp.33 %tmp.34(%tmp.35);
         %tmp.37 = 3;
         aputv %tmp.32 %tmp.37 %tmp.36;
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 174 7 ]
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 199 7 ]
         %tmp.38 = getv self :zoneLow;
         %tmp.39 = lgetv %properties.1;
         %tmp.40 = getv function %tmp.39 :getValue;
@@ -859,7 +1002,7 @@ E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc
         %tmp.42 = invoke %tmp.39 %tmp.40(%tmp.41);
         %tmp.43 = 4;
         aputv %tmp.38 %tmp.43 %tmp.42;
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 175 7 ]
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 200 7 ]
         %tmp.44 = getv self :zoneLow;
         %tmp.45 = lgetv %properties.1;
         %tmp.46 = getv function %tmp.45 :getValue;
@@ -867,105 +1010,113 @@ E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc
         %tmp.48 = invoke %tmp.45 %tmp.46(%tmp.47);
         %tmp.49 = 5;
         aputv %tmp.44 %tmp.49 %tmp.48;
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 176 8 ]
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 201 8 ]
         %tmp.50 = getv self :zoneHigh;
         %tmp.52 = getv ? :zoneLow;
         %tmp.53 = 2;
         %tmp.54 = agetv %tmp.52 %tmp.53;
         %tmp.55 = 1;
         aputv %tmp.50 %tmp.55 %tmp.54;
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 177 8 ]
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 202 8 ]
         %tmp.56 = getv self :zoneHigh;
         %tmp.58 = getv ? :zoneLow;
         %tmp.59 = 3;
         %tmp.60 = agetv %tmp.58 %tmp.59;
         %tmp.61 = 2;
         aputv %tmp.56 %tmp.61 %tmp.60;
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 178 8 ]
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 203 8 ]
         %tmp.62 = getv self :zoneHigh;
         %tmp.64 = getv ? :zoneLow;
         %tmp.65 = 4;
         %tmp.66 = agetv %tmp.64 %tmp.65;
         %tmp.67 = 3;
         aputv %tmp.62 %tmp.67 %tmp.66;
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 179 8 ]
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 204 8 ]
         %tmp.68 = getv self :zoneHigh;
         %tmp.70 = getv ? :zoneLow;
         %tmp.71 = 5;
         %tmp.72 = agetv %tmp.70 %tmp.71;
         %tmp.73 = 4;
         aputv %tmp.68 %tmp.73 %tmp.72;
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 180 8 ]
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 205 8 ]
         %tmp.74 = getv self :zoneHigh;
-        %tmp.75 = 1000;
-        %tmp.76 = 5;
-        aputv %tmp.74 %tmp.76 %tmp.75;
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_163_23_182_4_stop:
+        %tmp.76 = getv ? :zoneLow;
+        %tmp.77 = 5;
+        %tmp.78 = agetv %tmp.76 %tmp.77;
+        %tmp.80 = getv ? :zoneLow;
+        %tmp.81 = 5;
+        %tmp.82 = agetv %tmp.80 %tmp.81;
+        %tmp.83 = 0.2;
+        %tmp.84 = mul %tmp.82 %tmp.83;
+        %tmp.85 = add %tmp.78 %tmp.84;
+        %tmp.86 = 5;
+        aputv %tmp.74 %tmp.86 %tmp.85;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_188_23_207_4_stop:
     }
-    [ @file = "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc"; @line = 183; ]
+    [ @file = "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc"; @line = 208; ]
     function LapComplete(info) {
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_183_30_192_4_start:
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 186 8 ]
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_186_8_188_8_if_stmt:
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_208_30_217_4_start:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 211 8 ]
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_211_8_213_8_if_stmt:
         %tmp.2 = getv ? :lastLapPower;
         %tmp.3 = 0;
         %tmp.4 = gt %tmp.2 %tmp.3;
-        bf %tmp.4 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_186_8_188_8_if_end;
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_186_8_188_8_if_true:
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_186_29_188_8_start:
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 187 12 ]
+        bf %tmp.4 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_211_8_213_8_if_end;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_211_8_213_8_if_true:
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_211_29_213_8_start:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 212 12 ]
         %tmp.6 = getv ? :lapPower;
         putv self :lastLapPower %tmp.6;
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_186_29_188_8_stop:
-        goto @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_186_8_188_8_if_end;
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_186_8_188_8_if_end:
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 189 8 ]
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_211_29_213_8_stop:
+        goto @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_211_8_213_8_if_end;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_211_8_213_8_if_end:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 214 8 ]
         %tmp.7 = lgetv %info;
-        %tmp.8 = getv %tmp.7 :elapsedTime;
+        %tmp.8 = getv %tmp.7 :timerTime;
         putv self :lapStartTime %tmp.8;
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 190 8 ]
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 215 8 ]
         %tmp.9 = 0.0;
         putv self :lapPower %tmp.9;
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 191 8 ]
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 216 8 ]
         %tmp.11 = getv ? :lapStepCountStart;
         %tmp.12 = 1;
         %tmp.13 = add %tmp.11 %tmp.12;
         putv self :lapStepCountStart %tmp.13;
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_183_30_192_4_stop:
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_208_30_217_4_stop:
     }
-    [ @file = "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc"; @line = 193; ]
+    [ @file = "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc"; @line = 218; ]
     function Start() {
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_193_20_197_4_start:
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 195 7 ]
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_218_20_222_4_start:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 220 7 ]
         %tmp.1 = self;
         %tmp.2 = getv function %tmp.1 :setZones;
         invoke %tmp.1 %tmp.2();
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 196 7 ]
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 221 7 ]
         %tmp.4 = getv ? :RUNNING;
         putv self :mTimerState %tmp.4;
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_193_20_197_4_stop:
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_218_20_222_4_stop:
     }
-    [ @file = "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc"; @line = 198; ]
+    [ @file = "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc"; @line = 223; ]
     function Stop() {
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_198_19_201_4_start:
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 200 8 ]
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_223_19_226_4_start:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 225 8 ]
         %tmp.2 = getv ? :STOPPED;
         putv self :mTimerState %tmp.2;
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_198_19_201_4_stop:
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_223_19_226_4_stop:
     }
-    [ @file = "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc"; @line = 202; ]
+    [ @file = "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc"; @line = 227; ]
     function GetHeartRateZone() {
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_202_31_214_4_start:
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 203 8 ]
-        [ "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_202_31_214_4_start" "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_202_31_214_4_stop" ]
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_227_31_239_4_start:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 228 8 ]
+        [ "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_227_31_239_4_start" "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_227_31_239_4_stop" ]
         %heartRate.1 = local;
         %tmp.1 = getm $.Toybox.Activity;
         %tmp.2 = getv function %tmp.1 :getActivityInfo;
         %tmp.3 = invoke %tmp.1 %tmp.2();
         %tmp.4 = getv %tmp.3 :currentHeartRate;
         lputv %heartRate.1 %tmp.4;
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 204 8 ]
-        [ "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_202_31_214_4_start" "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_202_31_214_4_stop" ]
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 229 8 ]
+        [ "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_227_31_239_4_start" "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_227_31_239_4_stop" ]
         %zones.2 = local;
         %tmp.5 = getm $.Toybox.UserProfile;
         %tmp.6 = getv function %tmp.5 :getHeartRateZones;
@@ -974,73 +1125,73 @@ E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc
         %tmp.9 = invoke %tmp.7 %tmp.8();
         %tmp.10 = invoke %tmp.5 %tmp.6(%tmp.9);
         lputv %zones.2 %tmp.10;
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 205 8 ]
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_205_8_207_8_if_stmt:
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_205_12_205_42_begin:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 230 8 ]
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_230_8_232_8_if_stmt:
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_230_12_230_42_begin:
         %tmp.12 = lgetv %zones.2;
         %tmp.13 = null;
         %tmp.14 = eq %tmp.12 %tmp.13;
-        bt %tmp.14 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_205_8_207_8_if_true;
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_205_29_205_42_false:
+        bt %tmp.14 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_230_8_232_8_if_true;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_230_29_230_42_false:
         %tmp.16 = lgetv %heartRate.1;
         %tmp.17 = null;
         %tmp.18 = eq %tmp.16 %tmp.17;
         push %tmp.18;
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_205_29_205_42_end:
-        %tmp.19 = phi [%tmp.14 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_205_12_205_42_begin] [%tmp.18 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_205_29_205_42_false] [%tmp.19 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_205_29_205_42_end];
-        bf %tmp.19 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_205_8_207_8_if_end;
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_205_8_207_8_if_true:
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_205_48_207_8_start:
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 206 12 ]
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_230_29_230_42_end:
+        %tmp.19 = phi [%tmp.14 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_230_12_230_42_begin] [%tmp.18 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_230_29_230_42_false] [%tmp.19 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_230_29_230_42_end];
+        bf %tmp.19 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_230_8_232_8_if_end;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_230_8_232_8_if_true:
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_230_48_232_8_start:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 231 12 ]
         %tmp.20 = null;
         ret %tmp.20;
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_205_48_207_8_stop:
-        goto @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_205_8_207_8_if_end;
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_205_8_207_8_if_end:
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 208 8 ]
-        for @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_208_8_212_8_for_test @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_208_8_212_8_for_incr @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_208_8_212_8_for_end;
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_208_8_212_8_for_init:
-        [ "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_208_8_212_8_for_begin" "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_208_8_212_8_for_end" ]
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_230_48_232_8_stop:
+        goto @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_230_8_232_8_if_end;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_230_8_232_8_if_end:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 233 8 ]
+        for @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_233_8_237_8_for_test @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_233_8_237_8_for_incr @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_233_8_237_8_for_end;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_233_8_237_8_for_init:
+        [ "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_233_8_237_8_for_begin" "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_233_8_237_8_for_end" ]
         %i.3 = local;
         %tmp.21 = 1;
         lputv %i.3 %tmp.21;
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_208_8_212_8_for_test:
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_233_8_237_8_for_test:
         %tmp.23 = lgetv %i.3;
         %tmp.24 = lgetv %zones.2;
         %tmp.25 = getv function %tmp.24 :size;
         %tmp.26 = invoke %tmp.24 %tmp.25();
         %tmp.27 = lt %tmp.23 %tmp.26;
-        bf %tmp.27 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_208_8_212_8_for_end;
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_208_8_212_8_for_begin:
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_208_47_212_8_start:
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 209 12 ]
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_209_12_211_12_if_stmt:
+        bf %tmp.27 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_233_8_237_8_for_end;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_233_8_237_8_for_begin:
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_233_47_237_8_start:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 234 12 ]
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_234_12_236_12_if_stmt:
         %tmp.29 = lgetv %heartRate.1;
         %tmp.31 = lgetv %zones.2;
         %tmp.33 = lgetv %i.3;
         %tmp.34 = agetv %tmp.31 %tmp.33;
         %tmp.35 = lte %tmp.29 %tmp.34;
-        bf %tmp.35 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_209_12_211_12_if_end;
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_209_12_211_12_if_true:
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_209_39_211_12_start:
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 210 16 ]
+        bf %tmp.35 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_234_12_236_12_if_end;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_234_12_236_12_if_true:
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_234_39_236_12_start:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 235 16 ]
         %tmp.37 = lgetv %i.3;
         ret %tmp.37;
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_209_39_211_12_stop:
-        goto @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_209_12_211_12_if_end;
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_209_12_211_12_if_end:
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_208_47_212_8_stop:
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_208_8_212_8_for_incr:
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 208 ]
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_234_39_236_12_stop:
+        goto @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_234_12_236_12_if_end;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_234_12_236_12_if_end:
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_233_47_237_8_stop:
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_233_8_237_8_for_incr:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 233 ]
         %tmp.40 = lgetv %i.3;
         %tmp.41 = add %tmp.40 1;
         lputv %i.3 %tmp.41;
-        goto @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_208_8_212_8_for_test;
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_208_8_212_8_for_end:
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 213 8 ]
+        goto @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_233_8_237_8_for_test;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_233_8_237_8_for_end:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc" 238 8 ]
         %tmp.42 = null;
         ret %tmp.42;
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_202_31_214_4_stop:
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_ZoneManagment_mc_227_31_239_4_stop:
     }
 }
 [ @file = "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\ZoneManagment.mc"; @line = 1; ]

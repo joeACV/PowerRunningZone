@@ -76,7 +76,7 @@ class RunningPowerEfficiency {
 		if((curDist - prevDist)>0){
 //			gap = (totalSpeed/avgPoint) / (1+ 9*(elevchange/totalDist));
 			gap = (curSpeed * 60)/(1+9*((curElev - prevElev)/(curDist - prevDist)));
-			Sys.println("speed:" + curSpeed.toString());
+			// Sys.println("speed:" + curSpeed.toString());
 			gapData[datapoint] = gap;
 			
 		}
@@ -91,7 +91,7 @@ class RunningPowerEfficiency {
 		if(totalGap>0 and totalPower>0){
 			//value = gap / (totalPwr / avgPoint) * 100;
 			value = totalGap / totalPower * 100;
-			Sys.println(totalGap.toString() + " GAP " + totalPower.toString() + "Watts");
+			// Sys.println(totalGap.toString() + " GAP " + totalPower.toString() + "Watts");
 		}
 		prevElev = curElev;
 		prevDist = curDist;

@@ -4,6 +4,7 @@ using Toybox.System;
 using Toybox.Math;
 using Toybox.Activity as Act;
 
+
 class CircularZoneView extends ui.DataField {
     
     var pe = new ZoneManagment();
@@ -29,12 +30,12 @@ class CircularZoneView extends ui.DataField {
         }
     }
     function compute(info){
-        if (getBackgroundColor() == Graphics.COLOR_BLACK) {
-            textForegroundColor = Graphics.COLOR_WHITE;
-            currentPowerColor = Graphics.COLOR_WHITE;
-        } else {
+        if (getBackgroundColor() == Graphics.COLOR_WHITE) { // updated condition
             textForegroundColor = Graphics.COLOR_BLACK;
             currentPowerColor = Graphics.COLOR_BLACK;
+        } else {
+            textForegroundColor = Graphics.COLOR_WHITE;
+            currentPowerColor = Graphics.COLOR_WHITE;
         }
         pe.Update(info);
         value = pe.GetPower();
@@ -99,39 +100,54 @@ class CircularZoneView extends ui.DataField {
         }
         
         // Draw Lap power indicator line
-        var indicatorAngle = (startAngle - 140) + (lapPowerZone -1) * (totalArc / zoneColors.size()); // Adjust for 0 degrees at 3 o'clock
+        if (lapPowerZone < 1) {
+            lapPowerZone = 1;
+        }
+        var indicatorAngle = (startAngle - 140) + (lapPowerZone - 1) * zoneAngle; // Adjust for 0 degrees at 3 o'clock
+
         var lapPowerWidth = 3;
-        if (lapPowerZone == targetPower) {
-            lapPowerWidth = 6;
+        if (Math.floor(lapPowerZone) == targetPower) {
+            lapPowerWidth = 8;
         } else {
             lapPowerWidth = 3;
         }
+        
         drawIndicatorLine(indicatorAngle, centerX, centerY, radius, 30, lapPowerColor, lapPowerWidth, dc);
-
+        if (zone < 1) {
+            zone = 1;
+        }
         // Draw Current power indicator line
         indicatorAngle = (startAngle - 140) + (zone -1) * (totalArc / zoneColors.size()); // Adjust for 0 degrees at 3 o'clock
-        drawIndicatorLine(indicatorAngle, centerX, centerY, radius, lineOffset, currentPowerColor, 2, dc);
+        
+        var powerWidth = 3;
+        if (Math.floor(zone) == targetPower) {
+            powerWidth = 8;
+        } else {
+            powerWidth = 3;
+        }
+        drawIndicatorLine(indicatorAngle, centerX, centerY, radius, lineOffset, currentPowerColor, powerWidth, dc);
         var powerPosition = centerY - Graphics.getFontHeight(Graphics.FONT_NUMBER_HOT) / 2;
         //draw icon
         var icon = null;
-        if (getBackgroundColor() == Graphics.COLOR_BLACK) {
-            icon = ui.loadResource(Rez.Drawables.PowerIconWhite);
-        } else {
+        if (getBackgroundColor() == Graphics.COLOR_WHITE) { // updated condition
             icon = ui.loadResource(Rez.Drawables.PowerIcon);
+        } else {
+            icon = ui.loadResource(Rez.Drawables.PowerIconWhite);
         }
         
         var iconWidth = icon.getWidth();
-        var iconHeight = icon.getHeight();
+        // var iconHeight = icon.getHeight();
         var iconX = centerX - iconWidth / 2;
         var iconY = powerPosition - Graphics.getFontHeight(Graphics.FONT_NUMBER_HOT) / 2 ;
-        var bitMapOptions = {"tintColor" => Graphics.COLOR_BLACK};
+        // var bitMapOptions = {"tintColor" => Graphics.COLOR_BLACK};
         dc.drawBitmap(iconX, iconY, icon);
         // Draw the value text
-        if (zone.toNumber() >= zoneColors.size() || zone.toNumber() < 1) {
+        if (Math.floor(zone).toNumber() > zoneColors.size() || zone.toNumber() < 1) {
             zone = zoneColors.size() - 1;
         }
-        dc.setColor(zoneColors[zone.toNumber() - 1], Graphics.COLOR_TRANSPARENT);
+        dc.setColor(zoneColors[Math.floor(zone).toNumber() - 1], Graphics.COLOR_TRANSPARENT);
         dc.drawText(centerX, powerPosition, Graphics.FONT_NUMBER_HOT, value.toLong().toString(), Graphics.TEXT_JUSTIFY_CENTER);
+        
         var timeLeft = pe.GetTimeLeft();
 
         // Draw the time left text
@@ -140,13 +156,27 @@ class CircularZoneView extends ui.DataField {
         }
         var timeLeftString = "";
         if (timeLeft % 60 < 10) {
-            timeLeftString = Math.floor(timeLeft / 60).toString() + ":0" + (timeLeft % 60).toString();
+            timeLeftString = Math.floor(timeLeft / 60).toString() + ":0" + (timeLeft % 60).toString() + " " + pe.GetWorkoutRepeatCount();
         } else {
-            timeLeftString = Math.floor(timeLeft / 60).toString() + ":" + (timeLeft % 60).toString();
+            timeLeftString = Math.floor(timeLeft / 60).toString() + ":" + (timeLeft % 60).toString() + " " + pe.GetWorkoutRepeatCount();
         }
         var position = powerPosition + Graphics.getFontHeight(Graphics.FONT_NUMBER_HOT) / 2 + 10 + Graphics.getFontHeight(Graphics.FONT_MEDIUM) / 2;
-        dc.setColor(textForegroundColor, textBackgroundColor);
+        var timeTextColor = getBackgroundColor() == Graphics.COLOR_WHITE ? Graphics.COLOR_BLACK : Graphics.COLOR_WHITE; // updated condition
+        dc.setColor(timeTextColor, textBackgroundColor);
         dc.drawText(centerX, position, Graphics.FONT_MEDIUM, timeLeftString, Graphics.TEXT_JUSTIFY_CENTER);
+        //Draw the Workout step intensity icon
+        var stepType = pe.GetWorkoutStepIntensity();
+        icon = getWorkoutIntensityIcon(stepType, getBackgroundColor()); // updated condition
+        
+        // Position intensity icon to the left of the time-left text
+        iconWidth = icon.getWidth();
+        var iconHeight = icon.getHeight();
+        var timeTextWidth = dc.getTextWidthInPixels(timeLeftString, Graphics.FONT_MEDIUM);
+        var timeTextHeight = dc.getFontHeight(Graphics.FONT_MEDIUM);
+        var spacing = 5; // gap between icon and text
+        iconX = centerX - timeTextWidth/2 - iconWidth - spacing;
+        iconY = position + timeTextHeight/2 - iconHeight/2;
+        dc.drawBitmap(iconX, iconY, icon);
         // Draw the heart rate text
         var heartRateZone = pe.GetHeartRateZone();
         var heartRatePosition = position + Graphics.getFontHeight(Graphics.FONT_MEDIUM) + 5;
@@ -158,12 +188,12 @@ class CircularZoneView extends ui.DataField {
         var heartRateTextWidth = dc.getTextWidthInPixels(Act.getActivityInfo().currentHeartRate.toString(), Graphics.FONT_MEDIUM);
         // Draw the heart rate icon
         var heartRateIcon = null;
-        if (getBackgroundColor() == Graphics.COLOR_BLACK) {
-            heartRateIcon = ui.loadResource(Rez.Drawables.HeartWhite);
-        } else {
+        if (getBackgroundColor() == Graphics.COLOR_WHITE) { // updated condition
             heartRateIcon = ui.loadResource(Rez.Drawables.Heart);
+        } else {
+            heartRateIcon = ui.loadResource(Rez.Drawables.HeartWhite);
         }
-        var heartRateIconWidth = heartRateIcon.getWidth();
+        // var heartRateIconWidth = heartRateIcon.getWidth();
         var heartRateIconHeight = heartRateIcon.getHeight();
         var heartRateIconX = centerX + heartRateTextWidth / 2;
         var heartRateIconY = heartRatePosition + heartRateIconHeight / 2;
@@ -179,5 +209,32 @@ class CircularZoneView extends ui.DataField {
         dc.setColor(color, Graphics.COLOR_TRANSPARENT);
         dc.setPenWidth(width);
         dc.drawLine(startX, startY, indicatorX, indicatorY);
+    }
+    function getWorkoutIntensityIcon(stepType, backgroundColor) as ui.BitmapResource {
+        if (backgroundColor == Graphics.COLOR_WHITE) { // updated condition
+            if (stepType == Act.WORKOUT_INTENSITY_ACTIVE) {
+            return ui.loadResource(Rez.Drawables.ActiveIcon);
+        } else if (stepType == Act.WORKOUT_INTENSITY_RECOVERY || stepType == Act.WORKOUT_INTENSITY_REST) {
+            return ui.loadResource(Rez.Drawables.RecoveryIcon);
+        } else if (stepType == Act.WORKOUT_INTENSITY_WARMUP) {
+            return ui.loadResource(Rez.Drawables.WarmupIcon);
+        } else if (stepType == Act.WORKOUT_INTENSITY_COOLDOWN) {
+            return ui.loadResource(Rez.Drawables.CooldownIcon);
+        } else {
+            return ui.loadResource(Rez.Drawables.ActiveIcon); // Default to active icon if no step type is found
+        }
+        } else {
+            if (stepType == Act.WORKOUT_INTENSITY_ACTIVE) {
+                return ui.loadResource(Rez.Drawables.ActiveIconWhite);
+            } else if (stepType == Act.WORKOUT_INTENSITY_RECOVERY || stepType == Act.WORKOUT_INTENSITY_REST) {
+                return ui.loadResource(Rez.Drawables.RecoveryIconWhite);
+            } else if (stepType == Act.WORKOUT_INTENSITY_WARMUP) {
+                return ui.loadResource(Rez.Drawables.WarmupIconWhite);
+            } else if (stepType == Act.WORKOUT_INTENSITY_COOLDOWN) {
+                return ui.loadResource(Rez.Drawables.CooldownIconWhite);
+            } else {
+                return ui.loadResource(Rez.Drawables.ActiveIconWhite); // Default to active icon if no step type is found
+            }
+        }
     }
 }

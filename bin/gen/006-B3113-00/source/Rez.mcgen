@@ -10,6 +10,14 @@ module Rez {
         (:initialized) var PowerIconWhite as ResourceId;
         (:initialized) var Heart as ResourceId;
         (:initialized) var HeartWhite as ResourceId;
+        (:initialized) var WarmupIcon as ResourceId;
+        (:initialized) var WarmupIconWhite as ResourceId;
+        (:initialized) var CooldownIconWhite as ResourceId;
+        (:initialized) var CooldownIcon as ResourceId;
+        (:initialized) var ActiveIcon as ResourceId;
+        (:initialized) var ActiveIconWhite as ResourceId;
+        (:initialized) var RecoveryIcon as ResourceId;
+        (:initialized) var RecoveryIconWhite as ResourceId;
         (:initialized) var LauncherIcon as ResourceId;
     } // Drawables
 

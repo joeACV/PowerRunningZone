@@ -5,5 +5,13 @@
          <bitmap id="PowerIconWhite" filename="drawables/dumbell_small_white.png" />
          <bitmap id="Heart" filename="drawables/heart.png" />
          <bitmap id="HeartWhite" filename="drawables/heart_white.png" />
+         <bitmap id="WarmupIcon" filename="drawables/warmup.png" />
+         <bitmap id="WarmupIconWhite" filename="drawables/warmup_white.png" />
+         <bitmap id="CooldownIconWhite" filename="drawables/cooldown_white.png" />
+         <bitmap id="CooldownIcon" filename="drawables/cooldown.png" />
+         <bitmap id="ActiveIcon" filename="drawables/active.png" />
+         <bitmap id="ActiveIconWhite" filename="drawables/active_white.png" />
+         <bitmap id="RecoveryIcon" filename="drawables/recovery.png" />
+        <bitmap id="RecoveryIconWhite" filename="drawables/recovery_white.png" />
      </drawables>
 </resources>

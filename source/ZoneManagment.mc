@@ -25,7 +25,7 @@ class ZoneManagment
     var lapStepCountStart = 0;
     hidden var mTimerState = STOPPED;
 	var label = "Run Power";
-    var zoneLow = [0, 0, 50, 100, 150, 350];
+    var zoneLow = [0, 0, 50, 100, 150, 0];
     var zoneHigh = [0, 50, 100, 150, 350, 1000];
 	var alertZoneChange = false;
 	var vibrateZoneChange = false;
@@ -52,10 +52,12 @@ class ZoneManagment
         if (zoneLow[5]==0){
         	setZones();
         }
-        if (info.elapsedTime != null){
-            lapTime = info.elapsedTime - lapStartTime;
+        
+        if (info.timerTime != null){
+            lapTime = info.timerTime - lapStartTime;
+        }else{
+            lapTime = 0;
         }
-        lapTime = info.elapsedTime - lapStartTime;
        	prevLapPower = lapPower;
         currentPower = info.currentPower;
     	prevLapZone = getZone(prevLapPower);
@@ -71,29 +73,25 @@ class ZoneManagment
         return currentPower;
     }
     function calculateAvgPower(time, prevTime, avg, power){
-	//time is total time in seconds 
-	//avg is current average over that time
-	//power is new power
-	//returns new average
-		var newAvg = 0.0;
-		var timeF = 0.0;
-		var math = "";
-		var timeDiff = 0.0;
-		timeF = time.toFloat()/1000.0;
-		timeDiff = (time.toFloat() - prevTime.toFloat()) / 1000.0;
-		//math = avg.toString() + "avg " + timeF.toString() + "lap time " + power.toString() + "power";
+        // time is total time in milliseconds 
+        // avg is current average over that time
+        // power is new power
+        // returns new average
+        var newAvg = 0.0;
+        var totalTimeInSeconds = time.toFloat() / 1000.0;
+        var timeDiffInSeconds = (time.toFloat() - prevTime.toFloat()) / 1000.0;
 
-		if(timeF >0){
-			if (power!=null){
-				newAvg = (avg*(prevTime.toFloat()/1000.0) + power*timeDiff) / timeF;
-			}else{
-				newAvg = (avg*(prevTime.toFloat()/1000.0) + 0) / timeF;
-			}
-		} else {
-			newAvg = 0.0;
-		}
-		return newAvg;
-	}
+        if (totalTimeInSeconds > 0){
+            if (power != null){
+                newAvg = (avg * (prevTime.toFloat() / 1000.0) + power * timeDiffInSeconds) / totalTimeInSeconds;
+            } else {
+                newAvg = (avg * (prevTime.toFloat() / 1000.0) + avg * timeDiffInSeconds) / totalTimeInSeconds;
+            }
+        } else {
+            newAvg = power;
+        }
+        return newAvg;
+}
     function GetWorkoutZone(){
         
         var step = Act.getCurrentWorkoutStep();
@@ -133,13 +131,40 @@ class ZoneManagment
         var timeLeft = step.durationValue - lapTime / 1000;
         return timeLeft.toLong();
     }
-
+    function GetWorkoutStepIntensity(){
+        var step = Act.getCurrentWorkoutStep();
+        if (step == null) {
+            return null;
+        }
+        return step.intensity;
+    }
+    function GetWorkoutRepeatCount(){
+        var step = Act.getCurrentWorkoutStep();
+         if (step == null) {
+            return "";
+        }
+        var intervalStep = step.step;
+        if (intervalStep == null) {
+            return "";
+        }
+        if (!(intervalStep has :repetitionNumber)){
+            return "";
+        }
+        var totalReps = intervalStep.repetitionNumber;
+        if (totalReps == null || totalReps <= 0) {
+            return "";
+        }
+        return totalReps.toString();
+    }
     function getZone(power) {
         var zone = 0.0;
         for (var i = 1; i < zoneLow.size(); i++) {
             if (power >= zoneLow[i] && power < zoneHigh[i]) {
                 zone = i + (power - zoneLow[i].toFloat()) / (zoneHigh[i].toFloat() - zoneLow[i].toFloat());
             }
+        }
+        if (power >= zoneHigh[zoneLow.size() - 1]) {
+            zone = zoneLow.size() - 1 + 0.999999;
         }
         return zone;
     }
@@ -177,7 +202,7 @@ class ZoneManagment
         zoneHigh[2] = zoneLow[3];
         zoneHigh[3] = zoneLow[4];
         zoneHigh[4] = zoneLow[5];
-        zoneHigh[5] = 1000;
+        zoneHigh[5] = zoneLow[5] + zoneLow[5] * 0.2;
         
     }
     function LapComplete(info){
@@ -186,7 +211,7 @@ class ZoneManagment
         if (lastLapPower > 0){
             lastLapPower = lapPower;
         }
-        lapStartTime = info.elapsedTime;
+        lapStartTime = info.timerTime;
         lapPower = 0.0;
         lapStepCountStart = lapStepCountStart + 1;
     }

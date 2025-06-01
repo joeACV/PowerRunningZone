@@ -119,36 +119,6 @@
     "configMin" : null,
     "configMax" : null,
     "configMaxLength" : null
-  }, {
-    "key" : "zone6_low_p",
-    "valueType" : "number",
-    "defaultValue" : 310,
-    "configTitle" : "zone6_low_p_title",
-    "configPrompt" : null,
-    "configType" : "numeric",
-    "configError" : null,
-    "configHelpUrl" : null,
-    "configReadonly" : false,
-    "configRequired" : false,
-    "configOptions" : null,
-    "configMin" : null,
-    "configMax" : null,
-    "configMaxLength" : null
-  }, {
-    "key" : "zone7_low_p",
-    "valueType" : "number",
-    "defaultValue" : 320,
-    "configTitle" : "zone7_low_p_title",
-    "configPrompt" : null,
-    "configType" : "numeric",
-    "configError" : null,
-    "configHelpUrl" : null,
-    "configReadonly" : false,
-    "configRequired" : false,
-    "configOptions" : null,
-    "configMin" : null,
-    "configMax" : null,
-    "configMaxLength" : null
   } ],
   "supportsLiveValidation" : false,
   "languages" : {

@@ -6,8 +6,6 @@
         <property id="zone3_low_p" type="number">250</property>
         <property id="zone4_low_p" type="number">270</property>
         <property id="zone5_low_p" type="number">290</property>
-        <property id="zone6_low_p" type="number">310</property>
-        <property id="zone7_low_p" type="number">320</property>
         <property id="alert_zone_change_p" type="boolean">true</property>
         <property id="vibrate_zone_change_p" type="boolean">true</property>
         <property id="alert_lap_p" type="boolean">true</property>
@@ -32,10 +30,6 @@
         <setting propertyKey="zone4_low_p" title="zone4_low_p_title">
         	<settingConfig type="numeric"></settingConfig></setting>
         <setting propertyKey="zone5_low_p" title="zone5_low_p_title">
-        	<settingConfig type="numeric"></settingConfig></setting>
-        <setting propertyKey="zone6_low_p" title="zone6_low_p_title">
-        	<settingConfig type="numeric"></settingConfig></setting>
-		<setting propertyKey="zone7_low_p" title="zone7_low_p_title">
-        	<settingConfig type="numeric"></settingConfig></setting>        	
+        	<settingConfig type="numeric"></settingConfig></setting>     	
      </settings>
 </resources>
