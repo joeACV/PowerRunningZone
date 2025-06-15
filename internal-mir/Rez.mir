@@ -1,0 +1,79 @@
+[ @file = "e:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\gen\006-B3113-00\source\Rez.mcgen"; @line = 1; ]
+import Toybox.Lang;
+[ @file = "e:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\gen\006-B3113-00\source\Rez.mcgen"; @line = 2; ]
+using Toybox.WatchUi;
+[ @file = "e:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\gen\006-B3113-00\source\Rez.mcgen"; @line = 3; ]
+using Toybox.WatchUi as :Ui;
+[ @file = "e:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\gen\006-B3113-00\source\Rez.mcgen"; @line = 4; ]
+using Toybox.Graphics;
+[ @file = "e:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\gen\006-B3113-00\source\Rez.mcgen"; @line = 5; ]
+using Toybox.Graphics as :Gfx;
+[ @file = "e:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\gen\006-B3113-00\source\Rez.mcgen"; @line = 7; ]
+module Rez {
+    [ @file = "e:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\gen\006-B3113-00\source\Rez.mcgen"; @line = 7; ]
+    <init> {
+    }
+    [ @file = "e:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\gen\006-B3113-00\source\Rez.mcgen"; @line = 8; ]
+    module Drawables {
+        [ @file = "e:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\gen\006-B3113-00\source\Rez.mcgen"; @line = 8; ]
+        <init> {
+        }
+        [ @file = "e:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\gen\006-B3113-00\source\Rez.mcgen"; @line = 9; @position = 27; initialized = true; ]
+        var PowerIcon as ResourceId;
+        [ @file = "e:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\gen\006-B3113-00\source\Rez.mcgen"; @line = 10; @position = 27; initialized = true; ]
+        var PowerIconWhite as ResourceId;
+        [ @file = "e:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\gen\006-B3113-00\source\Rez.mcgen"; @line = 11; @position = 27; initialized = true; ]
+        var Heart as ResourceId;
+        [ @file = "e:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\gen\006-B3113-00\source\Rez.mcgen"; @line = 12; @position = 27; initialized = true; ]
+        var HeartWhite as ResourceId;
+        [ @file = "e:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\gen\006-B3113-00\source\Rez.mcgen"; @line = 13; @position = 27; initialized = true; ]
+        var WarmupIcon as ResourceId;
+        [ @file = "e:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\gen\006-B3113-00\source\Rez.mcgen"; @line = 14; @position = 27; initialized = true; ]
+        var WarmupIconWhite as ResourceId;
+        [ @file = "e:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\gen\006-B3113-00\source\Rez.mcgen"; @line = 15; @position = 27; initialized = true; ]
+        var CooldownIconWhite as ResourceId;
+        [ @file = "e:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\gen\006-B3113-00\source\Rez.mcgen"; @line = 16; @position = 27; initialized = true; ]
+        var CooldownIcon as ResourceId;
+        [ @file = "e:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\gen\006-B3113-00\source\Rez.mcgen"; @line = 17; @position = 27; initialized = true; ]
+        var ActiveIcon as ResourceId;
+        [ @file = "e:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\gen\006-B3113-00\source\Rez.mcgen"; @line = 18; @position = 27; initialized = true; ]
+        var ActiveIconWhite as ResourceId;
+        [ @file = "e:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\gen\006-B3113-00\source\Rez.mcgen"; @line = 19; @position = 27; initialized = true; ]
+        var RecoveryIcon as ResourceId;
+        [ @file = "e:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\gen\006-B3113-00\source\Rez.mcgen"; @line = 20; @position = 27; initialized = true; ]
+        var RecoveryIconWhite as ResourceId;
+        [ @file = "e:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\gen\006-B3113-00\source\Rez.mcgen"; @line = 21; @position = 27; initialized = true; ]
+        var LauncherIcon as ResourceId;
+    }
+    [ @file = "e:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\gen\006-B3113-00\source\Rez.mcgen"; @line = 24; ]
+    module Strings {
+        [ @file = "e:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\gen\006-B3113-00\source\Rez.mcgen"; @line = 24; ]
+        <init> {
+        }
+        [ @file = "e:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\gen\006-B3113-00\source\Rez.mcgen"; @line = 25; @position = 27; initialized = true; ]
+        var zone6_low_p_title as ResourceId;
+        [ @file = "e:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\gen\006-B3113-00\source\Rez.mcgen"; @line = 26; @position = 27; initialized = true; ]
+        var zone7_low_p_title as ResourceId;
+        [ @file = "e:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\gen\006-B3113-00\source\Rez.mcgen"; @line = 27; @position = 27; initialized = true; ]
+        var alert_zone_change_title as ResourceId;
+        [ @file = "e:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\gen\006-B3113-00\source\Rez.mcgen"; @line = 28; @position = 27; initialized = true; ]
+        var zone4_low_p_title as ResourceId;
+        [ @file = "e:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\gen\006-B3113-00\source\Rez.mcgen"; @line = 29; @position = 27; initialized = true; ]
+        var zone3_low_p_title as ResourceId;
+        [ @file = "e:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\gen\006-B3113-00\source\Rez.mcgen"; @line = 30; @position = 27; initialized = true; ]
+        var vibrate_zone_change_title as ResourceId;
+        [ @file = "e:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\gen\006-B3113-00\source\Rez.mcgen"; @line = 31; @position = 27; initialized = true; ]
+        var zone1_low_p_title as ResourceId;
+        [ @file = "e:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\gen\006-B3113-00\source\Rez.mcgen"; @line = 32; @position = 27; initialized = true; ]
+        var zone5_low_p_title as ResourceId;
+        [ @file = "e:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\gen\006-B3113-00\source\Rez.mcgen"; @line = 33; @position = 27; initialized = true; ]
+        var zone2_low_p_title as ResourceId;
+        [ @file = "e:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\gen\006-B3113-00\source\Rez.mcgen"; @line = 34; @position = 27; initialized = true; ]
+        var AppName as ResourceId;
+        [ @file = "e:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\gen\006-B3113-00\source\Rez.mcgen"; @line = 35; @position = 27; initialized = true; ]
+        var alert_lap_title as ResourceId;
+    }
+}
+[ @file = "e:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\gen\006-B3113-00\source\Rez.mcgen"; @line = 1; ]
+<init> {
+}

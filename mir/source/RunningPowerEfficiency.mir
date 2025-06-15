@@ -1,0 +1,433 @@
+[ @file = "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\RunningPowerEfficiency.mc"; @line = 1; ]
+using Toybox.WatchUi as :Ui;
+[ @file = "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\RunningPowerEfficiency.mc"; @line = 2; ]
+using Toybox.System as :Sys;
+[ @file = "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\RunningPowerEfficiency.mc"; @line = 4; ]
+class RunningPowerEfficiency{
+    [ @file = "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\RunningPowerEfficiency.mc"; @line = 4; ]
+    <init> {
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\RunningPowerEfficiency.mc" 7 5 ]
+        %tmp.2 = 5;
+        %tmp.1 = newa %tmp.2;
+        putv self :pwrdict %tmp.1;
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\RunningPowerEfficiency.mc" 8 5 ]
+        %tmp.4 = 5;
+        %tmp.3 = newa %tmp.4;
+        putv self :speed %tmp.3;
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\RunningPowerEfficiency.mc" 9 5 ]
+        %tmp.6 = 5;
+        %tmp.5 = newa %tmp.6;
+        putv self :elevation %tmp.5;
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\RunningPowerEfficiency.mc" 10 5 ]
+        %tmp.8 = 5;
+        %tmp.7 = newa %tmp.8;
+        putv self :distance %tmp.7;
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\RunningPowerEfficiency.mc" 11 5 ]
+        %tmp.10 = 5;
+        %tmp.9 = newa %tmp.10;
+        putv self :gapData %tmp.9;
+    }
+    [ @file = "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\RunningPowerEfficiency.mc"; @line = 4; ]
+    static
+    <init> {
+    }
+    [ @file = "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\RunningPowerEfficiency.mc"; @line = 6; @position = 5; ]
+    var avg;
+    [ @file = "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\RunningPowerEfficiency.mc"; @line = 7; @position = 5; ]
+    var pwrdict;
+    [ @file = "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\RunningPowerEfficiency.mc"; @line = 8; @position = 5; ]
+    var speed;
+    [ @file = "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\RunningPowerEfficiency.mc"; @line = 9; @position = 5; ]
+    var elevation;
+    [ @file = "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\RunningPowerEfficiency.mc"; @line = 10; @position = 5; ]
+    var distance;
+    [ @file = "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\RunningPowerEfficiency.mc"; @line = 11; @position = 5; ]
+    var gapData;
+    [ @file = "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\RunningPowerEfficiency.mc"; @line = 12; @position = 5; ]
+    var elevchange = 0.0;
+    [ @file = "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\RunningPowerEfficiency.mc"; @line = 13; @position = 5; ]
+    var totalSpeed = 0.0;
+    [ @file = "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\RunningPowerEfficiency.mc"; @line = 14; @position = 5; ]
+    var totalDist = 0.0;
+    [ @file = "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\RunningPowerEfficiency.mc"; @line = 15; @position = 5; ]
+    var avgPoint = 5;
+    [ @file = "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\RunningPowerEfficiency.mc"; @line = 16; @position = 5; ]
+    var prevElev = 0.0;
+    [ @file = "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\RunningPowerEfficiency.mc"; @line = 17; @position = 5; ]
+    var prevDist = 0.0;
+    [ @file = "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\RunningPowerEfficiency.mc"; @line = 18; @position = 5; ]
+    var totalCalc = 0.0;
+    [ @file = "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\RunningPowerEfficiency.mc"; @line = 19; @position = 5; ]
+    var totalGap = 0.0;
+    [ @file = "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\RunningPowerEfficiency.mc"; @line = 20; @position = 5; ]
+    var totalPower = 0.0;
+    //! The given info object contains all the current workout
+    //! information. Calculate a value and return it in this method.
+    [ @file = "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\RunningPowerEfficiency.mc"; @line = 25; ]
+    function compute(info) {
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_25_27_99_1_start:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\RunningPowerEfficiency.mc" 27 8 ]
+        [ "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_25_27_99_1_start" "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_25_27_99_1_stop" ]
+        %d.1 = local;
+        %tmp.1 = 0.0;
+        lputv %d.1 %tmp.1;
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\RunningPowerEfficiency.mc" 28 2 ]
+        [ "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_25_27_99_1_start" "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_25_27_99_1_stop" ]
+        %hr.2 = local;
+        %tmp.2 = 0.0;
+        lputv %hr.2 %tmp.2;
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\RunningPowerEfficiency.mc" 29 2 ]
+        [ "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_25_27_99_1_start" "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_25_27_99_1_stop" ]
+        %datapoint.3 = local;
+        %tmp.3 = 0;
+        lputv %datapoint.3 %tmp.3;
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\RunningPowerEfficiency.mc" 30 2 ]
+        [ "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_25_27_99_1_start" "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_25_27_99_1_stop" ]
+        %last.4 = local;
+        %tmp.4 = 0;
+        lputv %last.4 %tmp.4;
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\RunningPowerEfficiency.mc" 31 2 ]
+        [ "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_25_27_99_1_start" "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_25_27_99_1_stop" ]
+        %curpower.5 = local;
+        %tmp.5 = 0;
+        lputv %curpower.5 %tmp.5;
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\RunningPowerEfficiency.mc" 32 2 ]
+        [ "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_25_27_99_1_start" "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_25_27_99_1_stop" ]
+        %curElev.6 = local;
+        %tmp.6 = 0;
+        lputv %curElev.6 %tmp.6;
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\RunningPowerEfficiency.mc" 33 2 ]
+        [ "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_25_27_99_1_start" "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_25_27_99_1_stop" ]
+        %curSpeed.7 = local;
+        %tmp.7 = 0;
+        lputv %curSpeed.7 %tmp.7;
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\RunningPowerEfficiency.mc" 34 2 ]
+        [ "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_25_27_99_1_start" "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_25_27_99_1_stop" ]
+        %curDist.8 = local;
+        %tmp.8 = 0;
+        lputv %curDist.8 %tmp.8;
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\RunningPowerEfficiency.mc" 35 2 ]
+        [ "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_25_27_99_1_start" "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_25_27_99_1_stop" ]
+        %gap.9 = local;
+        %tmp.9 = 0;
+        lputv %gap.9 %tmp.9;
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\RunningPowerEfficiency.mc" 36 2 ]
+        [ "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_25_27_99_1_start" "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_25_27_99_1_stop" ]
+        %value.10 = local;
+        %tmp.10 = 0;
+        lputv %value.10 %tmp.10;
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\RunningPowerEfficiency.mc" 37 2 ]
+        [ "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_25_27_99_1_start" "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_25_27_99_1_stop" ]
+        %calc.11 = local;
+        %tmp.11 = 0;
+        lputv %calc.11 %tmp.11;
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\RunningPowerEfficiency.mc" 39 2 ]
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_39_2_41_2_if_stmt:
+        %tmp.12 = lgetv %info;
+        %tmp.13 = getv %tmp.12 :elapsedDistance;
+        %tmp.14 = null;
+        %tmp.15 = ne %tmp.13 %tmp.14;
+        bf %tmp.15 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_39_2_41_2_if_end;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_39_2_41_2_if_true:
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_39_34_41_2_start:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\RunningPowerEfficiency.mc" 40 3 ]
+        %tmp.16 = lgetv %info;
+        %tmp.17 = getv %tmp.16 :elapsedDistance;
+        lputv %curDist.8 %tmp.17;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_39_34_41_2_stop:
+        goto @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_39_2_41_2_if_end;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_39_2_41_2_if_end:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\RunningPowerEfficiency.mc" 42 2 ]
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_42_2_44_2_if_stmt:
+        %tmp.18 = lgetv %info;
+        %tmp.19 = getv %tmp.18 :altitude;
+        %tmp.20 = null;
+        %tmp.21 = ne %tmp.19 %tmp.20;
+        bf %tmp.21 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_42_2_44_2_if_end;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_42_2_44_2_if_true:
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_42_27_44_2_start:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\RunningPowerEfficiency.mc" 43 3 ]
+        %tmp.22 = lgetv %info;
+        %tmp.23 = getv %tmp.22 :altitude;
+        lputv %curElev.6 %tmp.23;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_42_27_44_2_stop:
+        goto @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_42_2_44_2_if_end;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_42_2_44_2_if_end:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\RunningPowerEfficiency.mc" 45 2 ]
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_45_2_47_2_if_stmt:
+        %tmp.24 = lgetv %info;
+        %tmp.25 = getv %tmp.24 :currentSpeed;
+        %tmp.26 = null;
+        %tmp.27 = ne %tmp.25 %tmp.26;
+        bf %tmp.27 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_45_2_47_2_if_end;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_45_2_47_2_if_true:
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_45_29_47_2_start:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\RunningPowerEfficiency.mc" 46 3 ]
+        %tmp.28 = lgetv %info;
+        %tmp.29 = getv %tmp.28 :currentSpeed;
+        lputv %curSpeed.7 %tmp.29;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_45_29_47_2_stop:
+        goto @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_45_2_47_2_if_end;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_45_2_47_2_if_end:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\RunningPowerEfficiency.mc" 48 2 ]
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_48_2_52_2_if_stmt:
+        %tmp.30 = lgetv %info;
+        %tmp.31 = getv %tmp.30 :elapsedTime;
+        %tmp.32 = null;
+        %tmp.33 = ne %tmp.31 %tmp.32;
+        bf %tmp.33 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_48_2_52_2_if_false;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_48_2_52_2_if_true:
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_48_31_50_2_start:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\RunningPowerEfficiency.mc" 49 3 ]
+        %tmp.34 = lgetv %info;
+        %tmp.35 = getv %tmp.34 :elapsedTime;
+        %tmp.37 = getv ? :avgPoint;
+        %tmp.38 = 1000;
+        %tmp.39 = mul %tmp.37 %tmp.38;
+        %tmp.40 = mod %tmp.35 %tmp.39;
+        %tmp.41 = 1000;
+        %tmp.42 = div %tmp.40 %tmp.41;
+        lputv %datapoint.3 %tmp.42;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_48_31_50_2_stop:
+        goto @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_48_2_52_2_if_end;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_48_2_52_2_if_false:
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_50_9_52_2_start:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\RunningPowerEfficiency.mc" 51 3 ]
+        %tmp.43 = 0;
+        lputv %datapoint.3 %tmp.43;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_50_9_52_2_stop:
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_48_2_52_2_if_end:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\RunningPowerEfficiency.mc" 53 2 ]
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_53_2_55_2_if_stmt:
+        %tmp.44 = lgetv %info;
+        %tmp.45 = getv %tmp.44 :currentPower;
+        %tmp.46 = null;
+        %tmp.47 = ne %tmp.45 %tmp.46;
+        bf %tmp.47 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_53_2_55_2_if_end;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_53_2_55_2_if_true:
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_53_29_55_2_start:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\RunningPowerEfficiency.mc" 54 3 ]
+        %tmp.48 = lgetv %info;
+        %tmp.49 = getv %tmp.48 :currentPower;
+        lputv %curpower.5 %tmp.49;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_53_29_55_2_stop:
+        goto @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_53_2_55_2_if_end;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_53_2_55_2_if_end:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\RunningPowerEfficiency.mc" 57 2 ]
+        %tmp.51 = lgetv %curpower.5;
+        %tmp.53 = getv ? :avgPoint;
+        %tmp.54 = mul %tmp.51 %tmp.53;
+        putv self :totalPower %tmp.54;
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\RunningPowerEfficiency.mc" 60 2 ]
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_60_2_64_2_if_stmt:
+        %tmp.56 = getv ? :speed;
+        %tmp.58 = lgetv %datapoint.3;
+        %tmp.59 = agetv %tmp.56 %tmp.58;
+        %tmp.60 = null;
+        %tmp.61 = ne %tmp.59 %tmp.60;
+        bf %tmp.61 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_60_2_64_2_if_false;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_60_2_64_2_if_true:
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_60_28_62_2_start:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\RunningPowerEfficiency.mc" 61 3 ]
+        %tmp.63 = getv ? :totalSpeed;
+        %tmp.65 = getv ? :speed;
+        %tmp.67 = lgetv %datapoint.3;
+        %tmp.68 = agetv %tmp.65 %tmp.67;
+        %tmp.69 = sub %tmp.63 %tmp.68;
+        %tmp.71 = lgetv %curSpeed.7;
+        %tmp.72 = add %tmp.69 %tmp.71;
+        putv self :totalSpeed %tmp.72;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_60_28_62_2_stop:
+        goto @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_60_2_64_2_if_end;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_60_2_64_2_if_false:
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_62_8_64_2_start:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\RunningPowerEfficiency.mc" 63 3 ]
+        %tmp.73 = getv self :totalSpeed;
+        %tmp.75 = lgetv %curSpeed.7;
+        %tmp.76 = add %tmp.73 %tmp.75;
+        putv self :totalSpeed dup %tmp.76;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_62_8_64_2_stop:
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_60_2_64_2_if_end:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\RunningPowerEfficiency.mc" 65 2 ]
+        %tmp.77 = getv self :speed;
+        %tmp.79 = lgetv %curSpeed.7;
+        %tmp.81 = lgetv %datapoint.3;
+        aputv %tmp.77 %tmp.81 %tmp.79;
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\RunningPowerEfficiency.mc" 67 2 ]
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_67_2_69_2_if_stmt:
+        %tmp.83 = getv ? :elevation;
+        %tmp.85 = lgetv %datapoint.3;
+        %tmp.86 = agetv %tmp.83 %tmp.85;
+        %tmp.87 = null;
+        %tmp.88 = ne %tmp.86 %tmp.87;
+        bf %tmp.88 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_67_2_69_2_if_end;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_67_2_69_2_if_true:
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_67_32_69_2_start:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\RunningPowerEfficiency.mc" 68 3 ]
+        %tmp.90 = lgetv %curElev.6;
+        %tmp.92 = getv ? :elevation;
+        %tmp.94 = lgetv %datapoint.3;
+        %tmp.95 = agetv %tmp.92 %tmp.94;
+        %tmp.96 = sub %tmp.90 %tmp.95;
+        putv self :elevchange %tmp.96;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_67_32_69_2_stop:
+        goto @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_67_2_69_2_if_end;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_67_2_69_2_if_end:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\RunningPowerEfficiency.mc" 70 2 ]
+        %tmp.97 = getv self :elevation;
+        %tmp.99 = lgetv %curElev.6;
+        %tmp.101 = lgetv %datapoint.3;
+        aputv %tmp.97 %tmp.101 %tmp.99;
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\RunningPowerEfficiency.mc" 72 2 ]
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_72_2_74_2_if_stmt:
+        %tmp.103 = getv ? :distance;
+        %tmp.105 = lgetv %datapoint.3;
+        %tmp.106 = agetv %tmp.103 %tmp.105;
+        %tmp.107 = null;
+        %tmp.108 = ne %tmp.106 %tmp.107;
+        bf %tmp.108 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_72_2_74_2_if_end;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_72_2_74_2_if_true:
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_72_31_74_2_start:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\RunningPowerEfficiency.mc" 73 3 ]
+        %tmp.110 = lgetv %curDist.8;
+        %tmp.112 = getv ? :distance;
+        %tmp.114 = lgetv %datapoint.3;
+        %tmp.115 = agetv %tmp.112 %tmp.114;
+        %tmp.116 = sub %tmp.110 %tmp.115;
+        putv self :totalDist %tmp.116;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_72_31_74_2_stop:
+        goto @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_72_2_74_2_if_end;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_72_2_74_2_if_end:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\RunningPowerEfficiency.mc" 76 2 ]
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_76_2_82_2_if_stmt:
+        %tmp.118 = lgetv %curDist.8;
+        %tmp.120 = getv ? :prevDist;
+        %tmp.121 = sub %tmp.118 %tmp.120;
+        %tmp.122 = 0;
+        %tmp.123 = gt %tmp.121 %tmp.122;
+        bf %tmp.123 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_76_2_82_2_if_end;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_76_2_82_2_if_true:
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_76_28_82_2_start:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\RunningPowerEfficiency.mc" 78 3 ]
+        %tmp.125 = lgetv %curSpeed.7;
+        %tmp.126 = 60;
+        %tmp.127 = mul %tmp.125 %tmp.126;
+        %tmp.128 = 1;
+        %tmp.129 = 9;
+        %tmp.131 = lgetv %curElev.6;
+        %tmp.133 = getv ? :prevElev;
+        %tmp.134 = sub %tmp.131 %tmp.133;
+        %tmp.136 = lgetv %curDist.8;
+        %tmp.138 = getv ? :prevDist;
+        %tmp.139 = sub %tmp.136 %tmp.138;
+        %tmp.140 = div %tmp.134 %tmp.139;
+        %tmp.141 = mul %tmp.129 %tmp.140;
+        %tmp.142 = add %tmp.128 %tmp.141;
+        %tmp.143 = div %tmp.127 %tmp.142;
+        lputv %gap.9 %tmp.143;
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\RunningPowerEfficiency.mc" 80 3 ]
+        %tmp.144 = getv self :gapData;
+        %tmp.146 = lgetv %gap.9;
+        %tmp.148 = lgetv %datapoint.3;
+        aputv %tmp.144 %tmp.148 %tmp.146;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_76_28_82_2_stop:
+        goto @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_76_2_82_2_if_end;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_76_2_82_2_if_end:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\RunningPowerEfficiency.mc" 84 2 ]
+        %tmp.149 = 0;
+        putv self :totalGap %tmp.149;
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\RunningPowerEfficiency.mc" 86 2 ]
+        for @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_86_2_90_5_for_test @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_86_2_90_5_for_incr @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_86_2_90_5_for_end;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_86_2_90_5_for_init:
+        [ "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_86_2_90_5_for_begin" "E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_86_2_90_5_for_end" ]
+        %i.12 = local;
+        %tmp.150 = 0;
+        lputv %i.12 %tmp.150;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_86_2_90_5_for_test:
+        %tmp.152 = lgetv %i.12;
+        %tmp.154 = getv ? :avgPoint;
+        %tmp.155 = lt %tmp.152 %tmp.154;
+        bf %tmp.155 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_86_2_90_5_for_end;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_86_2_90_5_for_begin:
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_86_36_90_5_start:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\RunningPowerEfficiency.mc" 87 6 ]
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_87_6_89_6_if_stmt:
+        %tmp.157 = getv ? :gapData;
+        %tmp.159 = lgetv %i.12;
+        %tmp.160 = agetv %tmp.157 %tmp.159;
+        %tmp.161 = null;
+        %tmp.162 = ne %tmp.160 %tmp.161;
+        bf %tmp.162 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_87_6_89_6_if_end;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_87_6_89_6_if_true:
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_87_27_89_6_start:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\RunningPowerEfficiency.mc" 88 7 ]
+        %tmp.163 = getv self :totalGap;
+        %tmp.165 = getv ? :gapData;
+        %tmp.167 = lgetv %i.12;
+        %tmp.168 = agetv %tmp.165 %tmp.167;
+        %tmp.169 = add %tmp.163 %tmp.168;
+        putv self :totalGap dup %tmp.169;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_87_27_89_6_stop:
+        goto @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_87_6_89_6_if_end;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_87_6_89_6_if_end:
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_86_36_90_5_stop:
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_86_2_90_5_for_incr:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\RunningPowerEfficiency.mc" 86 ]
+        %tmp.170 = lgetv %i.12;
+        %tmp.171 = 1;
+        %tmp.172 = add %tmp.170 %tmp.171;
+        lputv %i.12 %tmp.172;
+        goto @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_86_2_90_5_for_test;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_86_2_90_5_for_end:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\RunningPowerEfficiency.mc" 91 2 ]
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_91_2_95_2_if_stmt:
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_91_5_91_31_begin:
+        %tmp.174 = getv ? :totalGap;
+        %tmp.175 = 0;
+        %tmp.176 = gt %tmp.174 %tmp.175;
+        bf %tmp.176 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_91_2_95_2_if_end;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_91_20_91_31_true:
+        %tmp.178 = getv ? :totalPower;
+        %tmp.179 = 0;
+        %tmp.180 = gt %tmp.178 %tmp.179;
+        push %tmp.180;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_91_20_91_31_end:
+        %tmp.181 = phi [%tmp.176 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_91_5_91_31_begin] [%tmp.180 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_91_20_91_31_true] [%tmp.181 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_91_20_91_31_end];
+        bf %tmp.181 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_91_2_95_2_if_end;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_91_2_95_2_if_true:
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_91_33_95_2_start:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\RunningPowerEfficiency.mc" 93 3 ]
+        %tmp.183 = getv ? :totalGap;
+        %tmp.185 = getv ? :totalPower;
+        %tmp.186 = div %tmp.183 %tmp.185;
+        %tmp.187 = 100;
+        %tmp.188 = mul %tmp.186 %tmp.187;
+        lputv %value.10 %tmp.188;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_91_33_95_2_stop:
+        goto @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_91_2_95_2_if_end;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_91_2_95_2_if_end:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\RunningPowerEfficiency.mc" 96 2 ]
+        %tmp.190 = lgetv %curElev.6;
+        putv self :prevElev %tmp.190;
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\RunningPowerEfficiency.mc" 97 2 ]
+        %tmp.192 = lgetv %curDist.8;
+        putv self :prevDist %tmp.192;
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\RunningPowerEfficiency.mc" 98 2 ]
+        %tmp.194 = lgetv %value.10;
+        ret %tmp.194;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_25_27_99_1_stop:
+    }
+    [ @file = "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\RunningPowerEfficiency.mc"; @line = 100; ]
+    function getGap() {
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_100_18_102_1_start:
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\RunningPowerEfficiency.mc" 101 2 ]
+        %tmp.2 = getv ? :totalGap;
+        %tmp.4 = getv ? :avgPoint;
+        %tmp.5 = div %tmp.2 %tmp.4;
+        ret %tmp.5;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_RunningPowerEfficiency_mc_100_18_102_1_stop:
+    }
+}
+[ @file = "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\RunningPowerEfficiency.mc"; @line = 1; ]
+<init> {
+}

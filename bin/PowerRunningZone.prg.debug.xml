@@ -21,8 +21,8 @@
 <entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="5" lineNum="17" parent="globals/ZoneManagment" pc="268436141" symbol="&lt;init&gt;"/>
 <entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="5" lineNum="28" parent="globals/ZoneManagment" pc="268436175" symbol="&lt;init&gt;"/>
 <entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="5" lineNum="29" parent="globals/ZoneManagment" pc="268436267" symbol="&lt;init&gt;"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="5" lineNum="38" parent="globals/ZoneManagment" pc="268436359" symbol="&lt;init&gt;"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="5" lineNum="40" parent="globals/ZoneManagment" pc="268436465" symbol="&lt;init&gt;"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="5" lineNum="39" parent="globals/ZoneManagment" pc="268436359" symbol="&lt;init&gt;"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="5" lineNum="41" parent="globals/ZoneManagment" pc="268436465" symbol="&lt;init&gt;"/>
 <entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="6" lineNum="8" parent="globals/CircularZoneView" pc="268436664" symbol="&lt;init&gt;"/>
 <entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="6" lineNum="10" parent="globals/CircularZoneView" pc="268436682" symbol="&lt;init&gt;"/>
 <entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="6" lineNum="11" parent="globals/CircularZoneView" pc="268436716" symbol="&lt;init&gt;"/>
@@ -348,297 +348,300 @@
 <entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\PowerRunningZoneView.mc" id="33" lineNum="198" parent="globals/PowerRunningZoneView" pc="268444119" symbol="drawTopLeft"/>
 <entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\PowerRunningZoneView.mc" id="33" lineNum="200" parent="globals/PowerRunningZoneView" pc="268444255" symbol="drawTopLeft"/>
 <entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\PowerRunningZoneView.mc" id="33" lineNum="202" parent="globals/PowerRunningZoneView" pc="268444334" symbol="drawTopLeft"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="35" lineNum="172" parent="globals/ZoneManagment" pc="268444351" symbol="GetZone"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="35" lineNum="173" parent="globals/ZoneManagment" pc="268444355" symbol="GetZone"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="35" lineNum="174" parent="globals/ZoneManagment" pc="268444362" symbol="GetZone"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="35" lineNum="175" parent="globals/ZoneManagment" pc="268444369" symbol="GetZone"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="35" lineNum="176" parent="globals/ZoneManagment" pc="268444385" symbol="GetZone"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="35" lineNum="177" parent="globals/ZoneManagment" pc="268444398" symbol="GetZone"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="35" lineNum="179" parent="globals/ZoneManagment" pc="268444416" symbol="GetZone"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="36" lineNum="218" parent="globals/ZoneManagment" pc="268444419" symbol="Start"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="36" lineNum="220" parent="globals/ZoneManagment" pc="268444421" symbol="Start"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="36" lineNum="221" parent="globals/ZoneManagment" pc="268444433" symbol="Start"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="37" lineNum="223" parent="globals/ZoneManagment" pc="268444447" symbol="Stop"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="37" lineNum="225" parent="globals/ZoneManagment" pc="268444449" symbol="Stop"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="38" lineNum="181" parent="globals/ZoneManagment" pc="268444463" symbol="GetLapZone"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="38" lineNum="182" parent="globals/ZoneManagment" pc="268444467" symbol="GetLapZone"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="38" lineNum="183" parent="globals/ZoneManagment" pc="268444474" symbol="GetLapZone"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="38" lineNum="184" parent="globals/ZoneManagment" pc="268444487" symbol="GetLapZone"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="38" lineNum="186" parent="globals/ZoneManagment" pc="268444511" symbol="GetLapZone"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="39" lineNum="47" parent="globals/ZoneManagment" pc="268444514" symbol="Update"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="39" lineNum="49" parent="globals/ZoneManagment" pc="268444518" symbol="Update"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="39" lineNum="50" parent="globals/ZoneManagment" pc="268444525" symbol="Update"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="39" lineNum="51" parent="globals/ZoneManagment" pc="268444532" symbol="Update"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="39" lineNum="52" parent="globals/ZoneManagment" pc="268444559" symbol="Update"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="39" lineNum="53" parent="globals/ZoneManagment" pc="268444582" symbol="Update"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="39" lineNum="56" parent="globals/ZoneManagment" pc="268444597" symbol="Update"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="39" lineNum="57" parent="globals/ZoneManagment" pc="268444610" symbol="Update"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="39" lineNum="59" parent="globals/ZoneManagment" pc="268444638" symbol="Update"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="39" lineNum="61" parent="globals/ZoneManagment" pc="268444651" symbol="Update"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="39" lineNum="62" parent="globals/ZoneManagment" pc="268444667" symbol="Update"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="39" lineNum="63" parent="globals/ZoneManagment" pc="268444683" symbol="Update"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="39" lineNum="64" parent="globals/ZoneManagment" pc="268444704" symbol="Update"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="39" lineNum="65" parent="globals/ZoneManagment" pc="268444724" symbol="Update"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="39" lineNum="67" parent="globals/ZoneManagment" pc="268444778" symbol="Update"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="40" lineNum="141" parent="globals/ZoneManagment" pc="268444795" symbol="GetWorkoutRepeatCount"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="40" lineNum="142" parent="globals/ZoneManagment" pc="268444799" symbol="GetWorkoutRepeatCount"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="40" lineNum="143" parent="globals/ZoneManagment" pc="268444816" symbol="GetWorkoutRepeatCount"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="40" lineNum="144" parent="globals/ZoneManagment" pc="268444822" symbol="GetWorkoutRepeatCount"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="40" lineNum="146" parent="globals/ZoneManagment" pc="268444831" symbol="GetWorkoutRepeatCount"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="40" lineNum="147" parent="globals/ZoneManagment" pc="268444841" symbol="GetWorkoutRepeatCount"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="40" lineNum="148" parent="globals/ZoneManagment" pc="268444847" symbol="GetWorkoutRepeatCount"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="40" lineNum="150" parent="globals/ZoneManagment" pc="268444856" symbol="GetWorkoutRepeatCount"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="40" lineNum="151" parent="globals/ZoneManagment" pc="268444868" symbol="GetWorkoutRepeatCount"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="40" lineNum="153" parent="globals/ZoneManagment" pc="268444877" symbol="GetWorkoutRepeatCount"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="40" lineNum="154" parent="globals/ZoneManagment" pc="268444887" symbol="GetWorkoutRepeatCount"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="40" lineNum="155" parent="globals/ZoneManagment" pc="268444904" symbol="GetWorkoutRepeatCount"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="40" lineNum="157" parent="globals/ZoneManagment" pc="268444913" symbol="GetWorkoutRepeatCount"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="41" lineNum="188" parent="globals/ZoneManagment" pc="268444925" symbol="setZones"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="41" lineNum="190" parent="globals/ZoneManagment" pc="268444929" symbol="setZones"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="41" lineNum="191" parent="globals/ZoneManagment" pc="268444943" symbol="setZones"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="41" lineNum="192" parent="globals/ZoneManagment" pc="268444967" symbol="setZones"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="41" lineNum="193" parent="globals/ZoneManagment" pc="268444991" symbol="setZones"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="41" lineNum="194" parent="globals/ZoneManagment" pc="268445021" symbol="setZones"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="41" lineNum="195" parent="globals/ZoneManagment" pc="268445044" symbol="setZones"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="41" lineNum="197" parent="globals/ZoneManagment" pc="268445066" symbol="setZones"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="41" lineNum="198" parent="globals/ZoneManagment" pc="268445096" symbol="setZones"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="41" lineNum="199" parent="globals/ZoneManagment" pc="268445126" symbol="setZones"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="41" lineNum="200" parent="globals/ZoneManagment" pc="268445156" symbol="setZones"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="41" lineNum="201" parent="globals/ZoneManagment" pc="268445186" symbol="setZones"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="41" lineNum="202" parent="globals/ZoneManagment" pc="268445214" symbol="setZones"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="41" lineNum="203" parent="globals/ZoneManagment" pc="268445242" symbol="setZones"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="41" lineNum="204" parent="globals/ZoneManagment" pc="268445270" symbol="setZones"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="41" lineNum="205" parent="globals/ZoneManagment" pc="268445298" symbol="setZones"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="42" lineNum="208" parent="globals/ZoneManagment" pc="268445348" symbol="LapComplete"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="42" lineNum="211" parent="globals/ZoneManagment" pc="268445350" symbol="LapComplete"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="42" lineNum="212" parent="globals/ZoneManagment" pc="268445367" symbol="LapComplete"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="42" lineNum="214" parent="globals/ZoneManagment" pc="268445386" symbol="LapComplete"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="42" lineNum="215" parent="globals/ZoneManagment" pc="268445402" symbol="LapComplete"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="42" lineNum="216" parent="globals/ZoneManagment" pc="268445415" symbol="LapComplete"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="43" lineNum="227" parent="globals/ZoneManagment" pc="268445438" symbol="GetHeartRateZone"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="43" lineNum="228" parent="globals/ZoneManagment" pc="268445442" symbol="GetHeartRateZone"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="43" lineNum="229" parent="globals/ZoneManagment" pc="268445465" symbol="GetHeartRateZone"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="43" lineNum="230" parent="globals/ZoneManagment" pc="268445497" symbol="GetHeartRateZone"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="43" lineNum="231" parent="globals/ZoneManagment" pc="268445509" symbol="GetHeartRateZone"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="43" lineNum="233" parent="globals/ZoneManagment" pc="268445514" symbol="GetHeartRateZone"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="43" lineNum="234" parent="globals/ZoneManagment" pc="268445538" symbol="GetHeartRateZone"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="43" lineNum="235" parent="globals/ZoneManagment" pc="268445549" symbol="GetHeartRateZone"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="43" lineNum="238" parent="globals/ZoneManagment" pc="268445568" symbol="GetHeartRateZone"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="44" lineNum="75" parent="globals/ZoneManagment" pc="268445570" symbol="calculateAvgPower"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="44" lineNum="80" parent="globals/ZoneManagment" pc="268445574" symbol="calculateAvgPower"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="44" lineNum="81" parent="globals/ZoneManagment" pc="268445581" symbol="calculateAvgPower"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="44" lineNum="82" parent="globals/ZoneManagment" pc="268445600" symbol="calculateAvgPower"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="44" lineNum="84" parent="globals/ZoneManagment" pc="268445631" symbol="calculateAvgPower"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="44" lineNum="85" parent="globals/ZoneManagment" pc="268445642" symbol="calculateAvgPower"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="44" lineNum="86" parent="globals/ZoneManagment" pc="268445649" symbol="calculateAvgPower"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="44" lineNum="88" parent="globals/ZoneManagment" pc="268445683" symbol="calculateAvgPower"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="44" lineNum="91" parent="globals/ZoneManagment" pc="268445717" symbol="calculateAvgPower"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="44" lineNum="93" parent="globals/ZoneManagment" pc="268445721" symbol="calculateAvgPower"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="45" lineNum="115" parent="globals/ZoneManagment" pc="268445724" symbol="GetTimeLeft"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="45" lineNum="116" parent="globals/ZoneManagment" pc="268445728" symbol="GetTimeLeft"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="45" lineNum="117" parent="globals/ZoneManagment" pc="268445745" symbol="GetTimeLeft"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="45" lineNum="118" parent="globals/ZoneManagment" pc="268445814" symbol="GetTimeLeft"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="45" lineNum="120" parent="globals/ZoneManagment" pc="268445832" symbol="GetTimeLeft"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="45" lineNum="121" parent="globals/ZoneManagment" pc="268445849" symbol="GetTimeLeft"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="45" lineNum="122" parent="globals/ZoneManagment" pc="268445855" symbol="GetTimeLeft"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="45" lineNum="124" parent="globals/ZoneManagment" pc="268445873" symbol="GetTimeLeft"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="45" lineNum="125" parent="globals/ZoneManagment" pc="268445883" symbol="GetTimeLeft"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="45" lineNum="126" parent="globals/ZoneManagment" pc="268445889" symbol="GetTimeLeft"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="45" lineNum="128" parent="globals/ZoneManagment" pc="268445907" symbol="GetTimeLeft"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="45" lineNum="129" parent="globals/ZoneManagment" pc="268445924" symbol="GetTimeLeft"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="45" lineNum="131" parent="globals/ZoneManagment" pc="268445942" symbol="GetTimeLeft"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="45" lineNum="132" parent="globals/ZoneManagment" pc="268445967" symbol="GetTimeLeft"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="46" lineNum="159" parent="globals/ZoneManagment" pc="268445979" symbol="getZone"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="46" lineNum="160" parent="globals/ZoneManagment" pc="268445983" symbol="getZone"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="46" lineNum="161" parent="globals/ZoneManagment" pc="268445990" symbol="getZone"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="46" lineNum="162" parent="globals/ZoneManagment" pc="268446020" symbol="getZone"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="46" lineNum="163" parent="globals/ZoneManagment" pc="268446054" symbol="getZone"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="46" lineNum="166" parent="globals/ZoneManagment" pc="268446140" symbol="getZone"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="46" lineNum="167" parent="globals/ZoneManagment" pc="268446178" symbol="getZone"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="46" lineNum="169" parent="globals/ZoneManagment" pc="268446212" symbol="getZone"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="47" lineNum="95" parent="globals/ZoneManagment" pc="268446215" symbol="GetWorkoutZone"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="47" lineNum="97" parent="globals/ZoneManagment" pc="268446219" symbol="GetWorkoutZone"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="47" lineNum="98" parent="globals/ZoneManagment" pc="268446236" symbol="GetWorkoutZone"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="47" lineNum="99" parent="globals/ZoneManagment" pc="268446242" symbol="GetWorkoutZone"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="47" lineNum="101" parent="globals/ZoneManagment" pc="268446247" symbol="GetWorkoutZone"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="47" lineNum="102" parent="globals/ZoneManagment" pc="268446257" symbol="GetWorkoutZone"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="47" lineNum="103" parent="globals/ZoneManagment" pc="268446263" symbol="GetWorkoutZone"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="47" lineNum="105" parent="globals/ZoneManagment" pc="268446268" symbol="GetWorkoutZone"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="47" lineNum="106" parent="globals/ZoneManagment" pc="268446275" symbol="GetWorkoutZone"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="47" lineNum="107" parent="globals/ZoneManagment" pc="268446293" symbol="GetWorkoutZone"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="47" lineNum="108" parent="globals/ZoneManagment" pc="268446300" symbol="GetWorkoutZone"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="47" lineNum="110" parent="globals/ZoneManagment" pc="268446332" symbol="GetWorkoutZone"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="47" lineNum="113" parent="globals/ZoneManagment" pc="268446348" symbol="GetWorkoutZone"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="48" lineNum="69" parent="globals/ZoneManagment" pc="268446351" symbol="GetPower"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="48" lineNum="70" parent="globals/ZoneManagment" pc="268446353" symbol="GetPower"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="48" lineNum="71" parent="globals/ZoneManagment" pc="268446365" symbol="GetPower"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="48" lineNum="73" parent="globals/ZoneManagment" pc="268446381" symbol="GetPower"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="49" lineNum="134" parent="globals/ZoneManagment" pc="268446390" symbol="GetWorkoutStepIntensity"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="49" lineNum="135" parent="globals/ZoneManagment" pc="268446394" symbol="GetWorkoutStepIntensity"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="49" lineNum="136" parent="globals/ZoneManagment" pc="268446411" symbol="GetWorkoutStepIntensity"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="49" lineNum="137" parent="globals/ZoneManagment" pc="268446417" symbol="GetWorkoutStepIntensity"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="49" lineNum="139" parent="globals/ZoneManagment" pc="268446422" symbol="GetWorkoutStepIntensity"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="51" lineNum="56" parent="globals/CircularZoneView" pc="268446431" symbol="onTimerLap"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="51" lineNum="57" parent="globals/CircularZoneView" pc="268446435" symbol="onTimerLap"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="51" lineNum="58" parent="globals/CircularZoneView" pc="268446452" symbol="onTimerLap"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="52" lineNum="60" parent="globals/CircularZoneView" pc="268446473" symbol="onWorkoutStepComplete"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="52" lineNum="61" parent="globals/CircularZoneView" pc="268446477" symbol="onWorkoutStepComplete"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="52" lineNum="62" parent="globals/CircularZoneView" pc="268446494" symbol="onWorkoutStepComplete"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="53" lineNum="50" parent="globals/CircularZoneView" pc="268446515" symbol="onTimerStart"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="53" lineNum="51" parent="globals/CircularZoneView" pc="268446517" symbol="onTimerStart"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="54" lineNum="43" parent="globals/CircularZoneView" pc="268446536" symbol="onValueChanged"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="54" lineNum="44" parent="globals/CircularZoneView" pc="268446538" symbol="onValueChanged"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="55" lineNum="213" parent="globals/CircularZoneView" pc="268446549" symbol="getWorkoutIntensityIcon"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="55" lineNum="214" parent="globals/CircularZoneView" pc="268446551" symbol="getWorkoutIntensityIcon"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="55" lineNum="215" parent="globals/CircularZoneView" pc="268446562" symbol="getWorkoutIntensityIcon"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="55" lineNum="216" parent="globals/CircularZoneView" pc="268446573" symbol="getWorkoutIntensityIcon"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="55" lineNum="217" parent="globals/CircularZoneView" pc="268446616" symbol="getWorkoutIntensityIcon"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="55" lineNum="218" parent="globals/CircularZoneView" pc="268446638" symbol="getWorkoutIntensityIcon"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="55" lineNum="219" parent="globals/CircularZoneView" pc="268446681" symbol="getWorkoutIntensityIcon"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="55" lineNum="220" parent="globals/CircularZoneView" pc="268446692" symbol="getWorkoutIntensityIcon"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="55" lineNum="221" parent="globals/CircularZoneView" pc="268446735" symbol="getWorkoutIntensityIcon"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="55" lineNum="222" parent="globals/CircularZoneView" pc="268446746" symbol="getWorkoutIntensityIcon"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="55" lineNum="224" parent="globals/CircularZoneView" pc="268446789" symbol="getWorkoutIntensityIcon"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="55" lineNum="227" parent="globals/CircularZoneView" pc="268446832" symbol="getWorkoutIntensityIcon"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="55" lineNum="228" parent="globals/CircularZoneView" pc="268446843" symbol="getWorkoutIntensityIcon"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="55" lineNum="229" parent="globals/CircularZoneView" pc="268446886" symbol="getWorkoutIntensityIcon"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="55" lineNum="230" parent="globals/CircularZoneView" pc="268446908" symbol="getWorkoutIntensityIcon"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="55" lineNum="231" parent="globals/CircularZoneView" pc="268446951" symbol="getWorkoutIntensityIcon"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="55" lineNum="232" parent="globals/CircularZoneView" pc="268446962" symbol="getWorkoutIntensityIcon"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="55" lineNum="233" parent="globals/CircularZoneView" pc="268447005" symbol="getWorkoutIntensityIcon"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="55" lineNum="234" parent="globals/CircularZoneView" pc="268447016" symbol="getWorkoutIntensityIcon"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="55" lineNum="236" parent="globals/CircularZoneView" pc="268447059" symbol="getWorkoutIntensityIcon"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="56" lineNum="32" parent="globals/CircularZoneView" pc="268447100" symbol="compute"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="56" lineNum="33" parent="globals/CircularZoneView" pc="268447102" symbol="compute"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="56" lineNum="34" parent="globals/CircularZoneView" pc="268447122" symbol="compute"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="56" lineNum="35" parent="globals/CircularZoneView" pc="268447135" symbol="compute"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="56" lineNum="37" parent="globals/CircularZoneView" pc="268447151" symbol="compute"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="56" lineNum="38" parent="globals/CircularZoneView" pc="268447164" symbol="compute"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="56" lineNum="40" parent="globals/CircularZoneView" pc="268447177" symbol="compute"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="56" lineNum="41" parent="globals/CircularZoneView" pc="268447197" symbol="compute"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="57" lineNum="19" parent="globals/CircularZoneView" pc="268447223" symbol="initialize"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="57" lineNum="20" parent="globals/CircularZoneView" pc="268447225" symbol="initialize"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="58" lineNum="23" parent="globals/CircularZoneView" pc="268447244" symbol="onDraw"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="58" lineNum="24" parent="globals/CircularZoneView" pc="268447248" symbol="onDraw"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="58" lineNum="25" parent="globals/CircularZoneView" pc="268447261" symbol="onDraw"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="58" lineNum="27" parent="globals/CircularZoneView" pc="268447274" symbol="onDraw"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="58" lineNum="28" parent="globals/CircularZoneView" pc="268447349" symbol="onDraw"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="58" lineNum="29" parent="globals/CircularZoneView" pc="268447353" symbol="onDraw"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="59" lineNum="47" parent="globals/CircularZoneView" pc="268447390" symbol="onUpdate"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="59" lineNum="48" parent="globals/CircularZoneView" pc="268447392" symbol="onUpdate"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="66" parent="globals/CircularZoneView" pc="268447407" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="67" parent="globals/CircularZoneView" pc="268447411" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="68" parent="globals/CircularZoneView" pc="268447421" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="69" parent="globals/CircularZoneView" pc="268447431" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="70" parent="globals/CircularZoneView" pc="268447438" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="71" parent="globals/CircularZoneView" pc="268447445" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="72" parent="globals/CircularZoneView" pc="268447452" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="73" parent="globals/CircularZoneView" pc="268447475" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="74" parent="globals/CircularZoneView" pc="268447482" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="77" parent="globals/CircularZoneView" pc="268447489" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="78" parent="globals/CircularZoneView" pc="268447511" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="79" parent="globals/CircularZoneView" pc="268447530" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="80" parent="globals/CircularZoneView" pc="268447560" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="81" parent="globals/CircularZoneView" pc="268447570" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="82" parent="globals/CircularZoneView" pc="268447581" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="83" parent="globals/CircularZoneView" pc="268447594" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="84" parent="globals/CircularZoneView" pc="268447605" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="86" parent="globals/CircularZoneView" pc="268447618" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="87" parent="globals/CircularZoneView" pc="268447634" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="88" parent="globals/CircularZoneView" pc="268447645" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="89" parent="globals/CircularZoneView" pc="268447658" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="90" parent="globals/CircularZoneView" pc="268447669" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="93" parent="globals/CircularZoneView" pc="268447682" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="94" parent="globals/CircularZoneView" pc="268447716" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="95" parent="globals/CircularZoneView" pc="268447730" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="97" parent="globals/CircularZoneView" pc="268447753" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="99" parent="globals/CircularZoneView" pc="268447767" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="103" parent="globals/CircularZoneView" pc="268447807" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="104" parent="globals/CircularZoneView" pc="268447818" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="106" parent="globals/CircularZoneView" pc="268447828" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="108" parent="globals/CircularZoneView" pc="268447850" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="109" parent="globals/CircularZoneView" pc="268447857" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="110" parent="globals/CircularZoneView" pc="268447880" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="112" parent="globals/CircularZoneView" pc="268447890" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="115" parent="globals/CircularZoneView" pc="268447897" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="116" parent="globals/CircularZoneView" pc="268447934" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="117" parent="globals/CircularZoneView" pc="268447945" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="120" parent="globals/CircularZoneView" pc="268447955" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="122" parent="globals/CircularZoneView" pc="268447995" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="123" parent="globals/CircularZoneView" pc="268448002" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="124" parent="globals/CircularZoneView" pc="268448025" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="126" parent="globals/CircularZoneView" pc="268448035" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="128" parent="globals/CircularZoneView" pc="268448042" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="129" parent="globals/CircularZoneView" pc="268448076" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="131" parent="globals/CircularZoneView" pc="268448107" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="132" parent="globals/CircularZoneView" pc="268448110" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="133" parent="globals/CircularZoneView" pc="268448130" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="135" parent="globals/CircularZoneView" pc="268448174" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="138" parent="globals/CircularZoneView" pc="268448215" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="140" parent="globals/CircularZoneView" pc="268448228" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="141" parent="globals/CircularZoneView" pc="268448241" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="143" parent="globals/CircularZoneView" pc="268448272" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="145" parent="globals/CircularZoneView" pc="268448290" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="146" parent="globals/CircularZoneView" pc="268448357" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="148" parent="globals/CircularZoneView" pc="268448385" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="149" parent="globals/CircularZoneView" pc="268448443" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="151" parent="globals/CircularZoneView" pc="268448489" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="154" parent="globals/CircularZoneView" pc="268448508" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="155" parent="globals/CircularZoneView" pc="268448514" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="157" parent="globals/CircularZoneView" pc="268448518" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="158" parent="globals/CircularZoneView" pc="268448525" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="159" parent="globals/CircularZoneView" pc="268448542" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="161" parent="globals/CircularZoneView" pc="268448627" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="163" parent="globals/CircularZoneView" pc="268448709" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="164" parent="globals/CircularZoneView" pc="268448773" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="165" parent="globals/CircularZoneView" pc="268448808" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="166" parent="globals/CircularZoneView" pc="268448830" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="168" parent="globals/CircularZoneView" pc="268448858" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="169" parent="globals/CircularZoneView" pc="268448877" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="172" parent="globals/CircularZoneView" pc="268448903" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="173" parent="globals/CircularZoneView" pc="268448916" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="174" parent="globals/CircularZoneView" pc="268448929" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="175" parent="globals/CircularZoneView" pc="268448949" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="176" parent="globals/CircularZoneView" pc="268448967" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="177" parent="globals/CircularZoneView" pc="268448974" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="178" parent="globals/CircularZoneView" pc="268448993" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="179" parent="globals/CircularZoneView" pc="268449015" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="181" parent="globals/CircularZoneView" pc="268449033" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="182" parent="globals/CircularZoneView" pc="268449052" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="183" parent="globals/CircularZoneView" pc="268449083" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="184" parent="globals/CircularZoneView" pc="268449094" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="186" parent="globals/CircularZoneView" pc="268449104" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="187" parent="globals/CircularZoneView" pc="268449150" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="188" parent="globals/CircularZoneView" pc="268449206" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="190" parent="globals/CircularZoneView" pc="268449254" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="191" parent="globals/CircularZoneView" pc="268449257" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="192" parent="globals/CircularZoneView" pc="268449277" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="194" parent="globals/CircularZoneView" pc="268449321" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="197" parent="globals/CircularZoneView" pc="268449362" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="198" parent="globals/CircularZoneView" pc="268449375" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="199" parent="globals/CircularZoneView" pc="268449388" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="200" parent="globals/CircularZoneView" pc="268449401" symbol="drawLargeScreen"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="61" lineNum="203" parent="globals/CircularZoneView" pc="268449420" symbol="drawIndicatorLine"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="61" lineNum="205" parent="globals/CircularZoneView" pc="268449424" symbol="drawIndicatorLine"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="61" lineNum="206" parent="globals/CircularZoneView" pc="268449464" symbol="drawIndicatorLine"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="61" lineNum="207" parent="globals/CircularZoneView" pc="268449504" symbol="drawIndicatorLine"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="61" lineNum="208" parent="globals/CircularZoneView" pc="268449547" symbol="drawIndicatorLine"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="61" lineNum="209" parent="globals/CircularZoneView" pc="268449590" symbol="drawIndicatorLine"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="61" lineNum="210" parent="globals/CircularZoneView" pc="268449609" symbol="drawIndicatorLine"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="61" lineNum="211" parent="globals/CircularZoneView" pc="268449623" symbol="drawIndicatorLine"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="62" lineNum="53" parent="globals/CircularZoneView" pc="268449644" symbol="onTimerStop"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="62" lineNum="54" parent="globals/CircularZoneView" pc="268449646" symbol="onTimerStop"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\PowerRunningZoneApp.mc" id="63" lineNum="10" parent="globals/PowerRunningZoneApp" pc="268449665" symbol="onStart"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\PowerRunningZoneApp.mc" id="64" lineNum="18" parent="globals/PowerRunningZoneApp" pc="268449668" symbol="getInitialView"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\PowerRunningZoneApp.mc" id="64" lineNum="19" parent="globals/PowerRunningZoneApp" pc="268449670" symbol="getInitialView"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\PowerRunningZoneApp.mc" id="65" lineNum="5" parent="globals/PowerRunningZoneApp" pc="268449711" symbol="initialize"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\PowerRunningZoneApp.mc" id="65" lineNum="6" parent="globals/PowerRunningZoneApp" pc="268449713" symbol="initialize"/>
-<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\PowerRunningZoneApp.mc" id="66" lineNum="14" parent="globals/PowerRunningZoneApp" pc="268449732" symbol="onStop"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="35" lineNum="179" parent="globals/ZoneManagment" pc="268444351" symbol="GetZone"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="35" lineNum="180" parent="globals/ZoneManagment" pc="268444355" symbol="GetZone"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="35" lineNum="181" parent="globals/ZoneManagment" pc="268444362" symbol="GetZone"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="35" lineNum="182" parent="globals/ZoneManagment" pc="268444369" symbol="GetZone"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="35" lineNum="183" parent="globals/ZoneManagment" pc="268444385" symbol="GetZone"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="35" lineNum="184" parent="globals/ZoneManagment" pc="268444398" symbol="GetZone"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="35" lineNum="186" parent="globals/ZoneManagment" pc="268444416" symbol="GetZone"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="36" lineNum="225" parent="globals/ZoneManagment" pc="268444419" symbol="Start"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="36" lineNum="227" parent="globals/ZoneManagment" pc="268444421" symbol="Start"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="36" lineNum="228" parent="globals/ZoneManagment" pc="268444433" symbol="Start"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="37" lineNum="230" parent="globals/ZoneManagment" pc="268444447" symbol="Stop"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="37" lineNum="232" parent="globals/ZoneManagment" pc="268444449" symbol="Stop"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="38" lineNum="188" parent="globals/ZoneManagment" pc="268444463" symbol="GetLapZone"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="38" lineNum="189" parent="globals/ZoneManagment" pc="268444467" symbol="GetLapZone"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="38" lineNum="190" parent="globals/ZoneManagment" pc="268444474" symbol="GetLapZone"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="38" lineNum="191" parent="globals/ZoneManagment" pc="268444487" symbol="GetLapZone"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="38" lineNum="193" parent="globals/ZoneManagment" pc="268444511" symbol="GetLapZone"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="39" lineNum="48" parent="globals/ZoneManagment" pc="268444514" symbol="Update"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="39" lineNum="50" parent="globals/ZoneManagment" pc="268444518" symbol="Update"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="39" lineNum="51" parent="globals/ZoneManagment" pc="268444525" symbol="Update"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="39" lineNum="52" parent="globals/ZoneManagment" pc="268444532" symbol="Update"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="39" lineNum="53" parent="globals/ZoneManagment" pc="268444559" symbol="Update"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="39" lineNum="54" parent="globals/ZoneManagment" pc="268444582" symbol="Update"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="39" lineNum="57" parent="globals/ZoneManagment" pc="268444597" symbol="Update"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="39" lineNum="58" parent="globals/ZoneManagment" pc="268444610" symbol="Update"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="39" lineNum="60" parent="globals/ZoneManagment" pc="268444638" symbol="Update"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="39" lineNum="62" parent="globals/ZoneManagment" pc="268444651" symbol="Update"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="39" lineNum="63" parent="globals/ZoneManagment" pc="268444667" symbol="Update"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="39" lineNum="64" parent="globals/ZoneManagment" pc="268444683" symbol="Update"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="39" lineNum="65" parent="globals/ZoneManagment" pc="268444704" symbol="Update"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="39" lineNum="66" parent="globals/ZoneManagment" pc="268444724" symbol="Update"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="39" lineNum="68" parent="globals/ZoneManagment" pc="268444778" symbol="Update"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="40" lineNum="148" parent="globals/ZoneManagment" pc="268444795" symbol="GetWorkoutRepeatCount"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="40" lineNum="149" parent="globals/ZoneManagment" pc="268444799" symbol="GetWorkoutRepeatCount"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="40" lineNum="150" parent="globals/ZoneManagment" pc="268444816" symbol="GetWorkoutRepeatCount"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="40" lineNum="151" parent="globals/ZoneManagment" pc="268444822" symbol="GetWorkoutRepeatCount"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="40" lineNum="153" parent="globals/ZoneManagment" pc="268444831" symbol="GetWorkoutRepeatCount"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="40" lineNum="154" parent="globals/ZoneManagment" pc="268444841" symbol="GetWorkoutRepeatCount"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="40" lineNum="155" parent="globals/ZoneManagment" pc="268444847" symbol="GetWorkoutRepeatCount"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="40" lineNum="157" parent="globals/ZoneManagment" pc="268444856" symbol="GetWorkoutRepeatCount"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="40" lineNum="158" parent="globals/ZoneManagment" pc="268444868" symbol="GetWorkoutRepeatCount"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="40" lineNum="160" parent="globals/ZoneManagment" pc="268444877" symbol="GetWorkoutRepeatCount"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="40" lineNum="161" parent="globals/ZoneManagment" pc="268444887" symbol="GetWorkoutRepeatCount"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="40" lineNum="162" parent="globals/ZoneManagment" pc="268444904" symbol="GetWorkoutRepeatCount"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="40" lineNum="164" parent="globals/ZoneManagment" pc="268444913" symbol="GetWorkoutRepeatCount"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="41" lineNum="195" parent="globals/ZoneManagment" pc="268444925" symbol="setZones"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="41" lineNum="197" parent="globals/ZoneManagment" pc="268444929" symbol="setZones"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="41" lineNum="198" parent="globals/ZoneManagment" pc="268444943" symbol="setZones"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="41" lineNum="199" parent="globals/ZoneManagment" pc="268444967" symbol="setZones"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="41" lineNum="200" parent="globals/ZoneManagment" pc="268444991" symbol="setZones"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="41" lineNum="201" parent="globals/ZoneManagment" pc="268445021" symbol="setZones"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="41" lineNum="202" parent="globals/ZoneManagment" pc="268445044" symbol="setZones"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="41" lineNum="204" parent="globals/ZoneManagment" pc="268445066" symbol="setZones"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="41" lineNum="205" parent="globals/ZoneManagment" pc="268445096" symbol="setZones"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="41" lineNum="206" parent="globals/ZoneManagment" pc="268445126" symbol="setZones"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="41" lineNum="207" parent="globals/ZoneManagment" pc="268445156" symbol="setZones"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="41" lineNum="208" parent="globals/ZoneManagment" pc="268445186" symbol="setZones"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="41" lineNum="209" parent="globals/ZoneManagment" pc="268445214" symbol="setZones"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="41" lineNum="210" parent="globals/ZoneManagment" pc="268445242" symbol="setZones"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="41" lineNum="211" parent="globals/ZoneManagment" pc="268445270" symbol="setZones"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="41" lineNum="212" parent="globals/ZoneManagment" pc="268445298" symbol="setZones"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="42" lineNum="215" parent="globals/ZoneManagment" pc="268445348" symbol="LapComplete"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="42" lineNum="218" parent="globals/ZoneManagment" pc="268445350" symbol="LapComplete"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="42" lineNum="219" parent="globals/ZoneManagment" pc="268445367" symbol="LapComplete"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="42" lineNum="221" parent="globals/ZoneManagment" pc="268445386" symbol="LapComplete"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="42" lineNum="222" parent="globals/ZoneManagment" pc="268445402" symbol="LapComplete"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="42" lineNum="223" parent="globals/ZoneManagment" pc="268445415" symbol="LapComplete"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="43" lineNum="234" parent="globals/ZoneManagment" pc="268445438" symbol="GetHeartRateZone"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="43" lineNum="235" parent="globals/ZoneManagment" pc="268445442" symbol="GetHeartRateZone"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="43" lineNum="236" parent="globals/ZoneManagment" pc="268445465" symbol="GetHeartRateZone"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="43" lineNum="237" parent="globals/ZoneManagment" pc="268445497" symbol="GetHeartRateZone"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="43" lineNum="238" parent="globals/ZoneManagment" pc="268445509" symbol="GetHeartRateZone"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="43" lineNum="240" parent="globals/ZoneManagment" pc="268445514" symbol="GetHeartRateZone"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="43" lineNum="241" parent="globals/ZoneManagment" pc="268445538" symbol="GetHeartRateZone"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="43" lineNum="242" parent="globals/ZoneManagment" pc="268445549" symbol="GetHeartRateZone"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="43" lineNum="245" parent="globals/ZoneManagment" pc="268445568" symbol="GetHeartRateZone"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="44" lineNum="76" parent="globals/ZoneManagment" pc="268445570" symbol="calculateAvgPower"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="44" lineNum="81" parent="globals/ZoneManagment" pc="268445574" symbol="calculateAvgPower"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="44" lineNum="82" parent="globals/ZoneManagment" pc="268445581" symbol="calculateAvgPower"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="44" lineNum="83" parent="globals/ZoneManagment" pc="268445600" symbol="calculateAvgPower"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="44" lineNum="85" parent="globals/ZoneManagment" pc="268445631" symbol="calculateAvgPower"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="44" lineNum="86" parent="globals/ZoneManagment" pc="268445642" symbol="calculateAvgPower"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="44" lineNum="87" parent="globals/ZoneManagment" pc="268445649" symbol="calculateAvgPower"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="44" lineNum="89" parent="globals/ZoneManagment" pc="268445683" symbol="calculateAvgPower"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="44" lineNum="92" parent="globals/ZoneManagment" pc="268445717" symbol="calculateAvgPower"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="44" lineNum="94" parent="globals/ZoneManagment" pc="268445721" symbol="calculateAvgPower"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="45" lineNum="116" parent="globals/ZoneManagment" pc="268445724" symbol="GetTimeLeft"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="45" lineNum="117" parent="globals/ZoneManagment" pc="268445728" symbol="GetTimeLeft"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="45" lineNum="118" parent="globals/ZoneManagment" pc="268445745" symbol="GetTimeLeft"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="45" lineNum="119" parent="globals/ZoneManagment" pc="268445814" symbol="GetTimeLeft"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="45" lineNum="122" parent="globals/ZoneManagment" pc="268445832" symbol="GetTimeLeft"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="45" lineNum="123" parent="globals/ZoneManagment" pc="268445849" symbol="GetTimeLeft"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="45" lineNum="124" parent="globals/ZoneManagment" pc="268445855" symbol="GetTimeLeft"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="45" lineNum="126" parent="globals/ZoneManagment" pc="268445873" symbol="GetTimeLeft"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="45" lineNum="127" parent="globals/ZoneManagment" pc="268445883" symbol="GetTimeLeft"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="45" lineNum="128" parent="globals/ZoneManagment" pc="268445889" symbol="GetTimeLeft"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="45" lineNum="130" parent="globals/ZoneManagment" pc="268445907" symbol="GetTimeLeft"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="45" lineNum="131" parent="globals/ZoneManagment" pc="268445918" symbol="GetTimeLeft"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="45" lineNum="132" parent="globals/ZoneManagment" pc="268445940" symbol="GetTimeLeft"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="45" lineNum="135" parent="globals/ZoneManagment" pc="268445949" symbol="GetTimeLeft"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="45" lineNum="136" parent="globals/ZoneManagment" pc="268445966" symbol="GetTimeLeft"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="45" lineNum="138" parent="globals/ZoneManagment" pc="268445984" symbol="GetTimeLeft"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="45" lineNum="139" parent="globals/ZoneManagment" pc="268446009" symbol="GetTimeLeft"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="46" lineNum="166" parent="globals/ZoneManagment" pc="268446021" symbol="getZone"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="46" lineNum="167" parent="globals/ZoneManagment" pc="268446025" symbol="getZone"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="46" lineNum="168" parent="globals/ZoneManagment" pc="268446032" symbol="getZone"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="46" lineNum="169" parent="globals/ZoneManagment" pc="268446062" symbol="getZone"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="46" lineNum="170" parent="globals/ZoneManagment" pc="268446096" symbol="getZone"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="46" lineNum="173" parent="globals/ZoneManagment" pc="268446182" symbol="getZone"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="46" lineNum="174" parent="globals/ZoneManagment" pc="268446220" symbol="getZone"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="46" lineNum="176" parent="globals/ZoneManagment" pc="268446254" symbol="getZone"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="47" lineNum="96" parent="globals/ZoneManagment" pc="268446257" symbol="GetWorkoutZone"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="47" lineNum="98" parent="globals/ZoneManagment" pc="268446261" symbol="GetWorkoutZone"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="47" lineNum="99" parent="globals/ZoneManagment" pc="268446278" symbol="GetWorkoutZone"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="47" lineNum="100" parent="globals/ZoneManagment" pc="268446284" symbol="GetWorkoutZone"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="47" lineNum="102" parent="globals/ZoneManagment" pc="268446289" symbol="GetWorkoutZone"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="47" lineNum="103" parent="globals/ZoneManagment" pc="268446299" symbol="GetWorkoutZone"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="47" lineNum="104" parent="globals/ZoneManagment" pc="268446305" symbol="GetWorkoutZone"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="47" lineNum="106" parent="globals/ZoneManagment" pc="268446310" symbol="GetWorkoutZone"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="47" lineNum="107" parent="globals/ZoneManagment" pc="268446317" symbol="GetWorkoutZone"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="47" lineNum="108" parent="globals/ZoneManagment" pc="268446335" symbol="GetWorkoutZone"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="47" lineNum="109" parent="globals/ZoneManagment" pc="268446342" symbol="GetWorkoutZone"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="47" lineNum="111" parent="globals/ZoneManagment" pc="268446374" symbol="GetWorkoutZone"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="47" lineNum="114" parent="globals/ZoneManagment" pc="268446390" symbol="GetWorkoutZone"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="48" lineNum="70" parent="globals/ZoneManagment" pc="268446393" symbol="GetPower"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="48" lineNum="71" parent="globals/ZoneManagment" pc="268446395" symbol="GetPower"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="48" lineNum="72" parent="globals/ZoneManagment" pc="268446407" symbol="GetPower"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="48" lineNum="74" parent="globals/ZoneManagment" pc="268446423" symbol="GetPower"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="49" lineNum="141" parent="globals/ZoneManagment" pc="268446432" symbol="GetWorkoutStepIntensity"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="49" lineNum="142" parent="globals/ZoneManagment" pc="268446436" symbol="GetWorkoutStepIntensity"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="49" lineNum="143" parent="globals/ZoneManagment" pc="268446453" symbol="GetWorkoutStepIntensity"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="49" lineNum="144" parent="globals/ZoneManagment" pc="268446459" symbol="GetWorkoutStepIntensity"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\ZoneManagment.mc" id="49" lineNum="146" parent="globals/ZoneManagment" pc="268446464" symbol="GetWorkoutStepIntensity"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="51" lineNum="56" parent="globals/CircularZoneView" pc="268446473" symbol="onTimerLap"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="51" lineNum="57" parent="globals/CircularZoneView" pc="268446477" symbol="onTimerLap"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="51" lineNum="58" parent="globals/CircularZoneView" pc="268446494" symbol="onTimerLap"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="52" lineNum="60" parent="globals/CircularZoneView" pc="268446515" symbol="onWorkoutStepComplete"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="52" lineNum="61" parent="globals/CircularZoneView" pc="268446519" symbol="onWorkoutStepComplete"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="52" lineNum="62" parent="globals/CircularZoneView" pc="268446536" symbol="onWorkoutStepComplete"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="53" lineNum="50" parent="globals/CircularZoneView" pc="268446557" symbol="onTimerStart"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="53" lineNum="51" parent="globals/CircularZoneView" pc="268446559" symbol="onTimerStart"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="54" lineNum="43" parent="globals/CircularZoneView" pc="268446578" symbol="onValueChanged"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="54" lineNum="44" parent="globals/CircularZoneView" pc="268446580" symbol="onValueChanged"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="55" lineNum="213" parent="globals/CircularZoneView" pc="268446591" symbol="getWorkoutIntensityIcon"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="55" lineNum="214" parent="globals/CircularZoneView" pc="268446593" symbol="getWorkoutIntensityIcon"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="55" lineNum="215" parent="globals/CircularZoneView" pc="268446604" symbol="getWorkoutIntensityIcon"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="55" lineNum="216" parent="globals/CircularZoneView" pc="268446615" symbol="getWorkoutIntensityIcon"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="55" lineNum="217" parent="globals/CircularZoneView" pc="268446658" symbol="getWorkoutIntensityIcon"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="55" lineNum="218" parent="globals/CircularZoneView" pc="268446680" symbol="getWorkoutIntensityIcon"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="55" lineNum="219" parent="globals/CircularZoneView" pc="268446723" symbol="getWorkoutIntensityIcon"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="55" lineNum="220" parent="globals/CircularZoneView" pc="268446734" symbol="getWorkoutIntensityIcon"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="55" lineNum="221" parent="globals/CircularZoneView" pc="268446777" symbol="getWorkoutIntensityIcon"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="55" lineNum="222" parent="globals/CircularZoneView" pc="268446788" symbol="getWorkoutIntensityIcon"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="55" lineNum="224" parent="globals/CircularZoneView" pc="268446831" symbol="getWorkoutIntensityIcon"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="55" lineNum="227" parent="globals/CircularZoneView" pc="268446874" symbol="getWorkoutIntensityIcon"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="55" lineNum="228" parent="globals/CircularZoneView" pc="268446885" symbol="getWorkoutIntensityIcon"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="55" lineNum="229" parent="globals/CircularZoneView" pc="268446928" symbol="getWorkoutIntensityIcon"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="55" lineNum="230" parent="globals/CircularZoneView" pc="268446950" symbol="getWorkoutIntensityIcon"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="55" lineNum="231" parent="globals/CircularZoneView" pc="268446993" symbol="getWorkoutIntensityIcon"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="55" lineNum="232" parent="globals/CircularZoneView" pc="268447004" symbol="getWorkoutIntensityIcon"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="55" lineNum="233" parent="globals/CircularZoneView" pc="268447047" symbol="getWorkoutIntensityIcon"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="55" lineNum="234" parent="globals/CircularZoneView" pc="268447058" symbol="getWorkoutIntensityIcon"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="55" lineNum="236" parent="globals/CircularZoneView" pc="268447101" symbol="getWorkoutIntensityIcon"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="56" lineNum="32" parent="globals/CircularZoneView" pc="268447142" symbol="compute"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="56" lineNum="33" parent="globals/CircularZoneView" pc="268447144" symbol="compute"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="56" lineNum="34" parent="globals/CircularZoneView" pc="268447164" symbol="compute"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="56" lineNum="35" parent="globals/CircularZoneView" pc="268447177" symbol="compute"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="56" lineNum="37" parent="globals/CircularZoneView" pc="268447193" symbol="compute"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="56" lineNum="38" parent="globals/CircularZoneView" pc="268447206" symbol="compute"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="56" lineNum="40" parent="globals/CircularZoneView" pc="268447219" symbol="compute"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="56" lineNum="41" parent="globals/CircularZoneView" pc="268447239" symbol="compute"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="57" lineNum="19" parent="globals/CircularZoneView" pc="268447265" symbol="initialize"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="57" lineNum="20" parent="globals/CircularZoneView" pc="268447267" symbol="initialize"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="58" lineNum="23" parent="globals/CircularZoneView" pc="268447286" symbol="onDraw"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="58" lineNum="24" parent="globals/CircularZoneView" pc="268447290" symbol="onDraw"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="58" lineNum="25" parent="globals/CircularZoneView" pc="268447303" symbol="onDraw"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="58" lineNum="27" parent="globals/CircularZoneView" pc="268447316" symbol="onDraw"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="58" lineNum="28" parent="globals/CircularZoneView" pc="268447391" symbol="onDraw"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="58" lineNum="29" parent="globals/CircularZoneView" pc="268447395" symbol="onDraw"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="59" lineNum="47" parent="globals/CircularZoneView" pc="268447432" symbol="onUpdate"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="59" lineNum="48" parent="globals/CircularZoneView" pc="268447434" symbol="onUpdate"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="66" parent="globals/CircularZoneView" pc="268447449" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="67" parent="globals/CircularZoneView" pc="268447453" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="68" parent="globals/CircularZoneView" pc="268447463" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="69" parent="globals/CircularZoneView" pc="268447473" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="70" parent="globals/CircularZoneView" pc="268447480" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="71" parent="globals/CircularZoneView" pc="268447487" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="72" parent="globals/CircularZoneView" pc="268447494" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="73" parent="globals/CircularZoneView" pc="268447517" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="74" parent="globals/CircularZoneView" pc="268447524" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="77" parent="globals/CircularZoneView" pc="268447531" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="78" parent="globals/CircularZoneView" pc="268447553" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="79" parent="globals/CircularZoneView" pc="268447572" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="80" parent="globals/CircularZoneView" pc="268447602" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="81" parent="globals/CircularZoneView" pc="268447612" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="82" parent="globals/CircularZoneView" pc="268447623" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="83" parent="globals/CircularZoneView" pc="268447636" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="84" parent="globals/CircularZoneView" pc="268447647" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="86" parent="globals/CircularZoneView" pc="268447660" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="87" parent="globals/CircularZoneView" pc="268447676" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="88" parent="globals/CircularZoneView" pc="268447687" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="89" parent="globals/CircularZoneView" pc="268447700" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="90" parent="globals/CircularZoneView" pc="268447711" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="93" parent="globals/CircularZoneView" pc="268447724" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="94" parent="globals/CircularZoneView" pc="268447758" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="95" parent="globals/CircularZoneView" pc="268447772" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="97" parent="globals/CircularZoneView" pc="268447795" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="99" parent="globals/CircularZoneView" pc="268447809" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="103" parent="globals/CircularZoneView" pc="268447849" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="104" parent="globals/CircularZoneView" pc="268447860" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="106" parent="globals/CircularZoneView" pc="268447870" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="108" parent="globals/CircularZoneView" pc="268447892" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="109" parent="globals/CircularZoneView" pc="268447899" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="110" parent="globals/CircularZoneView" pc="268447922" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="112" parent="globals/CircularZoneView" pc="268447932" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="115" parent="globals/CircularZoneView" pc="268447939" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="116" parent="globals/CircularZoneView" pc="268447976" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="117" parent="globals/CircularZoneView" pc="268447987" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="120" parent="globals/CircularZoneView" pc="268447997" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="122" parent="globals/CircularZoneView" pc="268448037" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="123" parent="globals/CircularZoneView" pc="268448044" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="124" parent="globals/CircularZoneView" pc="268448067" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="126" parent="globals/CircularZoneView" pc="268448077" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="128" parent="globals/CircularZoneView" pc="268448084" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="129" parent="globals/CircularZoneView" pc="268448118" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="131" parent="globals/CircularZoneView" pc="268448149" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="132" parent="globals/CircularZoneView" pc="268448152" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="133" parent="globals/CircularZoneView" pc="268448172" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="135" parent="globals/CircularZoneView" pc="268448216" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="138" parent="globals/CircularZoneView" pc="268448257" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="140" parent="globals/CircularZoneView" pc="268448270" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="141" parent="globals/CircularZoneView" pc="268448283" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="143" parent="globals/CircularZoneView" pc="268448314" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="145" parent="globals/CircularZoneView" pc="268448332" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="146" parent="globals/CircularZoneView" pc="268448399" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="148" parent="globals/CircularZoneView" pc="268448427" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="149" parent="globals/CircularZoneView" pc="268448485" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="151" parent="globals/CircularZoneView" pc="268448531" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="154" parent="globals/CircularZoneView" pc="268448550" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="155" parent="globals/CircularZoneView" pc="268448556" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="157" parent="globals/CircularZoneView" pc="268448560" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="158" parent="globals/CircularZoneView" pc="268448567" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="159" parent="globals/CircularZoneView" pc="268448584" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="161" parent="globals/CircularZoneView" pc="268448669" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="163" parent="globals/CircularZoneView" pc="268448751" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="164" parent="globals/CircularZoneView" pc="268448815" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="165" parent="globals/CircularZoneView" pc="268448850" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="166" parent="globals/CircularZoneView" pc="268448872" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="168" parent="globals/CircularZoneView" pc="268448900" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="169" parent="globals/CircularZoneView" pc="268448919" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="172" parent="globals/CircularZoneView" pc="268448945" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="173" parent="globals/CircularZoneView" pc="268448958" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="174" parent="globals/CircularZoneView" pc="268448971" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="175" parent="globals/CircularZoneView" pc="268448991" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="176" parent="globals/CircularZoneView" pc="268449009" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="177" parent="globals/CircularZoneView" pc="268449016" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="178" parent="globals/CircularZoneView" pc="268449035" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="179" parent="globals/CircularZoneView" pc="268449057" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="181" parent="globals/CircularZoneView" pc="268449075" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="182" parent="globals/CircularZoneView" pc="268449094" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="183" parent="globals/CircularZoneView" pc="268449125" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="184" parent="globals/CircularZoneView" pc="268449136" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="186" parent="globals/CircularZoneView" pc="268449146" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="187" parent="globals/CircularZoneView" pc="268449192" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="188" parent="globals/CircularZoneView" pc="268449248" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="190" parent="globals/CircularZoneView" pc="268449296" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="191" parent="globals/CircularZoneView" pc="268449299" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="192" parent="globals/CircularZoneView" pc="268449319" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="194" parent="globals/CircularZoneView" pc="268449363" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="197" parent="globals/CircularZoneView" pc="268449404" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="198" parent="globals/CircularZoneView" pc="268449417" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="199" parent="globals/CircularZoneView" pc="268449430" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="60" lineNum="200" parent="globals/CircularZoneView" pc="268449443" symbol="drawLargeScreen"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="61" lineNum="203" parent="globals/CircularZoneView" pc="268449462" symbol="drawIndicatorLine"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="61" lineNum="205" parent="globals/CircularZoneView" pc="268449466" symbol="drawIndicatorLine"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="61" lineNum="206" parent="globals/CircularZoneView" pc="268449506" symbol="drawIndicatorLine"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="61" lineNum="207" parent="globals/CircularZoneView" pc="268449546" symbol="drawIndicatorLine"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="61" lineNum="208" parent="globals/CircularZoneView" pc="268449589" symbol="drawIndicatorLine"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="61" lineNum="209" parent="globals/CircularZoneView" pc="268449632" symbol="drawIndicatorLine"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="61" lineNum="210" parent="globals/CircularZoneView" pc="268449651" symbol="drawIndicatorLine"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="61" lineNum="211" parent="globals/CircularZoneView" pc="268449665" symbol="drawIndicatorLine"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="62" lineNum="53" parent="globals/CircularZoneView" pc="268449686" symbol="onTimerStop"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\CircularZoneView.mc" id="62" lineNum="54" parent="globals/CircularZoneView" pc="268449688" symbol="onTimerStop"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\PowerRunningZoneApp.mc" id="63" lineNum="10" parent="globals/PowerRunningZoneApp" pc="268449707" symbol="onStart"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\PowerRunningZoneApp.mc" id="64" lineNum="18" parent="globals/PowerRunningZoneApp" pc="268449710" symbol="getInitialView"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\PowerRunningZoneApp.mc" id="64" lineNum="19" parent="globals/PowerRunningZoneApp" pc="268449712" symbol="getInitialView"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\PowerRunningZoneApp.mc" id="65" lineNum="5" parent="globals/PowerRunningZoneApp" pc="268449753" symbol="initialize"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\PowerRunningZoneApp.mc" id="65" lineNum="6" parent="globals/PowerRunningZoneApp" pc="268449755" symbol="initialize"/>
+<entry filename="E:\\Users\\joeal\\OneDrive\\Documents\\Github\\PowerRunningZone\\source\\PowerRunningZoneApp.mc" id="66" lineNum="14" parent="globals/PowerRunningZoneApp" pc="268449774" symbol="onStop"/>
 </pcToLineNum>
 <symbolTable>
 <entry id="8388639" module="true" symbol="Graphics"/>
 <entry field="true" id="76" symbol="valueFont"/>
-<entry field="true" id="106" symbol="CooldownIconWhite"/>
+<entry field="true" id="107" symbol="CooldownIconWhite"/>
 <entry id="84" method="true" symbol="GetZone"/>
 <entry field="true" id="47" symbol="powerEff"/>
 <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
@@ -648,16 +651,16 @@
 <entry field="true" id="24" symbol="totalSpeed"/>
 <entry id="33" method="true" symbol="drawRectangleAndText"/>
 <entry field="true" id="49" symbol="prevLapPower"/>
-<entry field="true" id="110" symbol="PowerIcon"/>
+<entry field="true" id="111" symbol="PowerIcon"/>
 <entry id="77" method="true" symbol="GetHeartRateZone"/>
-<entry field="true" id="122" symbol="zone3_low_p_title"/>
+<entry field="true" id="123" symbol="zone3_low_p_title"/>
 <entry id="52" method="true" symbol="roundFaceGFX"/>
-<entry field="true" id="107" symbol="Heart"/>
+<entry field="true" id="108" symbol="Heart"/>
 <entry field="true" id="23" symbol="totalPower"/>
 <entry id="10" object="true" symbol="ZoneManagment"/>
 <entry field="true" id="44" symbol="mTimerState"/>
 <entry id="8389748" method="true" symbol="onTimerStop"/>
-<entry field="true" id="105" symbol="CooldownIcon"/>
+<entry field="true" id="106" symbol="CooldownIcon"/>
 <entry id="8388647" module="true" symbol="UserProfile"/>
 <entry field="true" id="8388611" module="true" symbol="Toybox"/>
 <entry field="true" id="11" symbol="avg"/>
@@ -666,36 +669,37 @@
 <entry id="80" method="true" symbol="GetTimeLeft"/>
 <entry id="8389747" method="true" symbol="onTimerStart"/>
 <entry field="true" id="14" symbol="elevchange"/>
-<entry field="true" id="116" symbol="AppName"/>
+<entry field="true" id="117" symbol="AppName"/>
 <entry field="true" id="50" symbol="prevLapPowerTime"/>
 <entry id="4" module="true" symbol="globals/Rez/Strings"/>
 <entry field="true" id="21" symbol="totalDist"/>
-<entry field="true" id="111" symbol="PowerIconWhite"/>
+<entry field="true" id="112" symbol="PowerIconWhite"/>
 <entry id="8" object="true" symbol="PowerRunningZoneView"/>
 <entry field="true" id="8388947" method="true" symbol="value"/>
 <entry id="8388648" module="true" symbol="WatchUi"/>
-<entry field="true" id="101" symbol="zoneColors"/>
+<entry field="true" id="102" symbol="zoneColors"/>
 <entry id="83" method="true" symbol="GetWorkoutZone"/>
-<entry field="true" id="119" symbol="vibrate_zone_change_title"/>
-<entry field="true" id="123" symbol="zone4_low_p_title"/>
-<entry field="true" id="108" symbol="HeartWhite"/>
-<entry field="true" id="89" symbol="lapTime"/>
+<entry field="true" id="120" symbol="vibrate_zone_change_title"/>
+<entry field="true" id="124" symbol="zone4_low_p_title"/>
+<entry field="true" id="109" symbol="HeartWhite"/>
+<entry field="true" id="90" symbol="lapTime"/>
 <entry field="true" id="8389138" symbol="label"/>
 <entry field="true" id="71" symbol="labelFont"/>
 <entry id="2" module="true" symbol="globals/Rez"/>
 <entry field="true" id="48" symbol="powerZone"/>
+<entry field="true" id="89" symbol="intervalStepRecovery"/>
 <entry id="8389124" method="true" symbol="onUpdate"/>
 <entry field="true" id="63" symbol="zone4low"/>
-<entry field="true" id="118" symbol="alert_zone_change_title"/>
+<entry field="true" id="119" symbol="alert_zone_change_title"/>
 <entry id="25" method="true" symbol="alertZone"/>
-<entry field="true" id="91" symbol="zoneLow"/>
+<entry field="true" id="92" symbol="zoneLow"/>
 <entry field="true" id="29" symbol="currentPowerZone"/>
 <entry id="31" method="true" symbol="drawBottomLeft"/>
 <entry id="88" method="true" symbol="Update"/>
 <entry id="8388771" module="true" object="true" symbol="Drawables"/>
 <entry field="true" id="58" symbol="vibrateZoneChange"/>
 <entry id="36" method="true" symbol="drawValue"/>
-<entry field="true" id="96" symbol="lapPowerColor"/>
+<entry field="true" id="97" symbol="lapPowerColor"/>
 <entry id="6" object="true" symbol="DrawAttributes"/>
 <entry field="true" id="22" symbol="totalGap"/>
 <entry field="true" id="46" symbol="pe"/>
@@ -705,16 +709,16 @@
 <entry field="true" id="75" symbol="valueDimensions"/>
 <entry field="true" id="67" symbol="baseLocation"/>
 <entry id="78" method="true" symbol="GetLapZone"/>
-<entry field="true" id="99" symbol="textBackgroundColor"/>
+<entry field="true" id="100" symbol="textBackgroundColor"/>
 <entry id="35" method="true" symbol="drawTopRight"/>
-<entry field="true" id="117" symbol="alert_lap_title"/>
-<entry field="true" id="114" symbol="WarmupIcon"/>
+<entry field="true" id="118" symbol="alert_lap_title"/>
+<entry field="true" id="115" symbol="WarmupIcon"/>
 <entry field="true" id="45" symbol="obscurity"/>
 <entry id="82" method="true" symbol="GetWorkoutStepIntensity"/>
 <entry field="true" id="68" symbol="bkColor"/>
 <entry id="8389137" method="true" symbol="compute"/>
 <entry id="79" method="true" symbol="GetPower"/>
-<entry field="true" id="124" symbol="zone5_low_p_title"/>
+<entry field="true" id="125" symbol="zone5_low_p_title"/>
 <entry field="true" id="8388742" symbol="currentPower"/>
 <entry id="54" method="true" symbol="setZones"/>
 <entry id="32" method="true" symbol="drawBottomRight"/>
@@ -725,9 +729,9 @@
 <entry id="3" module="true" symbol="globals/Rez/Drawables"/>
 <entry id="16" method="true" symbol="getGap"/>
 <entry field="true" id="8391589" symbol="repetitionNumber"/>
-<entry id="93" method="true" symbol="drawIndicatorLine"/>
+<entry id="94" method="true" symbol="drawIndicatorLine"/>
 <entry field="true" id="40" symbol="lapPower"/>
-<entry field="true" id="104" symbol="ActiveIconWhite"/>
+<entry field="true" id="105" symbol="ActiveIconWhite"/>
 <entry id="57" method="true" symbol="vibrateZone"/>
 <entry id="37" method="true" symbol="getZone"/>
 <entry field="true" id="15" symbol="gapData"/>
@@ -735,24 +739,24 @@
 <entry field="true" id="13" symbol="elevation"/>
 <entry id="8388644" module="true" symbol="System"/>
 <entry id="8388769" module="true" object="true" symbol="Rez"/>
-<entry field="true" id="92" symbol="currentPowerColor"/>
-<entry field="true" id="125" symbol="zone6_low_p_title"/>
+<entry field="true" id="93" symbol="currentPowerColor"/>
+<entry field="true" id="126" symbol="zone6_low_p_title"/>
 <entry id="34" method="true" symbol="drawTopLeft"/>
-<entry id="98" method="true" symbol="onValueChanged"/>
+<entry id="99" method="true" symbol="onValueChanged"/>
 <entry id="39" method="true" symbol="lapComplete"/>
 <entry field="true" id="65" symbol="zone6low"/>
-<entry field="true" id="102" symbol="zoneThresholds"/>
+<entry field="true" id="103" symbol="zoneThresholds"/>
 <entry id="8388640" module="true" symbol="Lang"/>
 <entry field="true" id="69" symbol="dimensions"/>
 <entry id="86" method="true" symbol="Start"/>
 <entry field="true" id="41" symbol="lapStartTime"/>
 <entry field="true" id="19" symbol="pwrdict"/>
-<entry field="true" id="109" symbol="LauncherIcon"/>
+<entry field="true" id="110" symbol="LauncherIcon"/>
 <entry id="8388610" symbol="statics"/>
 <entry id="85" method="true" symbol="LapComplete"/>
 <entry field="true" id="12" symbol="avgPoint"/>
 <entry id="8389350" module="true" symbol="globals"/>
-<entry field="true" id="112" symbol="RecoveryIcon"/>
+<entry field="true" id="113" symbol="RecoveryIcon"/>
 <entry field="true" id="8388958" symbol="speed"/>
 <entry id="8388770" module="true" object="true" symbol="Strings"/>
 <entry id="87" method="true" symbol="Stop"/>
@@ -762,34 +766,34 @@
 <entry id="8389279" method="true" symbol="onStart"/>
 <entry id="8388641" module="true" symbol="Math"/>
 <entry field="true" id="26" symbol="alertZoneChange"/>
-<entry id="95" method="true" symbol="getWorkoutIntensityIcon"/>
-<entry field="true" id="120" symbol="zone1_low_p_title"/>
-<entry field="true" id="113" symbol="RecoveryIconWhite"/>
+<entry id="96" method="true" symbol="getWorkoutIntensityIcon"/>
+<entry field="true" id="121" symbol="zone1_low_p_title"/>
+<entry field="true" id="114" symbol="RecoveryIconWhite"/>
 <entry id="5" object="true" symbol="CircularZoneView"/>
 <entry field="true" id="66" symbol="zone7low"/>
-<entry field="true" id="115" symbol="WarmupIconWhite"/>
-<entry field="true" id="126" symbol="zone7_low_p_title"/>
+<entry field="true" id="116" symbol="WarmupIconWhite"/>
+<entry field="true" id="127" symbol="zone7_low_p_title"/>
 <entry id="8389751" method="true" symbol="onTimerLap"/>
 <entry id="8389280" method="true" symbol="getInitialView"/>
 <entry field="true" id="30" symbol="currentZoneCount"/>
 <entry id="8389281" method="true" symbol="onStop"/>
-<entry id="94" method="true" symbol="drawLargeScreen"/>
+<entry id="95" method="true" symbol="drawLargeScreen"/>
 <entry field="true" id="42" symbol="lapStepCountStart"/>
 <entry field="true" id="18" symbol="prevElev"/>
-<entry field="true" id="90" symbol="zoneHigh"/>
-<entry field="true" id="103" symbol="ActiveIcon"/>
+<entry field="true" id="91" symbol="zoneHigh"/>
+<entry field="true" id="104" symbol="ActiveIcon"/>
 <entry id="8388636" module="true" symbol="Attention"/>
 <entry field="true" id="60" symbol="zone1low"/>
 <entry id="27" method="true" symbol="alertZoneTone"/>
-<entry field="true" id="100" symbol="textForegroundColor"/>
+<entry field="true" id="101" symbol="textForegroundColor"/>
 <entry id="7" object="true" symbol="PowerRunningZoneApp"/>
 <entry id="9" object="true" symbol="RunningPowerEfficiency"/>
 <entry id="8388988" method="true" symbol="backlight"/>
-<entry id="97" method="true" symbol="onDraw"/>
+<entry id="98" method="true" symbol="onDraw"/>
 <entry id="55" method="true" symbol="squareFaceGFX"/>
 <entry field="true" id="73" symbol="location"/>
 <entry field="true" id="72" symbol="labelLocation"/>
-<entry field="true" id="121" symbol="zone2_low_p_title"/>
+<entry field="true" id="122" symbol="zone2_low_p_title"/>
 <entry id="53" method="true" symbol="setZoneColor"/>
 <entry field="true" id="38" symbol="lapAlertZone"/>
 </symbolTable>
@@ -898,85 +902,85 @@
 <entry endPc="268445723" name="newAvg" stackId="5" startPc="268445574"/>
 <entry endPc="268445723" name="totalTimeInSeconds" stackId="6" startPc="268445574"/>
 <entry endPc="268445723" name="timeDiffInSeconds" stackId="7" startPc="268445574"/>
-<entry endPc="268445978" name="sysInfo" stackId="1" startPc="268445728"/>
-<entry endPc="268445978" name="workoutStepInfo" stackId="2" startPc="268445728"/>
-<entry endPc="268445978" name="step" stackId="3" startPc="268445728"/>
-<entry endPc="268445978" name="timeLeft" stackId="4" startPc="268445728"/>
-<entry arg="true" endPc="268446214" name="power" stackId="1" startPc="268445979"/>
-<entry endPc="268446214" name="zone" stackId="2" startPc="268445983"/>
-<entry endPc="268446139" name="i" stackId="3" startPc="268446020"/>
-<entry endPc="268446350" name="step" stackId="1" startPc="268446219"/>
-<entry endPc="268446350" name="notes" stackId="2" startPc="268446219"/>
-<entry endPc="268446350" name="powerZone" stackId="3" startPc="268446219"/>
-<entry endPc="268446350" name="powerZoneIndex" stackId="4" startPc="268446219"/>
-<entry endPc="268446344" name="powerZoneString" stackId="5" startPc="268446300"/>
-<entry endPc="268446430" name="step" stackId="1" startPc="268446394"/>
-<entry endPc="268446471" name="info" stackId="1" startPc="268446435"/>
+<entry endPc="268446020" name="sysInfo" stackId="1" startPc="268445728"/>
+<entry endPc="268446020" name="workoutStepInfo" stackId="2" startPc="268445728"/>
+<entry endPc="268446020" name="step" stackId="3" startPc="268445728"/>
+<entry endPc="268446020" name="timeLeft" stackId="4" startPc="268445728"/>
+<entry arg="true" endPc="268446256" name="power" stackId="1" startPc="268446021"/>
+<entry endPc="268446256" name="zone" stackId="2" startPc="268446025"/>
+<entry endPc="268446181" name="i" stackId="3" startPc="268446062"/>
+<entry endPc="268446392" name="step" stackId="1" startPc="268446261"/>
+<entry endPc="268446392" name="notes" stackId="2" startPc="268446261"/>
+<entry endPc="268446392" name="powerZone" stackId="3" startPc="268446261"/>
+<entry endPc="268446392" name="powerZoneIndex" stackId="4" startPc="268446261"/>
+<entry endPc="268446386" name="powerZoneString" stackId="5" startPc="268446342"/>
+<entry endPc="268446472" name="step" stackId="1" startPc="268446436"/>
 <entry endPc="268446513" name="info" stackId="1" startPc="268446477"/>
-<entry arg="true" endPc="268446548" name="newValue" stackId="1" startPc="268446536"/>
-<entry arg="true" endPc="268447099" name="stepType" stackId="1" startPc="268446549"/>
-<entry arg="true" endPc="268447099" name="backgroundColor" stackId="2" startPc="268446549"/>
-<entry arg="true" endPc="268447222" name="info" stackId="1" startPc="268447100"/>
-<entry arg="true" endPc="268447389" name="dc" stackId="1" startPc="268447244"/>
-<entry endPc="268447388" name="screenWidth" stackId="2" startPc="268447248"/>
-<entry endPc="268447388" name="screenHeight" stackId="3" startPc="268447248"/>
-<entry endPc="268447383" name="e" stackId="4" startPc="268447349"/>
-<entry arg="true" endPc="268447406" name="dc" stackId="1" startPc="268447390"/>
-<entry arg="true" endPc="268449419" name="screenWidth" stackId="1" startPc="268447407"/>
-<entry arg="true" endPc="268449419" name="screenHeight" stackId="2" startPc="268447407"/>
-<entry arg="true" endPc="268449419" name="dc" stackId="3" startPc="268447407"/>
-<entry arg="true" endPc="268449419" name="value" stackId="4" startPc="268447407"/>
-<entry arg="true" endPc="268449419" name="zone" stackId="5" startPc="268447407"/>
-<entry arg="true" endPc="268449419" name="lapPowerZone" stackId="6" startPc="268447407"/>
-<entry endPc="268449418" name="centerX" stackId="7" startPc="268447411"/>
-<entry endPc="268449418" name="centerY" stackId="8" startPc="268447411"/>
-<entry endPc="268449418" name="lineThickness" stackId="9" startPc="268447411"/>
-<entry endPc="268449418" name="lineWidth" stackId="10" startPc="268447411"/>
-<entry endPc="268449418" name="lineOffset" stackId="11" startPc="268447411"/>
-<entry endPc="268449418" name="radius" stackId="12" startPc="268447411"/>
-<entry endPc="268449418" name="startAngle" stackId="13" startPc="268447411"/>
-<entry endPc="268449418" name="totalArc" stackId="14" startPc="268447411"/>
-<entry endPc="268449418" name="zoneAngle" stackId="15" startPc="268447411"/>
-<entry endPc="268449418" name="targetPower" stackId="16" startPc="268447411"/>
-<entry endPc="268447806" name="i" stackId="17" startPc="268447560"/>
-<entry endPc="268447793" name="startZoneAngle" stackId="18" startPc="268447560"/>
-<entry endPc="268447793" name="endZoneAngle" stackId="19" startPc="268447560"/>
-<entry endPc="268449418" name="indicatorAngle" stackId="20" startPc="268447411"/>
-<entry endPc="268449418" name="lapPowerWidth" stackId="21" startPc="268447411"/>
-<entry endPc="268449418" name="powerWidth" stackId="22" startPc="268447411"/>
-<entry endPc="268449418" name="powerPosition" stackId="23" startPc="268447411"/>
-<entry endPc="268449418" name="icon" stackId="24" startPc="268447411"/>
-<entry endPc="268449418" name="iconWidth" stackId="25" startPc="268447411"/>
-<entry endPc="268449418" name="iconX" stackId="26" startPc="268447411"/>
-<entry endPc="268449418" name="iconY" stackId="27" startPc="268447411"/>
-<entry endPc="268449418" name="timeLeft" stackId="28" startPc="268447411"/>
-<entry endPc="268449418" name="timeLeftString" stackId="29" startPc="268447411"/>
-<entry endPc="268449418" name="position" stackId="30" startPc="268447411"/>
-<entry endPc="268449418" name="timeTextColor" stackId="31" startPc="268447411"/>
-<entry endPc="268449418" name="stepType" stackId="32" startPc="268447411"/>
-<entry endPc="268449418" name="iconHeight" stackId="33" startPc="268447411"/>
-<entry endPc="268449418" name="timeTextWidth" stackId="34" startPc="268447411"/>
-<entry endPc="268449418" name="timeTextHeight" stackId="35" startPc="268447411"/>
-<entry endPc="268449418" name="spacing" stackId="36" startPc="268447411"/>
-<entry endPc="268449418" name="heartRateZone" stackId="37" startPc="268447411"/>
-<entry endPc="268449418" name="heartRatePosition" stackId="38" startPc="268447411"/>
-<entry endPc="268449418" name="heartRateTextWidth" stackId="39" startPc="268447411"/>
-<entry endPc="268449418" name="heartRateIcon" stackId="40" startPc="268447411"/>
-<entry endPc="268449418" name="heartRateIconHeight" stackId="41" startPc="268447411"/>
-<entry endPc="268449418" name="heartRateIconX" stackId="42" startPc="268447411"/>
-<entry endPc="268449418" name="heartRateIconY" stackId="43" startPc="268447411"/>
-<entry arg="true" endPc="268449643" name="indicatorAngle" stackId="1" startPc="268449420"/>
-<entry arg="true" endPc="268449643" name="centerX" stackId="2" startPc="268449420"/>
-<entry arg="true" endPc="268449643" name="centerY" stackId="3" startPc="268449420"/>
-<entry arg="true" endPc="268449643" name="radius" stackId="4" startPc="268449420"/>
-<entry arg="true" endPc="268449643" name="length" stackId="5" startPc="268449420"/>
-<entry arg="true" endPc="268449643" name="color" stackId="6" startPc="268449420"/>
-<entry arg="true" endPc="268449643" name="width" stackId="7" startPc="268449420"/>
-<entry arg="true" endPc="268449643" name="dc" stackId="8" startPc="268449420"/>
-<entry endPc="268449642" name="indicatorX" stackId="9" startPc="268449424"/>
-<entry endPc="268449642" name="indicatorY" stackId="10" startPc="268449424"/>
-<entry endPc="268449642" name="startX" stackId="11" startPc="268449424"/>
-<entry endPc="268449642" name="startY" stackId="12" startPc="268449424"/>
+<entry endPc="268446555" name="info" stackId="1" startPc="268446519"/>
+<entry arg="true" endPc="268446590" name="newValue" stackId="1" startPc="268446578"/>
+<entry arg="true" endPc="268447141" name="stepType" stackId="1" startPc="268446591"/>
+<entry arg="true" endPc="268447141" name="backgroundColor" stackId="2" startPc="268446591"/>
+<entry arg="true" endPc="268447264" name="info" stackId="1" startPc="268447142"/>
+<entry arg="true" endPc="268447431" name="dc" stackId="1" startPc="268447286"/>
+<entry endPc="268447430" name="screenWidth" stackId="2" startPc="268447290"/>
+<entry endPc="268447430" name="screenHeight" stackId="3" startPc="268447290"/>
+<entry endPc="268447425" name="e" stackId="4" startPc="268447391"/>
+<entry arg="true" endPc="268447448" name="dc" stackId="1" startPc="268447432"/>
+<entry arg="true" endPc="268449461" name="screenWidth" stackId="1" startPc="268447449"/>
+<entry arg="true" endPc="268449461" name="screenHeight" stackId="2" startPc="268447449"/>
+<entry arg="true" endPc="268449461" name="dc" stackId="3" startPc="268447449"/>
+<entry arg="true" endPc="268449461" name="value" stackId="4" startPc="268447449"/>
+<entry arg="true" endPc="268449461" name="zone" stackId="5" startPc="268447449"/>
+<entry arg="true" endPc="268449461" name="lapPowerZone" stackId="6" startPc="268447449"/>
+<entry endPc="268449460" name="centerX" stackId="7" startPc="268447453"/>
+<entry endPc="268449460" name="centerY" stackId="8" startPc="268447453"/>
+<entry endPc="268449460" name="lineThickness" stackId="9" startPc="268447453"/>
+<entry endPc="268449460" name="lineWidth" stackId="10" startPc="268447453"/>
+<entry endPc="268449460" name="lineOffset" stackId="11" startPc="268447453"/>
+<entry endPc="268449460" name="radius" stackId="12" startPc="268447453"/>
+<entry endPc="268449460" name="startAngle" stackId="13" startPc="268447453"/>
+<entry endPc="268449460" name="totalArc" stackId="14" startPc="268447453"/>
+<entry endPc="268449460" name="zoneAngle" stackId="15" startPc="268447453"/>
+<entry endPc="268449460" name="targetPower" stackId="16" startPc="268447453"/>
+<entry endPc="268447848" name="i" stackId="17" startPc="268447602"/>
+<entry endPc="268447835" name="startZoneAngle" stackId="18" startPc="268447602"/>
+<entry endPc="268447835" name="endZoneAngle" stackId="19" startPc="268447602"/>
+<entry endPc="268449460" name="indicatorAngle" stackId="20" startPc="268447453"/>
+<entry endPc="268449460" name="lapPowerWidth" stackId="21" startPc="268447453"/>
+<entry endPc="268449460" name="powerWidth" stackId="22" startPc="268447453"/>
+<entry endPc="268449460" name="powerPosition" stackId="23" startPc="268447453"/>
+<entry endPc="268449460" name="icon" stackId="24" startPc="268447453"/>
+<entry endPc="268449460" name="iconWidth" stackId="25" startPc="268447453"/>
+<entry endPc="268449460" name="iconX" stackId="26" startPc="268447453"/>
+<entry endPc="268449460" name="iconY" stackId="27" startPc="268447453"/>
+<entry endPc="268449460" name="timeLeft" stackId="28" startPc="268447453"/>
+<entry endPc="268449460" name="timeLeftString" stackId="29" startPc="268447453"/>
+<entry endPc="268449460" name="position" stackId="30" startPc="268447453"/>
+<entry endPc="268449460" name="timeTextColor" stackId="31" startPc="268447453"/>
+<entry endPc="268449460" name="stepType" stackId="32" startPc="268447453"/>
+<entry endPc="268449460" name="iconHeight" stackId="33" startPc="268447453"/>
+<entry endPc="268449460" name="timeTextWidth" stackId="34" startPc="268447453"/>
+<entry endPc="268449460" name="timeTextHeight" stackId="35" startPc="268447453"/>
+<entry endPc="268449460" name="spacing" stackId="36" startPc="268447453"/>
+<entry endPc="268449460" name="heartRateZone" stackId="37" startPc="268447453"/>
+<entry endPc="268449460" name="heartRatePosition" stackId="38" startPc="268447453"/>
+<entry endPc="268449460" name="heartRateTextWidth" stackId="39" startPc="268447453"/>
+<entry endPc="268449460" name="heartRateIcon" stackId="40" startPc="268447453"/>
+<entry endPc="268449460" name="heartRateIconHeight" stackId="41" startPc="268447453"/>
+<entry endPc="268449460" name="heartRateIconX" stackId="42" startPc="268447453"/>
+<entry endPc="268449460" name="heartRateIconY" stackId="43" startPc="268447453"/>
+<entry arg="true" endPc="268449685" name="indicatorAngle" stackId="1" startPc="268449462"/>
+<entry arg="true" endPc="268449685" name="centerX" stackId="2" startPc="268449462"/>
+<entry arg="true" endPc="268449685" name="centerY" stackId="3" startPc="268449462"/>
+<entry arg="true" endPc="268449685" name="radius" stackId="4" startPc="268449462"/>
+<entry arg="true" endPc="268449685" name="length" stackId="5" startPc="268449462"/>
+<entry arg="true" endPc="268449685" name="color" stackId="6" startPc="268449462"/>
+<entry arg="true" endPc="268449685" name="width" stackId="7" startPc="268449462"/>
+<entry arg="true" endPc="268449685" name="dc" stackId="8" startPc="268449462"/>
+<entry endPc="268449684" name="indicatorX" stackId="9" startPc="268449466"/>
+<entry endPc="268449684" name="indicatorY" stackId="10" startPc="268449466"/>
+<entry endPc="268449684" name="startX" stackId="11" startPc="268449466"/>
+<entry endPc="268449684" name="startY" stackId="12" startPc="268449466"/>
 </localVars>
 <deviceInfo partNumber="006-B3113-00"/>
 <annotations>
@@ -1012,10 +1016,10 @@
 <dataEntry label="globals/PowerRunningZoneView" offset="380" parentId="globals" symbolId="PowerRunningZoneView" type="class"/>
 <dataEntry label="globals/DrawAttributes" offset="819" parentId="globals" symbolId="DrawAttributes" type="class"/>
 <dataEntry label="globals/ZoneManagment" offset="970" parentId="globals" symbolId="ZoneManagment" type="class"/>
-<dataEntry label="globals/CircularZoneView" offset="1321" parentId="globals" symbolId="CircularZoneView" type="class"/>
-<dataEntry label="globals/PowerRunningZoneApp" offset="1520" parentId="globals" symbolId="PowerRunningZoneApp" type="class"/>
-<dataEntry label="globals/Rez/Drawables" offset="1591" parentId="Rez" symbolId="Drawables" type="module"/>
-<dataEntry label="globals/Rez/Strings" offset="1726" parentId="Rez" symbolId="Strings" type="module"/>
+<dataEntry label="globals/CircularZoneView" offset="1329" parentId="globals" symbolId="CircularZoneView" type="class"/>
+<dataEntry label="globals/PowerRunningZoneApp" offset="1528" parentId="globals" symbolId="PowerRunningZoneApp" type="class"/>
+<dataEntry label="globals/Rez/Drawables" offset="1599" parentId="Rez" symbolId="Drawables" type="module"/>
+<dataEntry label="globals/Rez/Strings" offset="1734" parentId="Rez" symbolId="Strings" type="module"/>
 </dataEntryOffsetMappings>
 <functions>
 <functionEntry accessMode="public" endPc="268435530" name="&lt;init&gt;" parent="RunningPowerEfficiency" startPc="268435460">
@@ -1197,59 +1201,59 @@
 <param id="power"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268445978" name="GetTimeLeft" parent="ZoneManagment" startPc="268445724">
+<functionEntry accessMode="public" endPc="268446020" name="GetTimeLeft" parent="ZoneManagment" startPc="268445724">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268446214" name="getZone" parent="ZoneManagment" startPc="268445979">
+<functionEntry accessMode="public" endPc="268446256" name="getZone" parent="ZoneManagment" startPc="268446021">
 <param id="power"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268446350" name="GetWorkoutZone" parent="ZoneManagment" startPc="268446215">
+<functionEntry accessMode="public" endPc="268446392" name="GetWorkoutZone" parent="ZoneManagment" startPc="268446257">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268446389" name="GetPower" parent="ZoneManagment" startPc="268446351">
+<functionEntry accessMode="public" endPc="268446431" name="GetPower" parent="ZoneManagment" startPc="268446393">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268446430" name="GetWorkoutStepIntensity" parent="ZoneManagment" startPc="268446390">
+<functionEntry accessMode="public" endPc="268446472" name="GetWorkoutStepIntensity" parent="ZoneManagment" startPc="268446432">
 <documentation/>
 </functionEntry>
 <functionEntry accessMode="public" name="initialize" parent="ZoneManagment">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268446472" name="onTimerLap" parent="CircularZoneView" startPc="268446431">
+<functionEntry accessMode="public" endPc="268446514" name="onTimerLap" parent="CircularZoneView" startPc="268446473">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268446514" name="onWorkoutStepComplete" parent="CircularZoneView" startPc="268446473">
+<functionEntry accessMode="public" endPc="268446556" name="onWorkoutStepComplete" parent="CircularZoneView" startPc="268446515">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268446535" name="onTimerStart" parent="CircularZoneView" startPc="268446515">
+<functionEntry accessMode="public" endPc="268446577" name="onTimerStart" parent="CircularZoneView" startPc="268446557">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268446548" name="onValueChanged" parent="CircularZoneView" startPc="268446536">
+<functionEntry accessMode="public" endPc="268446590" name="onValueChanged" parent="CircularZoneView" startPc="268446578">
 <param id="newValue"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268447099" name="getWorkoutIntensityIcon" parent="CircularZoneView" startPc="268446549">
+<functionEntry accessMode="public" endPc="268447141" name="getWorkoutIntensityIcon" parent="CircularZoneView" startPc="268446591">
 <param id="stepType"/>
 <param id="backgroundColor"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268447222" name="compute" parent="CircularZoneView" startPc="268447100">
+<functionEntry accessMode="public" endPc="268447264" name="compute" parent="CircularZoneView" startPc="268447142">
 <param id="info"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268447243" name="initialize" parent="CircularZoneView" startPc="268447223">
+<functionEntry accessMode="public" endPc="268447285" name="initialize" parent="CircularZoneView" startPc="268447265">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268447389" name="onDraw" parent="CircularZoneView" startPc="268447244">
+<functionEntry accessMode="public" endPc="268447431" name="onDraw" parent="CircularZoneView" startPc="268447286">
 <param id="dc"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268447406" name="onUpdate" parent="CircularZoneView" startPc="268447390">
+<functionEntry accessMode="public" endPc="268447448" name="onUpdate" parent="CircularZoneView" startPc="268447432">
 <param id="dc"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268449419" name="drawLargeScreen" parent="CircularZoneView" startPc="268447407">
+<functionEntry accessMode="public" endPc="268449461" name="drawLargeScreen" parent="CircularZoneView" startPc="268447449">
 <param id="screenWidth"/>
 <param id="screenHeight"/>
 <param id="dc"/>
@@ -1258,7 +1262,7 @@
 <param id="lapPowerZone"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268449643" name="drawIndicatorLine" parent="CircularZoneView" startPc="268449420">
+<functionEntry accessMode="public" endPc="268449685" name="drawIndicatorLine" parent="CircularZoneView" startPc="268449462">
 <param id="indicatorAngle"/>
 <param id="centerX"/>
 <param id="centerY"/>
@@ -1269,20 +1273,20 @@
 <param id="dc"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268449664" name="onTimerStop" parent="CircularZoneView" startPc="268449644">
+<functionEntry accessMode="public" endPc="268449706" name="onTimerStop" parent="CircularZoneView" startPc="268449686">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268449667" name="onStart" parent="PowerRunningZoneApp" startPc="268449665">
+<functionEntry accessMode="public" endPc="268449709" name="onStart" parent="PowerRunningZoneApp" startPc="268449707">
 <param id="state"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268449710" name="getInitialView" parent="PowerRunningZoneApp" startPc="268449668">
+<functionEntry accessMode="public" endPc="268449752" name="getInitialView" parent="PowerRunningZoneApp" startPc="268449710">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268449731" name="initialize" parent="PowerRunningZoneApp" startPc="268449711">
+<functionEntry accessMode="public" endPc="268449773" name="initialize" parent="PowerRunningZoneApp" startPc="268449753">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268449734" name="onStop" parent="PowerRunningZoneApp" startPc="268449732">
+<functionEntry accessMode="public" endPc="268449776" name="onStop" parent="PowerRunningZoneApp" startPc="268449774">
 <param id="state"/>
 <documentation/>
 </functionEntry>

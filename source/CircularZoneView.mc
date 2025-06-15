@@ -30,7 +30,7 @@ class CircularZoneView extends ui.DataField {
         }
     }
     function compute(info){
-        if (getBackgroundColor() == Graphics.COLOR_WHITE) { // updated condition
+        if (getBackgroundColor() == Graphics.COLOR_WHITE &&  !pe.intervalStepRecovery) { // updated condition
             textForegroundColor = Graphics.COLOR_BLACK;
             currentPowerColor = Graphics.COLOR_BLACK;
         } else {

@@ -30,6 +30,7 @@ class ZoneManagment
 	var alertZoneChange = false;
 	var vibrateZoneChange = false;
 	var lapAlertZone = false;
+    var intervalStepRecovery = false;
     hidden var prevZone = 0.0;
     hidden var currentPower = 0.0;
 	var currentPowerZone = 0.0;
@@ -117,6 +118,7 @@ class ZoneManagment
         if (sysInfo.monkeyVersion[0] < 3 || (sysInfo.monkeyVersion[0] == 3 && sysInfo.monkeyVersion[1] < 2))  {
             return lapTime / 1000;
         }
+        
         var workoutStepInfo = Act.getCurrentWorkoutStep();
         if (workoutStepInfo == null) {
             return lapTime / 1000;
@@ -125,6 +127,11 @@ class ZoneManagment
         if (step == null) {
             return lapTime / 1000;
         }
+        if( step has :repetitionNumber){
+            intervalStepRecovery = workoutStepInfo.intensity == Act.WORKOUT_INTENSITY_RECOVERY;
+            return "";
+        }
+         
         if (step.durationType != Act.WORKOUT_STEP_DURATION_TIME) {
             return lapTime / 1000;
         }
