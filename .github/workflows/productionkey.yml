@@ -1,0 +1,35 @@
+on:
+  create:
+    ref_type: branch
+  push:
+    branches:
+      - main
+
+jobs:
+  update-id:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set ID to beta on new branch creation
+        if: github.event_name == 'create' && github.event.ref_type == 'branch'
+        run: |
+          echo "Setting manifest ID to beta"
+          sed -i 's/id="[^"]*"/id="d620b6866aae4f6790ecc031c438d040"/' manifest.xml
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add manifest.xml
+          git commit -m "ci: set manifest id to beta for branch ${{ github.ref }}"
+          git push
+
+      - name: Set ID to prod on merge to main
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        run: |
+          echo "Setting manifest ID to prod"
+          sed -i 's/id="[^"]*"/id="d8b47060-fc50-485e-ae0e-7327431457b2"/' manifest.xml
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add manifest.xml
+          git commit -m "ci: set manifest id to prod on merge to main"
+          git push
