@@ -178,6 +178,7 @@ E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_CircularZoneView
 E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_CircularZoneView_mc_32_26_42_4_start:
 [ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\CircularZoneView.mc" 33 8 ]
 E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_CircularZoneView_mc_33_8_39_8_if_stmt:
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_CircularZoneView_mc_33_12_33_65_begin:
         %tmp.1 = self;
         %tmp.2 = getv function %tmp.1 :getBackgroundColor;
         %tmp.3 = invoke %tmp.1 %tmp.2();
@@ -185,40 +186,48 @@ E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_CircularZoneView
         %tmp.5 = getv %tmp.4 :COLOR_WHITE;
         %tmp.6 = eq %tmp.3 %tmp.5;
         bf %tmp.6 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_CircularZoneView_mc_33_8_39_8_if_false;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_CircularZoneView_mc_33_61_33_65_true:
+        %tmp.8 = getv ? :pe;
+        %tmp.9 = getv %tmp.8 :intervalStepRecovery;
+        %tmp.10 = not %tmp.9;
+        push %tmp.10;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_CircularZoneView_mc_33_61_33_65_end:
+        %tmp.11 = phi [%tmp.6 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_CircularZoneView_mc_33_12_33_65_begin] [%tmp.10 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_CircularZoneView_mc_33_61_33_65_true] [%tmp.11 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_CircularZoneView_mc_33_61_33_65_end];
+        bf %tmp.11 @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_CircularZoneView_mc_33_8_39_8_if_false;
 E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_CircularZoneView_mc_33_8_39_8_if_true:
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_CircularZoneView_mc_33_58_36_8_start:
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_CircularZoneView_mc_33_87_36_8_start:
 [ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\CircularZoneView.mc" 34 12 ]
-        %tmp.7 = getm $.Toybox.Graphics;
-        %tmp.8 = getv %tmp.7 :COLOR_BLACK;
-        putv self :textForegroundColor %tmp.8;
+        %tmp.12 = getm $.Toybox.Graphics;
+        %tmp.13 = getv %tmp.12 :COLOR_BLACK;
+        putv self :textForegroundColor %tmp.13;
 [ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\CircularZoneView.mc" 35 12 ]
-        %tmp.9 = getm $.Toybox.Graphics;
-        %tmp.10 = getv %tmp.9 :COLOR_BLACK;
-        putv self :currentPowerColor %tmp.10;
-E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_CircularZoneView_mc_33_58_36_8_stop:
+        %tmp.14 = getm $.Toybox.Graphics;
+        %tmp.15 = getv %tmp.14 :COLOR_BLACK;
+        putv self :currentPowerColor %tmp.15;
+E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_CircularZoneView_mc_33_87_36_8_stop:
         goto @E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_CircularZoneView_mc_33_8_39_8_if_end;
 E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_CircularZoneView_mc_33_8_39_8_if_false:
 E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_CircularZoneView_mc_36_15_39_8_start:
 [ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\CircularZoneView.mc" 37 12 ]
-        %tmp.11 = getm $.Toybox.Graphics;
-        %tmp.12 = getv %tmp.11 :COLOR_WHITE;
-        putv self :textForegroundColor %tmp.12;
+        %tmp.16 = getm $.Toybox.Graphics;
+        %tmp.17 = getv %tmp.16 :COLOR_WHITE;
+        putv self :textForegroundColor %tmp.17;
 [ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\CircularZoneView.mc" 38 12 ]
-        %tmp.13 = getm $.Toybox.Graphics;
-        %tmp.14 = getv %tmp.13 :COLOR_WHITE;
-        putv self :currentPowerColor %tmp.14;
+        %tmp.18 = getm $.Toybox.Graphics;
+        %tmp.19 = getv %tmp.18 :COLOR_WHITE;
+        putv self :currentPowerColor %tmp.19;
 E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_CircularZoneView_mc_36_15_39_8_stop:
 E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_CircularZoneView_mc_33_8_39_8_if_end:
 [ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\CircularZoneView.mc" 40 8 ]
-        %tmp.16 = getv ? :pe;
-        %tmp.17 = getv function %tmp.16 :Update;
-        %tmp.19 = lgetv %info;
-        invoke %tmp.16 %tmp.17(%tmp.19);
-[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\CircularZoneView.mc" 41 8 ]
         %tmp.21 = getv ? :pe;
-        %tmp.22 = getv function %tmp.21 :GetPower;
-        %tmp.23 = invoke %tmp.21 %tmp.22();
-        putv self :value %tmp.23;
+        %tmp.22 = getv function %tmp.21 :Update;
+        %tmp.24 = lgetv %info;
+        invoke %tmp.21 %tmp.22(%tmp.24);
+[ "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\CircularZoneView.mc" 41 8 ]
+        %tmp.26 = getv ? :pe;
+        %tmp.27 = getv function %tmp.26 :GetPower;
+        %tmp.28 = invoke %tmp.26 %tmp.27();
+        putv self :value %tmp.28;
 E_Users_joeal_OneDrive_Documents_Github_PowerRunningZone_source_CircularZoneView_mc_32_26_42_4_stop:
     }
     [ @file = "E:\Users\joeal\OneDrive\Documents\Github\PowerRunningZone\source\CircularZoneView.mc"; @line = 43; ]

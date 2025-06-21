@@ -81,16 +81,21 @@ class ZoneManagment
         var newAvg = 0.0;
         var totalTimeInSeconds = time.toFloat() / 1000.0;
         var timeDiffInSeconds = (time.toFloat() - prevTime.toFloat()) / 1000.0;
-
         if (totalTimeInSeconds > 0){
             if (power != null){
+                if (prevTime < 1000){
+                    newAvg = power;
+                    return newAvg;
+                }else{
                 newAvg = (avg * (prevTime.toFloat() / 1000.0) + power * timeDiffInSeconds) / totalTimeInSeconds;
+                }
             } else {
                 newAvg = (avg * (prevTime.toFloat() / 1000.0) + avg * timeDiffInSeconds) / totalTimeInSeconds;
             }
         } else {
             newAvg = power;
         }
+        Sys.println("NewAvg: " + newAvg + " Time: " + time + " PrevTime: " + prevTime + " Avg: " + avg + " Power: " + power);
         return newAvg;
 }
     function GetWorkoutZone(){
@@ -129,7 +134,7 @@ class ZoneManagment
         }
         if( step has :repetitionNumber){
             intervalStepRecovery = workoutStepInfo.intensity == Act.WORKOUT_INTENSITY_RECOVERY;
-            return "";
+            return lapTime / 1000;
         }
          
         if (step.durationType != Act.WORKOUT_STEP_DURATION_TIME) {
